@@ -1,0 +1,90 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.box{
+	width:200px;
+	height: 200px;
+	border: 1px solid #efefef;
+	background-color: #fff000;
+	display: inline-block;
+	
+
+
+}
+.big-box{
+	width: 500px;
+	height: 500px;
+	border: 1px solid lightblue;
+	background-color: #f8f8f8;
+}
+.big-box .absolute-box{
+	width: 100px;
+	height: 100px;
+	background-color: green;
+	position: absolute;
+	top:0;
+}
+.big-box .relative-box{
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+	position: relative;
+	top:100px;
+}
+
+.columns{
+	width: 25%;
+	height: 100px;
+	float: left;
+	
+}
+.columns2{
+	width: 33.3333%;
+	height: 100px;
+	float: left;
+}
+.top-menu{
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 50px;
+	font-size: 20px;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+	background-color: rgba(50, 72, 123, 0.7);
+
+}
+.columns3{
+	width: 16.66666%;
+	height: 100px;
+	float: left;
+	text-align: center;
+	color: #ffffff;
+
+}
+
+.columns3.relative-box{
+	position: relative;
+	z-index: 100;
+
+
+}
+.columns3.absolute-box{
+	position: absolute;
+	z-index: 100;
+}
+
+.container{
+	width: 100%;
+	float: left;
+	height: auto;
+	background-color: #000;
+
+}
+.container .inner-container{
+	width: 20%;
+	height: 100px;
+	background-color: blue;
+}
