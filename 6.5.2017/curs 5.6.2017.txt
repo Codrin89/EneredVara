@@ -1,9 +1,0 @@
-1.git init;
-2.git clone "link"
-3.cd EneredVara;
-4.git fetch -ap;
-5.git checkout "username"
---------------------------
-cnd.js.com
-
-

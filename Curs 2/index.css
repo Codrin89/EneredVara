@@ -1,0 +1,82 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.box {
+	width: 200px; 
+	height: 200px;	
+	border: 1px solid #000000;
+	background-color: grey;	
+	display: inline-block;	
+}
+.bigbox{
+	width: 500px;
+	height: 500px;
+	border: 1px solid #000000;
+	background-color: lightgrey;			
+}
+.bigbox .absolutebox{
+	width: 100px;
+	height: 100px;	
+	background-color: #989898;
+	border: 1px solid #000000;
+	position: absolute;
+	top: 0;
+}
+.bigbox .relativebox{
+	width: 200px;
+	height: 200px;	
+	background-color: #272727;
+	border: 1px solid #000000;
+	position: relative;
+	top: 100px;
+}
+.columns{
+	width: 25%;
+	height: 100px;
+	float: left;
+}
+.columns2{
+	width: 33.3333%;
+	height: 100px;	
+	float:left;
+}
+.top-menu{
+	position: fixed; 
+	top: 0;
+	width:100vw;	
+	height:50px;
+	font-size:25px;
+	font-family: 'Mogra', cursive;
+	color:##000000;
+	font-weight: bold;
+	text-align: center;	
+	background-color: rgba(255, 255, 255, 0.6);
+}
+.columns3{
+	width: 16.6666%;
+	height: 100px;
+	float:left;
+	text-align: center;	
+}
+.columns3.relativebox{
+	position: relative;
+	z-index: 100;
+}
+.columns3.absolutebox {
+	position:absolute;
+	z-index: 100;
+}
+.container {
+	width: 100%;
+	height: auto;	
+	background-color: #000;
+	float:left;
+}
+.container .innercontainer{
+	width: 20%;
+	height: 100px;
+	background-color: blue;
+	margin: 0 auto;	
+}
