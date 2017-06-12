@@ -1,0 +1,70 @@
+*{
+	margin:0;
+	padding:0;
+}
+.text h1{
+	color: #ff0000;
+	font-size: 20px;
+	font-weight: 400;
+	text-transform:uppercase;
+	text-decoration:underline;
+	text-align:center;
+}
+.text p span{
+	font-size:20px
+	font-style: italic;
+	font-weight:100;
+}
+.text a{
+	text-decoration:none;
+	color: yellow;
+	cursor:default;
+}
+.text ul{
+	list-style-type:upper-roman;
+}
+.text ol{
+	.font{}
+	list-style-type:katakana;
+}
+.text .button{
+	color: #ff0000;
+	font-size:30px;
+	font-weight:250;
+	 text-decoration:none;
+	 text-transform:capitalize;
+	 text-align:left;
+	 cursor:pointer;
+	}
+	
+	.font{
+		font-family:'Oswald',sans-serif;
+	}
+	.fa-home{
+		color:darkblue;
+		font-size: 50px;
+	}
+	body {
+		min-height:100vh;
+		background-color:darkgreen;
+		background:url(img/images.jpg)blue no-repeat center top;
+		background-image:url('img/pp.jpg');
+		background-repeat:no-repeat;
+		background-position: center;
+		background-size:50% 50%;
+		}
+		.search{
+			background-image: url('Sea/images.png');
+			background-repeat: no-repeat;
+			background-size:auto 50%;
+			background-position:center right;
+			padding-right:20px;
+			height: 40px;
+		}
+		table tr {
+			border-top:2px solid red;
+			}
+			table th,
+			table td{
+				border-right: 1px solid white;
+			}
