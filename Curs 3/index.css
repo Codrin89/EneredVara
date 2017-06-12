@@ -1,0 +1,86 @@
+*{
+	margin:0;
+	padding: 0;
+}
+.text h1{
+	color: #027ee1;
+	font-size: 20px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-align:center;
+}
+.text p span{
+	font-size: 20px;
+	font-style: italic;
+	font-weight: 100;
+}
+.text a{
+	text-decoration: none;
+	color: #00674c;
+	cursor: default;
+}
+.text a:hover{
+	color: #009522;
+	font-weight: 800;
+}
+.text ul{
+	list-style-type: upper-roman;
+}
+.text ol{
+	list-style-type: katakana;
+}
+.text .button1 {
+	font-family: sans-serif;
+	font-size: 20px;
+	background-color: #ffb2b2;
+	border:1px solid #007e25;
+	color: #780015;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 7px;
+	font-family: 'Mogra', cursive;	
+}
+.text .button1:hover {
+	font-weight: 800;
+	background-color: yellow;
+	border:none;	
+	color: red;
+	text-decoration: : underline;
+	text-align: center;
+	cursor: crosshair;	
+}
+.font {
+	font-family: 'Mogra', cursive;
+}
+.fa-home{
+	color: #02be0a;
+	font-size: 30px;
+}
+body{
+	background-color: #86edd9;
+	background-image: url('Img/minioni.jpg');
+	background-repeat: no-repeat;
+	background-size: 50% 50%;
+	background-position:center;
+	min-height: 100vh;		
+}
+.search {
+	background-image: url('Img/lupa.png');
+	background-repeat: no-repeat;
+	background-size: auto 50%;
+	background-position: center right;
+	padding-right: 20px;
+	height: 40px;
+	display: block;	
+}
+.textarea {
+	resize: none;
+}
+table tr{	
+	border-top: 2px solid red;
+}
+table td,
+table th {
+	border-right:1px solid black;
+}
