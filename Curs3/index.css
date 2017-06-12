@@ -1,0 +1,76 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.text h1 {
+	color: #ff0000;
+	font-size: 20px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-align: center;
+}
+.text p span{
+	font-size: 20px;
+	font-style: italic;
+	font-weight: 100;
+}
+.text a {
+	text-decoration: none;
+	color: red;
+	cursor: default;
+}
+.text ul {
+	list-style-type: upper-roman;
+}
+.text ol {
+	list-style-type: katakana;
+}
+.text .button1 {
+	background-color: #4285F4;
+	color: #082947;
+	font-weight: 600;
+	cursor: help;
+	padding: 10px; 
+}
+.text .button2 {
+	background-color: red;
+	color: #082947;
+	font-weight: 600;
+	cursor: no-drop;
+	padding: 10px; 
+}
+.font {
+	font-family: 'Indie Flower', cursive;
+}
+.fa-home {
+	color:red;
+	font-size: 200px;
+}
+body {
+	min-height: 100vh;
+	background-color: darkgreen;
+	background-image: url(img/pozamea.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 50% 50%;
+}
+p {
+	color: white;
+}
+.search {
+	background-image: url(img/search.png);
+	background-repeat: no-repeat;
+	background-size: auto 50%;
+	background-position: center right;
+	padding-right: 20px;
+	height: 40px;
+}
+
+table tr {
+	border-top: 2px solid red;
+}
+table th,
+table td {
+	border-right: 1px solid white;
+}
