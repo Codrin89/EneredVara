@@ -1,0 +1,76 @@
+.heading {
+	color:red;
+}
+.box {
+	width: 200px;
+    height: 200px;
+    border: 2px solid:green;
+    background-color: purple;
+    margin: 18px;
+    text-align: left;
+
+}
+.box-text {
+	font-size: 10px;
+	color: red;
+	font-weight: bold;
+	font-style: italic;
+	text-transform: uppercase;
+}
+.buton {
+	padding: 2px 3px 4px 3px;
+	border-radius: 5px;
+	background-color: yellow;
+	font-size: 20px;
+	color: black;
+}	
+.cutie {
+	border: solid red;
+	background-color: white;
+	padding: 10px 8px ;
+	color: black;
+	font-size: 15px;
+	font-weight: lighter;
+
+}
+.input:hover {
+	border-color: red;
+}
+.input:focus {
+	border-color: black;
+}
+.img {
+	width: 200px;
+}
+.index2 .box {
+	width: 150px;
+	float: right;
+	height: 150px;
+	border: 5px solid red;
+	background-color: white;
+	margin: 10px;
+	text-align: center;
+
+}
+.index2 .box .box-text {
+	color:yellow;
+	border: solid red;
+	float: left;
+}
+.content .box-content {
+	width: 200px;
+	height: 300px;
+	background-color: #d6c5c5;
+	margin: 10px;
+	color: black;
+}
+.content2 .boxContent {
+	height: 150px;
+	width: 200px;
+	background-color: green;
+	margin: 15px;
+	color:red;
+}
+
+
+
