@@ -1,0 +1,158 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI';
+}
+
+.header{
+	height:48px;
+	max-width: 100%;
+	background-image: url("https://assets-9gag-fun.9cache.com/s/fab0aa49/30eb052420799ef4f74bd669a7e9c55e3bba9d24/static/dist/web6/img/header-logo.png");
+	background-color: black;
+	background-repeat: no-repeat;
+	padding-left: 10px;
+	background-size: contain;
+	padding-left: 50px;
+}
+
+.header .firstmenu {
+	list-style-type: none;
+	color: white;
+
+}
+
+.header .firstmenu li {
+	display: inline-block;
+    color: #999;
+    font-size: 17px;
+    line-height: 48px;
+    height: 48px;
+    font-weight: bold;
+    padding: 0 12px;
+    font-family: 'Segoe UI';		
+}
+.header .firstmenu li:hover {
+	color: white;			
+}
+.header .btn {
+	font-family: 'Segoe UI';
+    float: right;
+    display: inline-block;
+    padding: 3px 13px;
+    margin: 10px 12px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    font-size: 14px;
+}
+.header .btn.login {
+	background-color: transparent;
+	color: #999;
+
+}
+.header .btn.signup{
+	background-color: #09f;
+	color: white;
+	font-weight: bold;
+}
+.header .btn.signup:hover {
+	background-color: #33adff;
+	color: white;
+}
+.header .fa-search {
+	float: right;
+	font-size: 17px;
+	color: #999;
+	margin-top: 15px;
+}
+.content{
+	padding: 30px 130px;
+}
+
+.content .left{
+	min-height: 300px;
+	width: 65%;	
+	float: left;
+}
+.content .right{
+	min-height: 300px;	
+	width: 35%;
+	float: left;	
+}
+.content .left .item h2{
+	margin-bottom: 20px;
+}
+.content .left .item h2:hover {
+	color: lightblue;
+	cursor: pointer;
+}
+.content .left .item{
+	width: 90%;
+}
+.content .left .item img{	
+	width: 100%;
+	max-width: 100%;
+}
+.content .right .item-sidebar {
+	width: 90%;
+}
+.content .right .item-sidebar img {	
+	width: 100%;
+	max-width: 100%;
+}
+.content .right .item-sidebar h5{
+	margin: 15px 0px;
+	padding-left: 20px;
+}
+.content .right .item-sidebar h5:hover {
+	color: lightblue;
+	cursor: pointer;
+}
+.content .left .item .buttons .btn-default {
+	width: 44px;
+	height: 34px;
+	background-color: transparent;
+	border:1px solid #ccc;
+	border-radius: 2px;
+	outline: none;
+	font-size: 20px;
+	color: #333;
+	padding-bottom: 3px;
+}
+.content .left .item .buttons .btn-default:hover{
+	border: 1px solid #999;
+}
+.content .left .item .buttons .btn-pinterest {
+	float: right;
+	color: white;
+	background-color:#bd081c;
+	margin-right: 0px;	
+	height: 34px;
+	outline: none;
+	border:none;
+	border-radius: 2px;
+	padding: 0 10px;	
+	font-weight: 700;
+}
+.content .left .item .buttons .btn-facebook {
+	float: right;
+	color: white;
+	background-color:#3b5998;
+	margin-right: 10px;		
+	height: 34px; 
+	outline: none;
+	border:none;
+	border-radius: 2px;
+	padding: 0 10px;	
+	font-weight: 700;
+}
+.content .left .item .buttons .btn-pinterest:hover {	
+	background-color:#ee0a23;
+}
+.content .left .item .buttons .btn-facebook:hover {	
+	background-color:#4c70ba; 
+}
+.content .left .item .buttons .btn-pinterest .fa,
+.content .left .item .buttons .btn-facebook .fa{
+	padding-right: 8px;
+}
