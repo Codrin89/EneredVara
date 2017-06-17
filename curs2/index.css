@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+
+}
+
+.box {
+	width: 200px;
+	height: 200px;
+	border: 2px solid red;
+	background-color: purple;
+	display: inline-block;
+}
+.bigbox {
+	width: 500px;
+	height: 500px;
+	border: 3px solid blue;
+	background-color: yellow;
+}
+.bigbox .absolutebox {
+	width: 100px; 
+	height: 100px;
+	border: 2px solid snow;
+	background-color: pink;
+	position: absolute;
+	top:0;
+}	
+.bigbox .relativebox {
+	width: 200px;
+	height: 200px;
+	border: 2px green;
+	background-color: red;
+	position: relative;
+    top: 100px;
+}
+.bigbox .relativebox .absolutebox {
+	width: 100px;
+	height: 100px;
+	border: 2px yellow;
+	background-color: green;
+	position: absolute;
+	top:0;
+	right: 0;
+}
+.columns {
+	width: 25%;
+	height: 100px;
+	display:inline-block;
+	float: left;
+}
+.columns2 {
+	width: 33.3333%;
+	height:100px;
+	float: left;
+}
+.topmenu {
+	position:fixed;
+	top:0;
+	width: 100vw;
+	height: 50px;
+	font-size: 25px;
+	font-family: 'Italic', cursive;
+	color:red;
+	font-weight: bold;
+	text-align: center;	
+	background-color: rgba(255, 255, 255, 0.6);
+
+}
+.columns3 {
+	width: 16.6666%;
+	height:100px;
+	float:left;
+	text-align: left;
+
+}
+.columns3.relativebox {
+	position: relative;
+	z-index: 100;
+}
+.columns3.absolutebox {
+	position:absolute;
+	z-index: 100;
+}
+.container {
+	width: 100%;
+	height: auto;	
+	background-color: #000;
+	float:left;
+}
+.container .intercontainer {
+	width: 20%;
+	height: 100px;
+	background-color: blue;
+	margin: 0 auto;	
+}
+
+
