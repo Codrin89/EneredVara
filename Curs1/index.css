@@ -72,3 +72,22 @@ img {
 	position: relative;
     top: 225px;
 }
+.NoButtons {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.NoButtons li{
+	float: left;
+}
+#MainMenu {
+	font-family: 20px 'PT Sans Narrow', Arial, sans-serif;
+	text-transform: uppercase;
+}
+#MainMenu a {
+	color: #F20A40;
+	text-decoration: none;
+}
+#MainMenu li {
+	margin-right: 20px;
+}
