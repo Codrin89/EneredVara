@@ -60,6 +60,12 @@
 	height: 294px;
 	float: left;
 }
+.image-container h1 {
+	color: #fff;
+	position: relative;
+	top: 60%;
+	left: 20px;
+}
 .image-container .img1 {
 	background: url('https://www.mendo.nl/wp-content/uploads/2017/06/mendo-books-manolo-blahnik-studio-07-e1497690968282-2000x1500-c-default.jpg');
 	background-repeat: no-repeat;
