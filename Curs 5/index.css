@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family:Helvetica;
+}
+.header {
+ padding: 0 70px;
+ text-align:center;
+}
+.header .black-top-bar {
+	width: 100%;
+	background:black;
+	height: 10px;
+}
+.header .spining-text .fa-angle-left,
+
+.header .spining-text .fa-angle-right {
+ 		cursor:pointer;
+}
+.header .spining-text span {
+	margin: 0 40px;
+}
+.header .spining-text {
+	margin-top: 30px;
+}
+.menu ul {
+ list-style-type:none;
+}
+.menu ul li {
+	display: inline-block;
+	margin-left: 48px;
+}
+.menu ul li.first-li{
+	margin-left:0;
+
+}
+.menu ul li.last-li {
+	margin-right:0;
+
+}
+.menu ul li.logo {
+	margin:0 20px 0 110px;
+}
+
+.menu ul li.logo img {
+	width: 132px;
+	height: 132px;
+	position: relative;
+    margin: 0 20px 0 9px;
+    top: 58px;
+}
+.menu {
+	margin-top:-55px;
+	margin-bottom: 55px;
+}
+.image-container {
+	height:294px;
+	padding: 70px 0;
+	background-color:#000;
+}
+.image-container .images {
+	margin-left:50px;
+	width:calc((100% - 150px) / 3);
+	height:359px;
+	float:left;
+}
+.image-container .images h1 {
+	color:#fff;
+	position:relative;
+	top:60%;
+	left :20px;
+}
+.image-container .img1 {
+	background:url(book1.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center center;
+}
+.image-container .img2{
+	background:url(book2.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center center;
+
+}
+.image-container .img3 {
+    background:url(book3.jpg);
+    background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center center;
+}
+
