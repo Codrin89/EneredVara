@@ -1,0 +1,79 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica,Arial,sans-serif;
+	max-width: 100%;	
+}
+
+header {
+	padding: 0 70px;
+	font-size: 15px;
+	text-align: center;
+}
+
+header .topbar {
+	height: 7px;
+	background-color: black;
+	width: 100%;
+}
+
+header .spintext {
+	text-align: center;
+	line-height: 36px;
+}
+
+header .spintext .fa-angle-left,
+header .spintext .fa-angle-right {
+	cursor: pointer;
+	margin: 0 50px;	
+	z-index: 99;
+    position: relative;
+}
+header span {	
+	font-size: 15px;
+}
+
+header .menu {
+	margin-top: -50px;
+	margin-bottom: 50px;
+}
+header .menu .navbar li {	
+    list-style-type: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 0 15px;
+    font-weight: 500;
+}
+header .menu .navbar li.center img{
+	padding: 0;
+	width: 100px;
+	height: auto;
+	margin: 0px 156px 0 146px;
+	position: relative;
+	top: 42px;
+}
+header .menu .navbar li.li-left {
+	margin-left: 0px;
+}
+header .menu .navbar li.li-right {
+	margin-right: 0px;
+}
+.content {	
+	height: 297px;	
+	background-color: #121212;
+	padding: 70px 0;
+}
+.content .picture {
+	margin-left: 70px;
+	width: calc((100% - 210px) / 3 );
+	float: left;
+	height: 297px;		
+}
+.content .picture h1 {
+	color: white;
+	position: relative;
+	top: 75%;
+	left: 26px;
+	font-size: 28px;
+    max-width: inherit;
+}
