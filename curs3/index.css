@@ -1,0 +1,90 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.text h1 {
+	color: red;
+	font-size: 25px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-decoration: overline;
+	text-align: center;
+
+}
+.text p span {
+	font-size: 20px;
+	font-style: times;
+	font-weight: 100;
+}
+.text a {
+	text-decoration: none;
+	color:pink;
+	cursor: default;
+}
+.text a:hover {
+	color: #48b1d2;
+	font-weight: 600;
+}
+.text .a{
+	list-style-type: upper-roman;
+}
+.text .b{
+	list-style-type: katakana;
+}
+.text .buton1 {
+	font-family: sans-serif;
+	font-size: 20px;
+	background-color: #423838;
+	border: 10px;
+	border-radius: 7px;
+	color:#c8dee8;
+	text-align: center;
+	text-transform: lowercase;
+
+}
+.text .buton1:hover {
+	font-weight: 500;
+	background-color: red;
+	color: white;
+	border: none;
+	text-decoration: line-through;
+	text-align: center;
+	cursor: crosshair;
+}
+.font {
+	font-family: 'Indie Flower', cursive;
+}
+.fa-home {
+	color: red;
+	font-size: 200px;
+
+}
+body {
+	min-height: 100vh;
+	background-color: blue;
+	background-image: url(poza.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 50% 50%;
+
+
+}
+p {
+	color: white;
+}
+.search {
+	background-image: url(search.png);
+	background-repeat: no-repeat;
+	background-size: auto 50%;
+	background-position: center right;
+	padding-right: 20px;
+	height: 40px;
+}
+table tr {
+	border-top: 2px solid red;
+
+}
+table th,
+table td {
+	border-right: 1px solid white;
+}
