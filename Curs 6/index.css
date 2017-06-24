@@ -1,0 +1,40 @@
+.container {
+	background-color:purple;
+
+}
+.container-fluid {
+	background-color:;
+	height:100px;
+}
+.container .row .col-lg-3 {
+	background-color:rgba(255,255,255,0.6);
+	color:red;
+}
+/*@media (min-width:700px) and (max-width: 1000px) {
+	.container {
+		width :100px !important;
+	}
+}*/
+.container .col-sm-5 {
+	background-color:red;
+	height:50px;
+}
+.container .col-sm-7 {
+	background-color:blue;
+	height:50px;
+}
+.container .col-sm-3 {
+	background-color:purple;
+	height:50px;
+}
+.container .col-sm-3 {
+	background-color:purple;
+	height:50px;
+
+}
+.image-container {
+	height:auto;
+	background-color:transparent;
+}
+tr:hover > * {
+	background-color:red;
