@@ -1,0 +1,42 @@
+.container {
+	height: 100%;
+	background-color: rgba(20, 227, 20, 0.3);
+}
+.container-fluid {
+	height: 100px;
+	background-color: blue;
+}
+.container .row .col-lg-3 {
+	background-color: rgba(255, 255, 255, 0.4);
+	color: red;
+	text-align: center;
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+	.container{
+		width: 100px !important;
+	}
+}
+.container-fluid .row .btn {
+	outline: 0;
+	margin: 10px 0px 0px 10px;
+}
+.container .col-sm-5 {
+	background-color: #511c64;
+	height: 50px;
+	color: white;
+}
+.container .col-sm-7 {
+	background-color: #000045;
+	height: 50px;
+	color: white;
+}
+.container .col-sm-3 {
+	background-color: pink;
+	height: 50px;
+}
+.container.tables {
+	background-color: white;	
+}
+.table tbody tr:hover {
+	background-color: lightgreen;
+}

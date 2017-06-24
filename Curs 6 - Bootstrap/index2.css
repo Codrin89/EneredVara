@@ -1,0 +1,33 @@
+.container .row .glyphicon {
+	font-size: 18px;
+	color: red;
+	margin-right: 10px;
+	line-height: 20px;
+}
+.container .row .glyphicon:hover {
+	color: yellow;
+}
+.container .glyphicon-container {
+	background-color: rgba(0, 205, 211, 0.34);
+	padding: 10px;
+	text-align: center;
+}
+.container .glyphicon-container .dropdown {
+	background-color: rgba(0, 205, 211, 0.34);
+	float: left;		
+}
+.container .row .dropdown i {
+	color: black;
+	font-size: 16px;
+}
+.container .row .dropdown button {
+	background-color: rgba(0, 205, 211, 0.34);
+	border: none;
+}
+.input-groups-container .input-group-addon {
+	background-color: #47fffd;
+	color: #00625a;
+}
+.input-groups-container .input-group {
+	margin-bottom: 10px;
+}
