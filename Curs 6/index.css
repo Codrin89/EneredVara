@@ -1,0 +1,38 @@
+.container {
+	background-color: green;
+}
+	
+
+.container-fluid {
+	background-color: blue;
+	height: 100px;
+}
+
+.container .row .col-lg-3 {
+	background-color: rgba(255, 255, 255, 0.6);
+	color: red;
+}
+
+/*@media (min-width: 700px) (max-width: 1000px) {
+	.container {
+		width: 100px !important;
+	}
+}*/
+.container .col-sm-5 {
+	background-color: red;
+	height: 50px;
+
+}
+
+.container .col-sm-7 {
+	background-color: #555;
+	height: 50px;
+	
+}
+.container .col-sm-3 {
+	background-color: purple;
+	height: 50px;
+	
+}
+tr:hover > * {
+	background-color: red;
