@@ -1,0 +1,17 @@
+.glyphicons-wrapper {
+	background-color: darkblue;
+}
+
+.glyphicons-wrapper i {
+	font-size: 40px;
+	color: green;
+	margin-right: 20px
+}
+.input-group-wrapper .input-group-addon {
+	background-color: blue;
+	color: white;
+
+}
+.input-group-wrapper .input-group-control{
+	margin-bottom: 10px;
+}
