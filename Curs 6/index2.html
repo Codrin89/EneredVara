@@ -1,0 +1,80 @@
+<!doctype <!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scaleble=no">
+		<title>Curs 6 - BOOTSTRAP</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="index.css">
+
+	</head>
+	<body>
+		<div class="container">
+			<form class="col-xs-6" action="upload.php>" method="POST">
+			  <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+			  </div>
+			  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			  </div>
+			  <div class="form-group">
+				    <label for="exampleInputFile">File input</label>
+				    <input type="file" id="exampleInputFile">
+				    <p class="help-block">Example block-level help text here.</p>
+			  </div>
+			  <div class="checkbox">
+				    <label>
+				      <input type="checkbox"> Check me out
+				    </label>
+			  </div>
+	 		 <button type="submit" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+		<div class="container image-container">
+			<div class="col-md-3">
+				<img src="imagini/Lac_Blanc.jpg" class="img-responsive" alt="responsive image">
+			</div>
+			<div class="col-md-3">
+				<img src="imagini/Lacul-Capra.jpg" class="img-responsive img-circle" alt="circle image">
+			</div>
+			<div class="col-md-3">
+				<img src="imagini/padure-550x300.jpg" class="img-responsive img-thumbnail" alt="thumbnail image">
+			</div>
+		</div>
+		<div class="container">
+			<table class="table table-bordered">
+				<thead>
+					<tr class="warning">
+						<th>#</th>
+						<th>First name</th>
+						<th>Last name</th>
+						<th>Username</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">1</th>
+						<td>Ana</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<td>Maria</td>
+						<td>Ionescu</td>
+						<td>@mies</td>
+					</tr>
+					<tr>
+						<th scope="row">3</th>
+						<td>Cristina</td>
+						<td>Popescu</td>
+						<td>@mpop</td>
+					</tr>
+				</tbody>
+			</table>
+			
+		</div>
+	</body>
+</html>
