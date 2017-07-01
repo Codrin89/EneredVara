@@ -1,0 +1,146 @@
+*{
+	padding:0;
+	margin:0;
+	font-family: 'Segoe UI';
+}
+body {
+	min-height: 100vh;
+	background-image:url(nou.png);
+	background-repeat :no-repeat;
+	background-size: cover;
+
+}
+.header {
+	height:80px;
+}
+
+
+.header button {
+	float:right;
+	padding :30px 37px;
+	border:none;
+	outline: none;
+	color:#fff;
+
+}
+.header .btn-orange {
+	background-color:#fe580f;
+
+}
+.header .btn-grey {
+	background-color:#7c8389;
+}
+.header .btn-orange .icon-add {
+	width :19px;
+	height: 15px;
+	background-image:url(msg.png);
+	background-repeat:no-repeat;
+	display:inline-block;
+	margin-right: 12px;
+
+}
+.header .btn-grey .icon-add {
+	width :19px;
+	height: 15px;
+	background-image:url(arrow.png);
+	background-repeat:no-repeat;
+	display:inline-block;
+	margin-right: 12px;
+}
+.search .pre-search {
+text-align:center;
+padding:150px 0;
+}
+.search .pre-search input {
+	color:#45515e;
+	font-family:'Segoe UI Light ';
+	font-size: 20px;
+	padding: 10px 40px;
+	width: 400px;
+	background-image:url(search.png);
+	background-repeat:no-repeat;
+	background-position: 5px center;
+	outline:none;
+	border: 1px solid #fff;
+	height:32px;
+
+}
+.search .pre-search input: focus {
+	border: 1px solid #a2c1f8;
+}
+.search .pre-search .search-button {
+width:32px;
+height:32px;
+background-color:#45515e;
+background-image: url(arrows.png);
+background-repeat:no-repeat;
+background-size:60%;
+border:none;
+outline: none;
+position:relative;
+background-color:transparent;
+left: -44px;
+top:16px;
+}
+.content-wrapper .profile-box {
+	width:15.666%;
+	margin:0 0.5%;
+	float:left;
+
+
+}
+.content-wrapper .profile-box >div{
+	max-width: 100%;
+	}
+.content-wrapper .profile-box .image-wrapper img {
+	max-width: 100%;
+}
+.content-wrapper .profile-box .details-wrapper {
+	background-color: #fff;
+	padding: 10px 20px;
+
+}
+.content-wrapper .profile-box .details-wrapper > *{
+	margin-top:10px;
+}
+.content-wrapper .profile-box .details-wrapper .email-heading {
+color:666666;
+font-family:'Segoe UI Semibold';
+font-size:12px;
+text-transform:uppercase;
+
+
+}
+.content-wrapper .profile-box .details-wrapper .name{
+	color:#666666;
+	font-family:'Segoe UI Regular';
+	font-size:18px;
+}
+.content-wrapper .profile-box .details-wrapper .delete-button {
+	color:#80878e;
+	font-family:'Segoe UI Regular';
+	font-size:14px;
+}
+
+.content-wrapper .profile-box .details-wrapper .creation-date{
+	color:#bcc8cf;
+	font-family:'Segoe UI';
+	font-size:13px;
+	font-style:italic;
+}
+.content-wrapper .profile-box .details-wrapper .email{
+	color:#bcc8cf;
+	font-family:'Segoe UI Semibold';
+	font-size:12px;
+	
+}
+.content-wrapper .profile-box .details-wrapper .delete-button{
+	background-image:url(recycle.png);
+	background-repeat:no-repeat;
+	outline:none;
+	border:none;
+	background-position: left center;
+  	background-color:#fff;
+  	padding-left:20px;
+	
+}
