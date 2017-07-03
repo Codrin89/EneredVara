@@ -1,0 +1,130 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI';
+}
+body {
+	min-height: 100vh;
+	background-image: url(img/bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.header {
+	height: 80px;
+}
+.header button {
+	float: right;
+	padding: 30px 37px;
+	border: none;
+	outline: none;
+	color: #fff;
+}
+.header .btn-orange {
+	background-color: #fe580f;
+}
+.header .btn-grey {
+	background-color: #7c8389;
+}
+.header .btn-orange .icon-add {
+	width: 19px;
+	height: 15px;
+	background-image: url("img/add_icon.png");
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+.header .btn-grey .icon-back {
+	width: 19px;
+	height: 15px;
+	background-image: url("img/sageata.png");
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin-right: 2px;
+}
+.search .pre-search {
+	text-align: center;
+	padding: 150px 0;
+}
+.search .pre-search input {
+	font-family: 'Segoe UI Light';
+	font-size: 20px;
+	color: #45515e;
+	padding: 10px 40px;
+	width: 400px;
+	background-image: url('img/search.png');
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+.search .pre-search input:focus {
+	border: 1px solid #a2c1f8;
+}
+.search .pre-search .search-button{
+	width: 40px;
+	height: 49px;
+	background-color: transparent;
+	background-image: url('img/sageata_dr.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	outline: none;
+	position: relative;
+	left: -44px;
+	top: 16px;
+}
+.content-wrapper .profile-box {
+	width: 15.6666%;
+	margin: 0 0.5%;
+	float: left;
+}
+.content-wrapper .profile-box > div {
+	max-width: 100%;
+}
+.content-wrapper .profile-box .image-wrapper img {
+	max-width: 100%
+}
+.content-wrapper .profile-box .details-wrapper > * {
+	margin-top: 10px;
+}
+.content-wrapper .profile-box .details-wrapper {
+	background-color: #fff;
+	padding: 10px 20px;
+}
+.content-wrapper .profile-box .details-wrapper .name {
+	font-size: 18px;
+	color: #666;
+}
+.content-wrapper .profile-box .details-wrapper .creation-date {
+	font-family: 'Segoe UI Italic';
+	font-size: 12px;
+	color: #869eaa;
+	font-style: italic;
+}
+.content-wrapper .profile-box .details-wrapper .email-heading {
+	font-family: 'Segoe UI Semibold';
+	font-size: 12px;
+	color: #666;
+	text-transform: uppercase;
+	
+}
+
+.content-wrapper .profile-box .details-wrapper .email {
+	font-family: 'Segoe UI Semibold';
+	font-size: 13px;
+	color: #99adb7;
+}
+.content-wrapper .profile-box .details-wrapper .delete-button {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	color: #747c84;
+	background-image: url(img/delete.png);
+	background-repeat: no-repeat;
+	position: relative;
+	padding-left: 20px;
+}
+.content-wrapper .details-wrapper {
+	padding: 0 50px;
+}
+
+
