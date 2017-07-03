@@ -47,14 +47,44 @@ body > div {
 	font-size: 83px;
 	font-family: "OpenSansBold";
 	color: #fff;
-	margin-top: 90px;
-
-
+	margin-top: 70px;
+	text-transform: uppercase;
 }
 .header h2 {
 	text-align: center;
 	font-size: 31px;
 	font-family: "OpenSansBold";
+	margin-bottom: 145px;
 	color: #fff;
 	text-transform: uppercase;
+}
+.about .about-us {
+	width: 830px;
+	height: 285px;
+	margin: 0 auto;
+	background-color: #fff;
+	border-radius: 4px;
+	position: relative;
+	top: -100px;
+}
+.about .about-us h3 {
+	text-align: center;
+	width: 385px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: "OpenSansBold";
+	font-size: 36px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #d5d5d5;
+	padding-top: 47px;
+	padding-bottom: 26px;
+}
+.about .about-us p {
+	text-align: center;
+	margin: 0 auto;
+	text-align: center;
+	font-family: "OpenSansRegular";
+	font-size: 22px;
+	padding-top: 38px;
+	padding-bottom: 26px;
 }
