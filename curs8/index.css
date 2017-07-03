@@ -1,0 +1,120 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family: "Segoe UI"
+}
+body{
+	min-height: 100vh;
+	background-image: url(img/bg.png);
+	background-repeat:  no-repeat;
+	background-size:  cover;
+}
+
+.header{
+	height:80px;
+
+}
+.header button{
+	float:right;
+	padding:30px 37px;
+	border: none;
+	outline: none;
+	color: #fff;
+}
+.header .btn-orange {
+	background-color:#fe580f;
+}
+.header .btn-grey{
+	background-color:#7c8389;
+	width:19px;
+	height:15px;
+	background-image: 
+	background -repeat:;
+	display: inline;
+	margin-right:2px;
+}
+.search .pre-search{
+	padding:100px;
+	text-align: center;
+}
+.search .pre-search input{
+	font-family: "Segoe UI Light";
+	font-size: 20px;
+	color:#45515e;
+	padding:10px 40px;
+	width:400px;
+	background-image: url('search.jpg');
+	background-repeat: no-repeat;
+	background -position: 5pc  center;
+
+}
+
+.search .pre-seearch input:focus{
+	border: 1px solid #a2c1f8;
+}
+.search .pre-search .search-button{
+	width: 40px;
+	height:49px;
+	background-color: transparent;
+	background-image: url(pad.jpg);
+	background-repeat: no-repeat;
+	border: none;
+	outline: none;
+	background-position: center;
+	position: relative;
+	left: -44px;
+	top:16px;
+
+}
+.content-wrapper .profile-box{
+	width: 15.6666%;
+	margin: 0 0.5%;
+	float:left;
+}
+.content-wrapper .profile-box > div{
+	max-width: 100%;
+
+}
+.content-wrapper .profile-box .image-wrapper img {
+	max-width: 100%;
+}
+
+.content-wrapper .profile-box .details-wrapper  {
+	background-color: #fff;
+	padding:10px 20px;
+	margin-top: 10px;
+}
+.content-wrapper .details-wrapper .name{
+	font-family: "Segoe UI";
+	color: #666666;
+	font-size:18px;
+
+}
+.content-wrapper .details-wrapper .creation-date{
+	font-family: "Segoe UI Semibold";
+	color:#869eaa;
+	font-size:12px;
+	font-style: italic;
+}
+.content-wrapper .details-wrapper .creation .email-heading{
+	font-family: "Segoe UI Semibold";
+	color:#666;
+	font-size:12px;
+	text-transform: uppercase;
+}
+
+.content-wrapper .details-wrapper .creation .email{
+	font-family: "Segoe UI Semibold";
+	color:#99adb7;
+	font-size:13px;
+}
+.content-wrapper .details-wrapper .delete-button {
+	font-family: "Segoe UI Semibold";
+	background-color: transparent;
+	border:none;
+	background-image:url(trush.jpg);
+	font-size:14px; 
+	background-repeat: no-repeat;
+	padding-left: 18px;
+}
+
