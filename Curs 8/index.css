@@ -1,0 +1,137 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image: url("background.png");	
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+.header {
+	height: 80px;	
+}
+.header a {
+	float: right;
+}
+.header .btn {
+	padding: 30px 48px;
+	color: white;
+	text-transform: none;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Segoe UI Light';		
+}
+.header .icon_add {
+	background-image: url("slide.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 15px;
+	height: 12px;
+	display: inline-block;
+	margin-right: 3px;
+}
+.header .icon_arrow {
+	background-image: url("arrow-left.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 15px;
+	height: 12px;
+	display: inline-block;
+	margin-right: 3px;
+}
+
+.header .btn.btn_grey {
+	background-color: #7c8389;
+	border-right: 1px solid #61686e; 
+}
+.header .btn.btn_orange {
+	background-color: #fe580f; 
+}
+.search .pre_search {
+	text-align: center;
+	padding: 100px 0px;
+}
+.search .pre_search input {
+	padding: 10px 40px 12px 40px;
+	font-size: 20px;
+	width: 565px;
+	background-image: url("search_icon.png");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	outline: none;
+	border: 1px solid #fff;
+	font-family: 'Segoe UI Light';
+}
+.search .pre_search .arrow_right {
+	background-image: url("arrow_right.png");
+	background-position: center center;
+	background-repeat: no-repeat;		
+	width: 40px;
+	height: 49px;
+	position: relative;	
+	left: -45px;
+    top: 18px;
+	background-color: transparent;
+	outline: none;
+	border: none;
+}
+.search .pre_search input:focus {
+	border: 1px solid #a2c1f7;
+}
+.profile_accounts{
+	float: left;	
+	width: 15.666%;
+	margin: 0 5px; 		
+}
+.content_wraper .profile_accounts .image_wraper {
+	max-width: 100%;
+}
+.content_wraper .profile_accounts .detail_wraper{
+	background-color: #fff;
+	padding: 10px 20px;
+}
+.content_wraper .profile_accounts .detail_wraper p{
+	margin-top: 10px;
+}
+.content_wraper .profile_accounts img{
+	width: 100%;
+}
+.content_wraper .profile_accounts .detail_wraper .name {
+	font-family: 'Segoe UI';
+	font-size: 18px;
+	color: #61686e;	 
+}
+.content_wraper .profile_accounts .detail_wraper .creation_date {
+	font-family: 'Segoe UI';
+	font-size: 12px;
+	color: #61686e;	
+	font-style: italic;
+}
+.content_wraper .profile_accounts .detail_wraper .email {
+	font-family: 'Segoe UI';
+	font-size: 12px;
+	color: #61686e;	
+	font-weight: bold;	
+}
+.content_wraper .profile_accounts .detail_wraper .email_adress {
+	font-family: 'Segoe UI';
+	font-size: 13px;
+	color: #61686e;	
+	font-weight: 600; 
+}
+.content_wraper .profile_accounts .detail_wraper .delete_button {
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	color: #61686e;	
+	background-color: transparent;
+	background-image: url("gunoi.png");
+	background-repeat: no-repeat;
+	background-position: 0px 20px;
+	width: 222px;
+	height: 60px;
+	padding-left: 25px;
+	padding-top: 20px;
+	border-top: 1px solid #eff6fc;
+}
