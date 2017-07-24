@@ -1,0 +1,186 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body > div {
+	min-height: 100px;
+	font-family: 'Open Sans', sans-serif;
+}
+@font-face{
+	font-family: 'openSans-Bold';
+	src: url('font/OpenSans-Bold.ttf');
+}
+@font-face{
+	font-family: 'openSans-Regular';
+	src: url('font/OpenSans-Regular.ttf');
+}
+@font-face{
+	font-family: 'openSans-SemiBold';
+	src: url('font/OpenSans-SemiBold.ttf');
+}
+@font-face{
+	font-family: 'openSans-Light';
+	src: url('font/OpenSans-Light.ttf');
+}
+.blue_bg {
+	background-color: #66ccff;
+}
+.orange_bg {
+	background-color: #fa6900;
+}
+.grey_bg {
+	background-color: #f1f1f1;
+}
+
+.header {
+	height: 465px;
+	border-top: 5px solid #fa6900;
+}
+.about {
+	height: 530px;
+}
+.slider_1 {
+	height: 470px;
+}
+.slider_2 {
+	height: 535px;
+}
+.information {
+	height: 530px;
+}
+.footer {
+	height: 555px;
+}
+.header {
+	padding: 35px 100px;		
+}
+.header .logo {
+	float: left;
+	margin-right: 10px;
+}
+.header .company {
+	font-family: 'OpenSans-Bold';
+	font-size: 20px;
+	line-height: 0.9;
+			
+}
+.header .tagline {
+	font-family: 'OpenSans-Regular';
+	font-size: 17px;
+	line-height: 1.2;
+		
+}
+.header .menu {
+	float: right;
+}
+.header h1,
+.header h2 {		
+	color: white;
+	text-align: center;		
+}
+.header h1 {
+	font-size: 83px;
+	padding-top: 95px;
+	font-family: 'OpenSans-Bold';
+	
+}
+.header h2 {
+	font-size: 31px;
+	font-family: 'OpenSans-SemiBold';
+}
+.about .about_me {
+	width: 830px;
+	height: 285px;
+	margin: 0 auto;
+	background-color: white;
+	border-radius: 4px;
+	position: relative;
+	top: -100px;
+}
+.about .about_me h1 {
+	font-size: 36px;
+	font-family: 'OpenSans-Bold';	
+	padding: 25px 0;
+	text-align: center;
+	width: 380px;
+	border-bottom: 1px solid #d5d5d5;
+	margin: 0 auto;
+
+}
+.about .about_me p {
+	font-size: 22px;
+	font-family: 'OpenSans-Light';
+	padding: 33px;
+}
+.about .about_me .imagini img {
+	margin: 6%;
+	float: left;
+}
+.carousel-inner {
+	height: 535px;
+}
+.carousel .item {
+	text-align: center;
+	padding: 50px 0 10px 0;
+}
+.carousel .item img {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.carousel-caption {
+	bottom: -250px;
+}
+.carousel-inner .item .carousel-caption {
+	text-shadow: none;
+}
+.carousel-inner .item .carousel-caption .name {
+	font-size: 26px; 
+	font-family: 'OpenSans-Bold';
+	color: black;
+	height: 15px;
+}
+.carousel-inner .item .carousel-caption .profession {
+	font-size: 22px; 
+	font-family: 'OpenSans-Light';
+	color: black;
+	height: 38px;
+}
+.carousel-inner .item .carousel-caption .info {
+	font-size: 16px;
+	font-family: 'OpenSans-Light';
+	color: black;
+	padding: 35px 75px 0 75px;
+}
+.carousel-indicators li {
+	background-color: #ffffff;
+	border: 1px solid #dedede;
+	width: 18px;
+	height: 18px;
+}
+.carousel-indicators li.active {
+	background-color: #69d2e7;
+	border: 1px solid #ffffff;
+	width: 18px;
+	height: 18px;
+}
+
+.orange_bg .carousel {
+	height: 100%;
+}
+.orange_bg .carousel-control {
+	background: transparent;
+	opacity: 1;
+}
+.carousel .left.carousel-control {
+	left: 505px;
+	top: 215px;
+	width: auto;
+	height: 30px;
+}
+.carousel .right.carousel-control {
+	right: 505px;
+	top: 215px;
+	width: auto;
+	height: 30px;
+}
