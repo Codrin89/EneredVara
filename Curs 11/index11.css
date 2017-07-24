@@ -1,0 +1,64 @@
+.carousel .item {
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 10px;
+	height: 535px;
+
+}
+.carousel .item img {
+	display: inline-block;
+	margin: 0 auto;
+}
+.carousel .item .carousel-caption h3.name {
+	font-family: "OpenSansBold";
+	font-size: 26px;
+	color: #000;
+}
+
+.carousel .item .carousel-caption p.profession {
+	font-family: "OpenSansLight";
+	font-size: 22px;
+	color: #000;
+}
+
+.carousel .item .carousel-caption p.info {
+	font-family: "OpenSansLight";
+	font-size: 16px;
+	color: #000;
+}
+
+.carousel-indicators li {
+	background-color: #fff;
+	border: 1px solid #efefef;
+	width: 18px;
+	height: 18px;
+
+
+}
+.carousel-indicators li.active {
+	background-color: #69d2e7;
+	border: 1px solid #fff;
+	width: 18px;
+	height: 18px;
+
+}
+
+.carousel .left.carousel-control{
+	background: transparent;
+	opacity: 1;
+	left: 500px;
+	top: 200px;
+	width: auto;
+	height: 30px;
+
+
+}
+.carousel .right.carousel-control {
+	background: transparent;
+	opacity: 1;
+	right: 500px;
+	top: 200px;
+	width: auto;
+	height: 30px;
+
+}
