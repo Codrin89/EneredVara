@@ -1,0 +1,161 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+	font-family: 'OpenSansBold';
+	src: url(Open_Sans/OpenSans-Bold.ttf);
+}
+@font-face {
+	font-family: 'OpenSansRegular';
+	src: url(Open_Sans/OpenSans-Regular.ttf);
+}
+@font-face {
+	font-family: 'OpenSansLight';
+	src: url(Open_Sans/OpenSans-Light.ttf);
+}
+body > div {
+	min-height: 100px;
+}
+
+.blue-background {
+	background-color: #69d2e7;
+}
+.grey-background {
+	background-color: #f1f1f1;
+}
+.orange-background {
+	background-color: #fa6900;
+}
+.header {
+	padding: 35px 100px;
+	box-sizing: border-box;
+}
+.header .companyName {
+	font-family: 'OpenSansBold';
+	font-size: 20px;
+	line-height: 0.95px;
+}
+.header .tagLine {
+	font-family: 'OpenSansRegular';
+	font-size: 17px;
+	line-height: 0.8px;
+}
+.header .logo {
+	float:left;
+	margin-right: 10px;
+}
+.header .menu {
+	float: right;
+}
+.header h1 {
+	text-align: center;
+	font-family: 'OpenSansBold';
+	font-size: 83px;
+	text-transform: uppercase;
+	color: white;
+	margin-top: 94px;
+}
+.header h2 {
+	text-align: center;
+	font-family: 'OpenSansRegular';
+	font-size: 31px;
+	text-transform: uppercase;
+	padding-bottom: 137px;
+	color: white;
+	font-weight: 550;
+}
+.about .about-us {
+	width: 830px;
+	height: 285px;
+	margin: 0 auto;
+	background-color: #fff;
+	border-radius: 4px;
+	position: relative;
+	top: -100px;
+}
+.about .about-us h2 {
+	text-align: center;
+	font-family: 'OpenSansBold';
+	padding-top: 46px;
+	padding-bottom: 16px;
+	font-weight: bold;
+	font-size: 36px;
+	width: 380px;
+	margin: 0 auto;
+	border-bottom: 1px solid #d5d5d5;
+}
+.about .about-us p {
+	font-family: 'OpenSansRegular';
+	font-size: 22px;
+	font-weight: lighter;
+	padding-left: 26px;
+	padding-top: 38px;
+}
+
+.carousel .item {
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 10px;
+	height: 535px;
+}
+
+.carousel .item img {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.carousel .item .carousel-caption {
+	color: #000;
+}
+
+.carousel .item .carousel-caption .name {
+	font-family: 'OpenSansBold';
+	font-size: 26px;
+}
+
+.carousel .item .carousel-caption .proffesion {
+	font-family: 'OpenSansLight';
+	font-size: 22px;
+	padding-bottom: 37px;
+}
+
+.carousel .item .carousel-caption .info {
+	font-family: 'OpenSansLight';
+	font-size: 16px;
+	padding-bottom: 70px;
+}
+
+.carousel .carousel-indicators li {
+	height: 18px;
+	width: 18px;
+	background-color: #fff;
+	border: 1px solid #d7d7d7;
+}
+
+.carousel .carousel-indicators li.active {
+	background-color: #69d2e7;
+	border: 1px solid #ffffff;
+}
+
+.carousel .left.carousel-control,
+.carousel .right.carousel-control
+ {
+	background: transparent;
+	opacity: 1;
+
+}
+
+.carousel .left.carousel-control {
+	left: 382px;
+	top: 210px;
+}
+
+.carousel .right.carousel-control {
+	right: 382px;
+	top: 210px;
+}
+
+.slide1 .carousel .item {
+	ma
+}
