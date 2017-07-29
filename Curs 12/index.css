@@ -1,0 +1,91 @@
+body {
+	background-color: #eff6fc;
+}
+
+.container .box .detail_box {
+	background-color: #fff;
+}
+.detail_box {
+	font-family: 'Segoe UI';
+	padding: 5px;
+
+}
+.detail_box .title {
+	font-weight: 400;
+	font-size: 18px;
+	color: #666666;
+	margin-top: 0;
+}
+.detail_box .creationDate {
+	font-style: italic;
+	font-size: 12px;
+	color: #69d2e7;
+}
+.detail_box .tags {	
+	height: 59px;
+	overflow: hidden;
+	margin-bottom: 20px; 
+}
+.detail_box .tags .tagsHeadline {
+	font-weight: 600;
+	font-size: 12px;
+	color: #666666;
+}
+.detail_box .tags .tagItem {
+	border: 1px solid #869eaa;
+	color: #869eaa;
+	padding: 2px 7px;
+	font-weight: 600;
+	font-size: 13px;
+	margin-right: 5px;
+	cursor: pointer;
+	display: inline-block;
+	margin-bottom: 2px;
+}
+.detail_box .tags .tagItem:hover {
+	background-color: #869eaa;
+	border: 1px solid #869eaa;
+	color: #fff;
+}
+.detail_box .tags .tagItemMore {
+	color: #869eaa;
+	margin-left: 10px;
+}
+.detail_box .buttons button {
+	border: none;
+	background-color: transparent;
+	outline: none;
+}
+.detail_box .buttons button:hover {
+	color: #fe580f;
+}
+.detail_box .buttons {
+	border-top: 1px solid #eff6fc;
+	padding-top: 10px;	
+}
+.hover-image {
+	display: none;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(254, 88, 15, 0.7);
+	position: absolute;
+	top: 0;
+}
+.container .image_box .hover-image p {
+	text-align: center;	
+	color: #fff;
+	font-size: 18px;
+	font-family: 'Segoe UI';
+	padding-top: 25%;
+}
+.container .image_box .hover-image label {
+	width: 18px;
+	height: 18px;
+	border: 2px solid #fff;		
+}
+.image_box:hover .hover-image {
+	display: block;
+}
+.image_box {
+	position: relative;
+}
