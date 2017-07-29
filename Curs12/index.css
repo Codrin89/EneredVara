@@ -1,0 +1,77 @@
+.container{
+	background-color: #eff6fc;
+}
+.boxes{
+	height: 100px;
+
+}
+.container .box .details-box {
+	background-color: #ffffff;
+}
+.tags .tagItem{
+	border: 1px solid #99adb7;
+	color: #99adb7;
+	font-family: 'Segoe UI' ;
+	font-weight: 400;
+	padding: 2px 7px;
+	margin-right: 5px;
+	cursor: pointer;
+	display: inline-block;;
+
+}
+.tags .tagItem:hover {
+	background-color: #869eaa;
+	border: 1px solid #869eaa;
+	color: #fff;
+
+}
+.title{
+	font-size: 18px;
+}
+.creationDate{
+	font-size: 12px;
+	font-style: italic;
+}
+.title {
+	margin-top: 10px;
+}
+
+.tags {
+	height: 61px;
+	overflow: hidden;
+
+}
+.details-box button {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	color: #747c84;
+
+}
+.details-box button:hover{
+	color:#747684;
+}
+
+.details-box .title {
+	margin-top: 0;
+}
+.hover-image {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	background-color: rgba(254, 88, 15, 0.7);
+}
+.image-box:hover .hover-image {
+	display: block;
+}
+.image-box {
+	position: relative;
+} 
+.hover-image p {
+	color: #fff;
+	text-align: center;
+	padding-top: 25%;
+	font-size: 15px;
+}

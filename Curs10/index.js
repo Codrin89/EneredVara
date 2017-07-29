@@ -7,8 +7,7 @@
 
 	$('.carousel').carousel({
 		interval: 800,
-		pause:'hover',
-		wrap: true
+		pause:'hover'
 	})
 
 })();
