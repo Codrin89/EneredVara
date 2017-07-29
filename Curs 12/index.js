@@ -9,7 +9,7 @@
 			})
 		}		
 	}		
-);
+)
 (function() {
 		var downloadButton = document.getElementsByClassName('downloadSlide')
 		var downloadBox = document.getElementsByClassName('downloadSlidesBox')
