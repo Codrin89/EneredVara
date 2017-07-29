@@ -1,0 +1,83 @@
+.container {
+	background-color: #aff6fc;
+}
+.boxes {
+	height: 100px;
+}
+.container .box .details-box {
+	background-color: #ffffff;
+	padding: 10px;
+}
+
+.tags .tagItem {
+	color: #b4c2c9;
+	border: 1px solid #99abd7;
+	font-family: 'Segoe UI';
+	font-weight: 400;
+	padding: 2px 7px;
+	cursor: pointer;
+	margin-right: 5px;
+	display: inline-block;
+	margin-bottom: 2px;
+}
+.tags .tagItem:hover {
+	background-color: #869eaa;
+	border: 1px solid #869eaa;
+	color: #fff;
+}
+.tags {
+	height: 80px;
+	overflow: hidden;
+}
+.tags .tagsHeadline {
+	font-family: 'Segoe UI';
+	color: #a7a7a7;
+	text-transform: uppercase;
+	font-weight: regular;
+	height: 29px;
+	font-size: 12px;
+
+}
+
+.details-box .title {
+	font-family: 'Segoe UI';
+	height: 18px;
+	color: #666666;
+	margin-top: 0px;
+	font-size: 15px;
+}
+.details-box .creationDate {
+	color: #b4c2c9;
+	font-family: 'Segoe UI'
+	width: 40px;
+	height: 23px;
+}
+.details-box button {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	color: #747c84;
+}
+.details-box button:hover {
+	color: #fe580f;
+}
+.hover-image {
+	display: none;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	background-color: rgba(254, 88, 15, 0.7);
+	position: absolute;
+}
+.image-box:hover .hover-image {
+	display: block;
+}
+.image-box {
+	position: relative;
+}
+.hover-image p {
+	color: #fff;
+	text-align: center;
+	padding-top: 25%;
+	font-size:15px;
+}
