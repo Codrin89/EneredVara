@@ -1,0 +1,149 @@
+.container {
+	background-color: #eff6fc;
+}
+
+.boxes {
+	height: 100px;
+}
+
+.container .box .info {
+	background-color: #fff;
+	padding: 20px 4px;
+}
+
+.info .title {
+	color: #666;
+	font-size: 18px;
+	margin-top: 0;
+}
+
+.info .tags {
+	height: 95px;
+	overflow: hidden;
+}
+
+.info .tags .tagItem {
+	border: 1px solid #869eaa;
+	display: inline-block;
+	padding: 2px 7px;
+	color: #99adb7;
+	cursor: pointer;
+	font-family: 'Segoe UI';
+	font-weight: 400;
+	margin-right: 5px;
+}
+
+.info .tags .tagItem:hover {
+	background-color: #869eaa;	
+	color: #fff;
+}
+
+.info .creationdate {
+	color: #869eaa;
+	font-style: italic;
+	font-family: 'Segoe UI'
+	font-size: 12px;
+}
+.info .previewSlide {
+border: none;
+background: transparent;
+color: #848b92;
+font-family: 'Segoe UI';
+font-size: 14px;
+}
+
+.info .downloadSlide {
+border: none;
+outline: none;
+background: transparent;
+color: #848b92;
+font-family: 'Segoe UI';
+font-size: 14px;
+}
+
+.info .previewSlide:hover{
+	color: #fe6e2e;
+}
+
+.info .downloadSlide:hover {
+color: #fe6e2e;
+}
+
+.info .previewSlide span {
+	padding-right: 2px;
+}
+
+.info .downloadSlide span {
+	padding-right: 2px;
+}
+
+.tags .tagsHeadline {
+	color: #666;
+	font-size: 12px;
+	font-family: 'Segoe UI';
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.info .tags .linia hr {
+	width: 80%;
+}
+
+.hover-image {
+	display: none;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	position: absolute;
+	background-color: rgba(254, 88,  15, 0.7);
+}
+
+.image-box:hover .hover-image {
+	display: block;
+}
+
+.image-box {
+	position: relative;
+}
+
+.hover-image p {
+	color: #fff;
+	text-align: center;
+	padding-top: 25%;
+	font-size: 15px;
+}
+
+.downloadBox {
+	width: 580px;
+	left: calc(50% - 280px);
+	height: 60px;
+	background-color: #7c8389;
+	position: fixed;
+	bottom: 20px;
+	padding: 18px;
+}
+
+.downloadBox .info2 {
+	font-family: 'Segoe UI';
+	font-size: 18px;
+	color: #fff;
+
+}
+
+.downloadBox button {
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	color: #fff;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	float: right;
+}
+
+.displayNone {
+	display: none !important;
+}
+
+.hover-image-selected {
+	display: block;
+}
