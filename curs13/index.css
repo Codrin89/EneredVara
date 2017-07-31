@@ -1,0 +1,98 @@
+.container {
+	background-color: #e3eaef;
+}
+
+.boxes {
+	height: 100px;
+}
+.container .box .details-box {
+	background-color: #ffffff;
+	padding: 10px;
+}
+.tags .tagitem {
+	color: #99adb7;
+	border: 1px solid #99adb7;
+	font-family: 'Segoe UI';
+	font-weight: 400;
+	padding: 2px 7px;
+	margin-right: 5px;
+	cursor: pointer;
+	margin-bottom: 5px;
+	display: inline-block;
+	margin-bottom: 2px;
+}
+.tags {
+	height: 60px;
+	overflow: hidden;
+}
+.tags .tagitem:hover {
+	background-color: #869eaa;
+	border: 1px solid #869eaa;
+	color: #fff;
+}
+.tags .tagsHeading {
+	color: #666666;
+	text-transform: uppercase;
+	font-family: 'Segoe UI';
+	font-size: 12px;
+}
+
+.details-box .title {
+	margin-top: 0;
+}
+.details-box button {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	color: #747c84;
+}
+.details-box button:hover {
+	color: #fe580f;
+}
+.hover-image {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	background-color: rgba(254, 98, 15, 0.7);
+}
+.image-box:hover .hover-image {
+	display: block;
+}
+.image-box {
+	position: relative;
+
+}
+.hover-image p {
+	color: #fff;
+	text-align: center;
+	padding-top: 25%;
+	font-size: 15px;
+
+
+}
+.downloadBox {
+	width:560px;
+	height: 60px;
+	background-color:#7c8389;
+	position:fixed;
+	bottom:20px;
+	left:calc(50% - 280px);
+	padding:  18px;
+}
+.downloadBox .info{
+	font-size: 14px;
+	color: #fff;
+	background: transaparent;
+	outline: none;
+	border: none;
+
+}
+.displayNone{
+display: none !important;
+
+}
+.hover-image-selected{
+	display:block;
+}
