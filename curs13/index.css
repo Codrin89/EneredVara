@@ -1,0 +1,150 @@
+.container {
+	background-color: #eff6fc;
+}
+.boxes {
+   height: 100px;	
+}
+
+.container .box .details-box {
+	background-color: #ffffff;
+	padding: 10px;
+}
+.details-box .title {
+	margin-top: 0px;
+	font-size: 18px;
+}
+.tags .tagItem {
+	color: #99adb7;
+	border: 1px solid #99adb7;
+	font-family: 'Segoe UI';
+	font-weight: 400;
+	padding: 2px 7px;
+	margin-right: 5px;
+	cursor: pointer;
+	font-size: 13px;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.tags .tagItem:hover {
+	background-color: #869eaa;
+	border: 1px solid #869eaa;
+	color: #fff; 
+}	
+.tags .tagsHeadline {
+	font-size: 12px;
+	color: #666666;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+.title  {
+	margin-top: 0px;
+	font-size: 18px;
+}
+.tags {
+	height: 60px;
+	overflow: hidden;
+}
+.details-box button {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	color: #747c84;
+}
+.details-box button:hover {
+     color: #fe580f;
+}
+.hover-image {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-color: rgba(254, 88, 15, 0.7);
+
+}
+.image-box:hover .hover-image {
+	display: block;
+}
+.image-box {
+	position: relative;
+}
+.hover-image p {
+	color: #fff;
+	position: absolute;
+	text-align: center;
+	padding-top: 25%;
+	font-size: 15px;
+}
+.creation-date {
+	font-size: 12px;
+	font-family: 'Segoe UI';
+	font-style: italic;
+	color: #869eaa;
+	
+}
+.downloadBox {
+	width: 560px;
+	height: 60px;
+	background-color: #7c8389;
+	position: fixed;
+	left: calc(50% - 280px);
+	bottom: 20px;
+	padding: 18px;
+}
+.downloadBox button {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	text-align: center;
+}
+.downloadBox .info {
+	margin-left: 10px;
+	font-family: 'Segoe UI';
+	font-size: 18px;
+	color: #fff;
+}
+.downloadSlide {
+	margin-right: 10px;
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	color: #fff;
+}
+.displayNone {
+	display: none;
+}
+.hover-image-selected {
+	display: block;
+}
+
+.search .pre-search {
+	text-align: center;
+	padding: 269px 0;
+}
+
+.search .pre-search input {
+	font-family: 'Segoe UI Light';
+	font-size: 20px;
+	color: #45515e;
+	padding: 10px 40px;
+	width: 400px;
+	outline: none;
+	border: 1px solid #fff;
+	background-image: url(img/search.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;	
+}
+.search .pre-search input:focus {
+	border: 1px solid #a2c1f8;
+}
+.search .pre-search .arrow-right {
+	width: 40px;
+	height: 49px;
+	background-color: transparent;
+	background-image: url('img/arrow-right.png');
+	background-repeat: no-repeat;
+	border: none;
+	outline: none;
+	background-position: center;
+	position: relative;
+	left: -44px;
+	top: 16px;
+}

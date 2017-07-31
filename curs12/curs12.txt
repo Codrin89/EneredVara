@@ -1,0 +1,29 @@
+lg= large= peste 1200px
+md= medium=1024px-1200px
+sm=small=768-1024px
+xs= extra-small= mai mic de 768px
+
+col-lg-4 {
+width:33,333%
+}
+col-md-4 {
+width:...
+}
+col-sm-6 {
+width:50%
+}
+col-xs-4 {
+width:%
+}
+
+
+
+@media-query
+min-width
+
+sub 992- pt tableta
+
+-----------------
+col-md-3 ca sa fie 4 pe un rand,
+col-sm-6
+col-xs-12
