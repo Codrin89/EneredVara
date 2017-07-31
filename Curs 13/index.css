@@ -1,0 +1,137 @@
+.container {
+	background-color: #eff6fc;
+}
+.boxes {
+	height:100px;
+
+}
+.container .box .details-box {
+	background-color:#ffffff;
+
+}
+@media (min-width:700px) {
+	.col-lg-4 {
+		width:100%;
+	}
+}
+.tags .tagItem {
+	color: #99adb7;
+	font-family:'Segoe UI';
+	border: 1px solid #99adb7;
+	font-weight: 400;
+	padding: 2px 7px;
+	margin-right: 5px;
+	cursor: pointer;
+	margin-bottom: 2px;
+	display:inline-block;
+
+
+}
+.tags .tagItem:hover {
+	background-color: #869eaa;
+	border: 1px solid #99adb7;
+	color :#fff;
+	font-size:12px;
+}
+
+.tags .tagsHeadline {
+	font-family:'Segoe UI';
+	color: #666666;
+
+}
+.title {
+	color: #666666;
+	font-family:'Segoe Ui';
+	margin-top: 0;
+}
+ p {
+	color:#869eaa;
+	font-family:'Segoe UI';
+	font-style: italic;
+}
+.tags .tagsHeadline .tagItem {
+	color: #666666;
+	font-family: 'Segoe UI';
+	font-style: bold;
+}
+button.previewSlide{
+	font-family:'Segoe UI';
+	color: #747c84;
+	font-size: 14px;
+	
+
+}
+button.downloadSlide {
+	color: #fe580f;
+	font-family:'Segoe UI';
+	font-size: 14px;
+	
+}
+.tags {
+	height: 59px;
+	overflow: hidden;
+	font-size: 13px;
+}
+.details-box button {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	color: #747c84;
+
+}
+.details-box button:hover {
+	color: #fe580f;
+}
+.hover-image {
+	display:none;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(254,88,15,0.7);
+	position:absolute;
+	top:0;
+}
+.image-box:hover .hover-image {
+	display: block;
+}
+.image-box{
+	position: relative;
+}
+.hover-image p{
+	color: #fff;
+	text-align: center;
+	padding-top: 25%;
+	font-size: 15px;
+}
+.downloadBox {
+	width: 580px;
+	height:60px;
+	background-color:#7c8389;
+	position:fixed;
+	bottom:20px;
+	left:calc(50% - 280px);
+	padding:18px;
+
+}
+.downloadBox .info {
+	font-size:18px;
+	color:#fff;
+	font-family:'Segoe Ui';
+	font-size:  18px;
+	
+}
+.downloadBox button {
+	font-size: 14px;
+	background:transparent;
+	border:none;
+	color: #fff;
+	outline: none;
+	float: right;
+	font-family:'Segoe Ui';
+	font-size: 14px;
+}
+.displayNone{
+	display:none !important;
+}
+.hover-image-selected {
+display: block;
+}
