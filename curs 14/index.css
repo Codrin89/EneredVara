@@ -1,0 +1,13 @@
+.item {
+	width: 33%;
+	float: left;
+	text-align: center;
+	border: 1px solid green;
+}
+.formContainer > *,
+.deleteItemContainer {
+	display: block;
+	text-align: center;
+	width: 40%;
+	margin: 5px auto;
+}
