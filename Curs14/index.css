@@ -1,0 +1,12 @@
+.item {
+	width: 33.3333%;
+	float: left;
+	text-align: center;
+	border:1px solid green;
+}
+.formContainer > * {
+	display: block;
+	width: 40%;
+	margin: 5px auto;
+
+}
