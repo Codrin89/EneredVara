@@ -1,0 +1,15 @@
+.item {
+	width: 33%;
+	display: inline-block;
+	text-align: center;
+	background-color: #FAFAFA;
+	border-radius: 50%;
+	color: #3B5998;
+}
+
+.formContainer > *,
+.deleteItemContainer > * {
+	width: 40%;
+	margin: 5px auto;
+	display: block;
+}
