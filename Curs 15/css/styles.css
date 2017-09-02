@@ -1,7 +1,7 @@
 body {
 	background-image: url('../images/background.png');
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	color: white;
 }
 
@@ -22,36 +22,22 @@ body {
 	src: url('../font/Roboto/Roboto Medium.ttf');
 }
 
-/*========================
-		MEDIA QUERIES
-========================*/
 
-@media screen and (max-width: 991px) {
-	body {
-		background-size: 600%;
-    	background-position: 82% 0%;
-	}
-	.hide-mobile {
-		display: none;
-	}
-}
-@media screen and (min-width: 992px) {
-	.hide-desktop {
-		display: none;
-	}
-}
 
 /*========================
 		DESKTOP
 ========================*/
 
 .desktop .mobileIphone img {
-	margin-top: 20px;
 	width: 70%;
+	position: relative;
+	top: 80px;
 }
 
 .desktop .content {
-	margin-top: 56px;
+	margin-top: 30px;
+	position: relative;
+	top: 80px;
 }
 
 .desktop .content img {
@@ -150,4 +136,48 @@ body {
 }
 .mobile ul li:nth-child(5) {
 	list-style-image: url('../images/5.png');
+}
+
+/*========================
+		MEDIA QUERIES
+========================*/
+
+@media screen and (max-width: 991px) {
+	
+	.hide-mobile {
+		display: none;
+	}
+}
+@media screen and (min-width: 992px) {
+	.hide-desktop {
+		display: none;
+	}
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	.desktop .mobileIphone img {
+		width: 70%;
+		position: relative;
+		top: 65px;
+	}
+	.desktop .content {
+		position: relative;
+		top: 0px;
+	}
+}
+
+@media screen and (min-width: 550px) and (max-width: 992px) {
+	body {
+		background-size: auto;
+    	background-position: 85% -45%;
+	}
+	.mobile .phone {
+		width: 45%;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	body {
+		background-size: auto;
+    	background-position: 78% -43%;
+	}
 }
