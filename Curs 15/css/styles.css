@@ -17,6 +17,10 @@ body {
 	font-family: 'Roboto Light';
 	src: url('../font/Roboto/Roboto Light.ttf');
 }
+@font-face {
+	font-family: 'Roboto Medium';
+	src: url('../font/Roboto/Roboto Medium.ttf');
+}
 
 /*========================
 		MEDIA QUERIES
@@ -95,7 +99,6 @@ body {
 		MOBILE
 ========================*/
 
-
 .mobile .phone {
 	margin: 0 auto;
 }
@@ -103,4 +106,48 @@ body {
 .mobile .logo {
 	width: 80px;
 	margin: 25px auto;
+}
+.mobile p {
+	font-family: 'Roboto Light';
+	font-size: 24px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+.mobile h1 {
+	font-family: 'Roboto Bold';
+	font-size: 30px;
+	text-align: center;
+	width: 99%;
+	margin-top: 0;
+    margin-bottom: 45px;
+}
+
+.mobile .phone {
+	width: 60%;
+}
+.mobile ul li {	
+	margin: 10px 0;
+	font-size: 17px;
+	font-family: 'Roboto', sans-serif;
+	margin-left: -30px;
+	color: black;
+	padding-left: 0.7em;
+}
+.mobile ul li span {
+}
+.mobile ul li:nth-child(1) {
+	list-style-image: url('../images/1.png');
+}
+.mobile ul li:nth-child(2) {
+	list-style-image: url('../images/2.png');
+}
+.mobile ul li:nth-child(3) {
+	list-style-image: url('../images/3.png');
+}
+.mobile ul li:nth-child(4) {
+	list-style-image: url('../images/4.png');
+}
+.mobile ul li:nth-child(5) {
+	list-style-image: url('../images/5.png');
 }

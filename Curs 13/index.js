@@ -31,7 +31,7 @@
 					document.getElementsByClassName('left')[0].innerHTML = boxesHoverSelected.length + ' slides (' + totalSize.toFixed(1) + ' Mb) selected for download.'
 				}	
 
-				alert(boxesHoverSelected.length + ' slides size ' + totalSize.toFixed(1) + ' Mb!');
+				
 
 			});			
 		}		
