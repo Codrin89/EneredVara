@@ -1,0 +1,15 @@
+* {
+	border: 1px solid red;
+}
+.container-fluid .container .item {
+	background-color: grey;
+	display: inline-block;
+	width: 33%;
+	border-radius: 70%;
+	text-align: center;
+	margin: 5px 0px;
+}
+
+.container-fluid .safie {
+	text-align: center;
+}

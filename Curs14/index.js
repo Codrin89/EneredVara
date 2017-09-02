@@ -53,47 +53,47 @@
 		wrapperDiv.setAttribute('class', 'item');
 		console.log(wrapperDiv);
 
-		//<h3 class="name">Andrei</h3>
-		var nameElement = document.createElement('h3');
-		nameElement.setAttribute('class','name');
-		var nameText = document.createTextNode(items[i].firstName);
-		nameElement.append(nameText);
-		console.log(nameElement);
+		// //<h3 class="name">Andrei</h3>
+		// var nameElement = document.createElement('h3');
+		// nameElement.setAttribute('class','name');
+		// var nameText = document.createTextNode(items[i].firstName);
+		// nameElement.append(nameText);
+		// console.log(nameElement);
 
-		//<h3 class="lastname">Popescu</h3>
-		var lastnameElement = document.createElement('h3');
-		lastnameElement.setAttribute('class','lastname');
-		var lastnameText = document.createTextNode(items[i].lastName);
-		lastnameElement.append(lastnameText);
-		console.log(lastnameElement);
+		// //<h3 class="lastname">Popescu</h3>
+		// var lastnameElement = document.createElement('h3');
+		// lastnameElement.setAttribute('class','lastname');
+		// var lastnameText = document.createTextNode(items[i].lastName);
+		// lastnameElement.append(lastnameText);
+		// console.log(lastnameElement);
 
-		//<p class="age">52</p>
-		var ageElement = document.createElement('p');
-		ageElement.setAttribute('class','age');
-		var ageText = document.createTextNode(items[i].age);
-		ageElement.append(ageText);
-		console.log(ageElement);
+		// //<p class="age">52</p>
+		// var ageElement = document.createElement('p');
+		// ageElement.setAttribute('class','age');
+		// var ageText = document.createTextNode(items[i].age);
+		// ageElement.append(ageText);
+		// console.log(ageElement);
 
-		//<p class="occupation">broker</p>
-		var occupationElement = document.createElement('p');
-		occupationElement.setAttribute('class','occupation');
-		var occupationText = document.createTextNode(items[i].occupation);
-		occupationElement.append(occupationText);
-		console.log(occupationElement);
+		// //<p class="occupation">broker</p>
+		// var occupationElement = document.createElement('p');
+		// occupationElement.setAttribute('class','occupation');
+		// var occupationText = document.createTextNode(items[i].occupation);
+		// occupationElement.append(occupationText);
+		// console.log(occupationElement);
 
-		//<p class="nationality">romanian</p>
-		var nationalityElement = document.createElement('p');
-		nationalityElement.setAttribute('class','nationality');
-		var nationalityText = document.createTextNode(items[i].nationality);
-		nationalityElement.append(nationalityText);
-		console.log(nationalityElement);
+		// //<p class="nationality">romanian</p>
+		// var nationalityElement = document.createElement('p');
+		// nationalityElement.setAttribute('class','nationality');
+		// var nationalityText = document.createTextNode(items[i].nationality);
+		// nationalityElement.append(nationalityText);
+		// console.log(nationalityElement);
 
-		wrapperDiv.append(nameElement);
-		wrapperDiv.append(lastnameElement);
-		wrapperDiv.append(ageElement);
-		wrapperDiv.append(occupationElement);
-		wrapperDiv.append(nationalityElement);
-		document.getElementsByClassName('itemContainer')[0].append(wrapperDiv);
+		// wrapperDiv.append(nameElement);
+		// wrapperDiv.append(lastnameElement);
+		// wrapperDiv.append(ageElement);
+		// wrapperDiv.append(occupationElement);
+		// wrapperDiv.append(nationalityElement);
+		// document.getElementsByClassName('itemContainer')[0].append(wrapperDiv);
 		}
 	}
 
