@@ -1,0 +1,17 @@
+* {
+	margin:0;
+	padding: 0;
+}
+.personItem {
+border: 1px solid blue;
+color:rgba(169, 68, 66, 0.76);
+background-color:rgba(92, 184, 92, 0.62);
+}
+ul li {
+	text-align:center;
+}	
+h6 {
+	text-align:center;
+	
+
+}
