@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body  {
+	background: url('Logo/img1.png') no-repeat #fff;
+	background-size: cover;
+	padding-top: 2cm;
+}
+.mobilePhone img {
+	width: 60%;
+	margin: 20px 0;
+	position: absolute;
+}
+.subHeading {
+	font-family: 'Myriad Pro';
+	color: #fff;
+	font-size: 24px;
+	padding-top: 1cm;
+}	
+h1 {
+	color: #fff;
+	font-size: 36px;
+}
+img li {
+	color: #fff;
+	font-size: 17px;
+}
+@media screen and (max-width:991px) {
+	.hideMobile {
+		display: none;
+	}
+}
+@media screen and (min-width:991px) {
+	.hideDesktop {
+		display:  none;
+	} 
+}
