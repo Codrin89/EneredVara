@@ -1,0 +1,8 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.personItem {
+	border: 1px solid #efefef;
+	padding: 5px 30px;
+}
