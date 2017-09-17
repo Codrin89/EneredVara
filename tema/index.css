@@ -1,0 +1,19 @@
+.planetItem {
+	position: relative;
+	padding: 20px;
+	font-size: 15px;
+	border: 5px solid #d5d5d5;
+	background-color: #69d2e7;
+	margin: 0 auto;
+	padding: 25px 0;
+	left:10px;
+	top: 10px;
+}
+
+.name {
+	font-size: bold;
+	color: #f1f1f1; 
+}
+ul {
+	list-style-type: none;
+}
