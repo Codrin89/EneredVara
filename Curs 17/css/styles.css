@@ -1,0 +1,130 @@
+/*----------------------------------
+			  PEOPLE
+----------------------------------*/
+
+.container {
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.container .personItem {
+	margin-top: 20px;
+	border: 1px solid #44ecae;
+	border-radius: 10px;
+	background: rgba(68, 236, 174, 0.07);
+	margin: 2px;
+	width: 49.6%;
+}
+.container .personItem .name {
+	border-bottom: 1px solid #45de58;
+	border-radius: 5px;
+	padding: 5px;
+	margin-top: 10px;
+	color: #45de58;
+}
+.container .personItem .info {
+	font-
+}
+.container .personItem ul {
+	list-style-type: none;
+	text-align: left;
+	-webkit-padding-start: 0px;
+}
+.container .personItem li {
+	background: rgba(68, 236, 174, 0.15);
+	margin: 3px;
+	color: rgb(0, 132, 83);
+}
+
+
+/*----------------------------------
+			  PLANETS
+----------------------------------*/
+
+
+.container .planetItem {
+	margin-top: 20px;
+    border: 1px solid #ff699b;
+    border-radius: 10px;
+    background: rgba(255, 105, 155, 0.1);
+    margin: 2px;
+    width: 49.6%;
+    padding: 10px;
+}
+.container .planetItem .name {
+	border-bottom: 1px solid #8e0049;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    color: #b10071;
+}
+
+.container .planetItem ul {
+	list-style-type: none;
+	text-align: left;
+	-webkit-padding-start: 0px;
+}
+.container .planetItem li {
+	background: rgba(247, 82, 126, 0.15);
+    margin: 3px;
+    color: rgb(132, 0, 54);
+}
+.container .planetItem .planetButton {
+	text-decoration: none;
+	cursor: pointer;
+	width: 100%;
+	line-height: 24px;
+    color: #b10071;
+    border: 1px solid #b10071;
+    padding: 5px 10px;
+}
+.container .planetItem .planetButton:hover {
+	background: #b10071;
+	color: white;
+}
+
+/*----------------------------------
+			 SINGLE PLANET
+----------------------------------*/
+
+.container .singlePlanet {
+	margin-top: 20px;
+    border: 1px solid #ff699b;
+    border-radius: 10px;
+    background: rgba(255, 105, 155, 0.1);
+    margin: 2px;
+    width: 100%;
+    padding: 10px;
+}
+.container .singlePlanet .name {
+	border-bottom: 1px solid #8e0049;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    color: #b10071;
+}
+
+.container .singlePlanet ul {
+	list-style-type: none;
+	text-align: left;
+	-webkit-padding-start: 0px;
+}
+.container .singlePlanet li {
+	background: rgba(247, 82, 126, 0.15);
+    margin: 3px;
+    color: rgb(132, 0, 54);
+}
+.container .singlePlanet .planetButton {
+	text-decoration: none;
+	cursor: pointer;
+	width: 100%;
+	line-height: 24px;
+    color: #b10071;
+    border: 1px solid #b10071;
+    padding: 5px 10px;
+}
+.container .singlePlanet .planetButton:hover {
+	background: #b10071;
+	color: white;
+}
+
