@@ -9,6 +9,7 @@ body {
 		FONT FACE
 ========================*/
 
+
 @font-face {
 	font-family: 'Roboto Bold';
 	src: url('../font/Roboto/Roboto Bold.ttf');
@@ -23,7 +24,6 @@ body {
 }
 
 
-
 /*========================
 		DESKTOP
 ========================*/
@@ -31,13 +31,13 @@ body {
 .desktop .mobileIphone img {
 	width: 70%;
 	position: relative;
-	top: 80px;
+	top: 100px;
 }
 
 .desktop .content {
 	margin-top: 30px;
 	position: relative;
-	top: 80px;
+	top: 100px;
 }
 
 .desktop .content img {

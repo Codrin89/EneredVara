@@ -1,9 +1,13 @@
-.personContainer {
+/*----------------------------------
+			  PEOPLE
+----------------------------------*/
+
+.container {
 	text-align: center;
 	font-family: 'Ubuntu', sans-serif;
 }
 
-.personContainer .personItem {
+.container .personItem {
 	margin-top: 20px;
 	border: 1px solid #44ecae;
 	border-radius: 10px;
@@ -11,25 +15,58 @@
 	margin: 2px;
 	width: 49.6%;
 }
-
-
-.personContainer .personItem .name {
+.container .personItem .name {
 	border-bottom: 1px solid #45de58;
 	border-radius: 5px;
 	padding: 5px;
 	margin-top: 10px;
 	color: #45de58;
 }
-.personContainer .personItem .info {
+.container .personItem .info {
 	font-
 }
-.personContainer .personItem ul {
+.container .personItem ul {
 	list-style-type: none;
 	text-align: left;
 	-webkit-padding-start: 0px;
 }
-.personContainer .personItem li {
+.container .personItem li {
 	background: rgba(68, 236, 174, 0.15);
 	margin: 3px;
 	color: rgb(0, 132, 83);
 }
+
+
+/*----------------------------------
+			  PLANETS
+----------------------------------*/
+
+
+.container .planetItem {
+	margin-top: 20px;
+    border: 1px solid #ff699b;
+    border-radius: 10px;
+    background: rgba(255, 105, 155, 0.1);
+    margin: 2px;
+    width: 49.6%;
+}
+.container .planetItem .name {
+	border-bottom: 1px solid #8e0049;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    color: #b10071;
+}
+
+.container .planetItem ul {
+	list-style-type: none;
+	text-align: left;
+	-webkit-padding-start: 0px;
+}
+.container .planetItem li {
+	background: rgba(247, 82, 126, 0.15);
+    margin: 3px;
+    color: rgb(132, 0, 54);
+}
+
+
