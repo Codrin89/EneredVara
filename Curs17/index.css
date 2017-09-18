@@ -1,0 +1,35 @@
+.personContainer {
+	text-align: center;
+}
+
+.personContainer .personItem {
+	margin-top: 10px;
+	border: 1px solid #E9972D;
+	border-radius: 10px;
+	background: #E9972D;
+	margin: 2px;
+	width: 40%;
+}
+
+
+.personContainer .personItem .name {
+	border-bottom: 1px solid #E9972D;
+	border-radius: 5px;
+	padding: 5px;
+	margin-top: 10px;
+	color: #E9972D;
+}
+
+.personContainer .personItem ul {
+	list-style-type: none;
+	text-align: left;
+	-webkit-padding-start: 0px;
+}
+.personContainer .personItem li {
+	background: rgba(68, 236, 174, 0.15);
+	margin: 3px;
+	color: rgb(0, 132, 83);
+}
+.planetButton {
+	border-radius: 2px;
+}
