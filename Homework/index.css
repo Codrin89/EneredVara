@@ -1,0 +1,22 @@
+* {
+	margin:0;
+	padding: 0;
+}
+.personItem {
+border: 1px solid blue;
+color:orange;
+background-color:rgba(92, 184, 92, 0.62);
+display: inline-block;
+}
+ul li {
+	text-align:center;
+}	
+h6 {
+	text-align:center;
+	
+
+}
+h3 {
+	text-align:center;
+}
+}
