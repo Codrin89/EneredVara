@@ -1,0 +1,122 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-image: url('background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Segoe UI';
+}
+.navContainer {
+	float: right;
+}
+.navContainer .button {
+	float: left;	
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+	line-height: 60px;
+	text-align: center;
+	display: block;
+}
+
+#admins {
+	width: 159px;
+	height: 60px;
+	border-right: 1px solid #61686e;
+	background: #7c8389;
+}
+
+#addSlide {
+	width: 180px;
+	height: 60px;
+	background: #fe580f;
+}
+
+.searchContainer {
+	width: 100%;
+	height: 100px;
+	float: left;
+	margin: 40px 0;
+}
+
+#searchBar {
+	width: 562px;
+	height: 58px;
+	display: block;
+	margin: 0 auto;
+	outline: none;
+}
+
+.boxesContainer {
+	float: left;
+}
+
+
+.boxesContainer .boxItem .imageBoxItem {
+	position: relative;
+}
+.boxesContainer .boxItem .imageBoxItem .hoverImage {
+	display: none;
+    align-items: center;
+    justify-content: center; 
+	width: 100%;
+	height: 100%;
+	background: #fe580f;
+	opacity: 0.8;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	color: white;
+}
+
+.boxesContainer .boxItem .imageBoxItem:hover .hoverImage {
+	display: flex;
+}
+.boxesContainer .boxItem .imageBoxItem img {
+	width: 100%;
+	height: auto;
+}
+.boxesContainer .boxItem .detailsBoxItem {
+	width: 100%;
+	background: white;
+	margin-top: -10px; 
+	padding: 10px 15px;
+}
+
+.boxesContainer .boxItem .detailsBoxItem .title{
+	color: #666666;
+}
+.boxesContainer .boxItem .detailsBoxItem .timelapse{
+	color: #869eaa;
+	font-size: 12px;
+	font-style: italic;
+}
+.boxesContainer .boxItem .detailsBoxItem .tags {
+	margin-bottom: 10px;
+}
+.boxesContainer .boxItem .detailsBoxItem .tags .tagsTitle{
+	color: #666666;
+	font-size: 12px;
+	font-weight: 600;
+}
+.boxesContainer .boxItem .detailsBoxItem .tags span{
+	border: 1px solid #99adb7;
+	padding: 2px 5px;
+	color: #99adb7;
+}
+.boxesContainer .boxItem .detailsBoxItem .detailsButtons {
+	border-top: 1px solid #eff6fc;
+    padding: 10px 5px;
+}
+
+.boxesContainer .boxItem .detailsBoxItem .detailsButtons button {
+	border: none;
+	background: transparent;
+	outline: none;
+	padding: 5px;
+	color: #747c84;
+}
