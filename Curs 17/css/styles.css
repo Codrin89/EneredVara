@@ -1,3 +1,168 @@
+* {
+	transition: 0.3s all ease-in-out;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+	background: url('img/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/*----------------------------------
+			HOME PAGE
+----------------------------------*/
+
+/*-------
+TOP BAR
+-------*/
+
+/*LOGO SECTION*/
+
+
+.topBar .logoBar {
+	width: 100%;
+	height: 100px;
+	background-image: url('img/40262-Star_Wars-Death_Star-science_fiction.jpg');
+	background-size: cover;
+	background-position: 0px -125px;
+	background-repeat: no-repeat;
+}
+.topBar .socialMedia {
+	font-size: 25px;
+    padding: 32.5555px 0;
+    text-align: center;
+}
+.topBar .socialMedia ul {
+	list-style: none;
+    margin: 0;
+    -webkit-padding-start: 0px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.topBar .socialMedia ul li {
+	display: inline-block;
+	margin: 0 7px;
+	color: white;
+	
+}
+.topBar .socialMedia ul li a {
+	text-decoration: none;
+	color: white;
+}
+.topBar .socialMedia ul li:hover {
+	transform: scale(1.2);
+}
+.topBar .socialMedia ul li:nth-child(1):hover a {
+	color: #4267b2;
+	transition: 0s;
+}
+.topBar .socialMedia ul li:nth-child(2):hover a {
+	color: white;
+	transition: 0s;
+}
+.topBar .socialMedia ul li:nth-child(3):hover a {
+	color: #1da1f2;
+	transition: 0s;
+}
+.topBar .socialMedia ul li:nth-child(4):hover a {
+	color: #fbad50;
+	transition: 0s;
+}
+.topBar .socialMedia ul li:nth-child(5):hover a {
+	color: #db4437;
+	transition: 0s;
+}
+.topBar .socialMedia ul li:nth-child(6):hover a {
+	color: #ff0000;
+	transition: 0s;
+}
+
+.topBar .logoBar .starLogo img{
+	width: 150px;
+    margin: 15px auto;
+    display: block;
+    margin-bottom: 0;
+}
+.topBar .logoBar .starLogo img:hover {
+	transform: scale(1.15);
+}
+.topBar .logoBar .lucasLogo img{
+	width: 120px;
+    float: right;
+    margin-top: 30px;
+    display: block;
+}
+
+/*MENU SECTION*/
+
+.topBar .menuBar {
+	height: 50px;
+    background: #191919;
+    border-top: 2px solid #353535;
+}
+
+.topBar .menuBar ul {
+	text-decoration: none;
+    margin-bottom: 10px;
+    -webkit-padding-start: 0px;
+}
+
+.topBar .menuBar ul li {
+	display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 48px;
+    color: white;
+    border: 1px solid #353535;
+    border-top: none;
+    border-bottom: 2px solid #353535;
+}
+
+.topBar .menuBar ul li:hover {
+	background: black;
+}
+.topBar .menuBar ul li a {
+	text-decoration: none;
+	color: white;
+}
+.topBar .menuBar ul li span.filmIcon {
+    width: 32px;
+    height: 32px;
+	background: url('img/Icons/film-roll.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*-----
+CONTENT
+-----*/
+
+.container {
+	background: black;
+}
+.container .content {
+	text-align: justify;
+	color: white;
+}
+.container .content h1 {
+	text-align: center;
+	margin: 30px 0;
+}
+.container .content h3 {
+	text-indent: 70px;
+	margin: 15px 0;
+	padding: 5px 0;
+	font-style: italic;
+	border-bottom: 1px solid white;
+}
+.container .content p {
+	text-indent: 40px;
+}
+
+
+
 /*----------------------------------
 			  PEOPLE
 ----------------------------------*/
@@ -5,24 +170,62 @@
 .container {
 	text-align: center;
 	font-family: 'Ubuntu', sans-serif;
+	margin-top: 25px;
 }
 
-.container .personItem {
+.container .profileItem {
 	margin-top: 20px;
-	border: 1px solid #44ecae;
+	margin-right: 35px;
 	border-radius: 10px;
 	background: rgba(68, 236, 174, 0.07);
-	margin: 2px;
-	width: 49.6%;
+	width: 250px;
+	height: 350px;
+	float: left;
 }
-.container .personItem .name {
-	border-bottom: 1px solid #45de58;
-	border-radius: 5px;
-	padding: 5px;
-	margin-top: 10px;
-	color: #45de58;
+.container .profileItem .imageWrapper {
+	width: 100%;
+	height: 250px;
 }
-.container .personItem .info {
+.container .profileItem .imageWrapper img {
+	width: 100%;
+	border-radius: 10px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.container .profileItem .textWrapper {
+	background: url(img/People/img/text-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 15px -1px;
+    height: 98px;
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid #9e4f60;
+    border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	margin-top: 0px;
+	position: relative;
+}
+.container .profileItem .textWrapper h3 {
+	margin: 7px 10px;
+	color: white;
+	text-align: left;
+}
+.container .profileItem .textWrapper a {
+	text-decoration: none;
+}
+.container .profileItem .textWrapper a:hover h3{
+	color: #9e4f60;
+}
+.container .profileItem .textWrapper p {
+	margin: 35px 10px 0 10px;
+	color: #9e4f60;
+	text-align: left;
+}
+.container .profileItem .textWrapper p:hover i {
+	transform: rotate(360deg);
+}
+/*.container .personprofileItemItem .info {
 	font-
 }
 .container .personItem ul {
@@ -34,7 +237,7 @@
 	background: rgba(68, 236, 174, 0.15);
 	margin: 3px;
 	color: rgb(0, 132, 83);
-}
+}*/
 
 
 /*----------------------------------
@@ -42,89 +245,234 @@
 ----------------------------------*/
 
 
-.container .planetItem {
+.container .profileItem {
 	margin-top: 20px;
-    border: 1px solid #ff699b;
-    border-radius: 10px;
-    background: rgba(255, 105, 155, 0.1);
-    margin: 2px;
-    width: 49.6%;
-    padding: 10px;
+	margin-right: 35px;
+	border-radius: 10px;
+	background: rgba(68, 236, 174, 0.07);
+	width: 250px;
+	height: 350px;
+	float: left;
 }
-.container .planetItem .name {
-	border-bottom: 1px solid #8e0049;
-    border-radius: 5px;
-    padding: 5px;
-    margin-top: 10px;
-    color: #b10071;
+.container .profileItem .imageWrapper {
+	width: 100%;
+	height: 250px;
+}
+.container .profileItem .imageWrapper img {
+	width: 100%;
+	border-radius: 10px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.container .profileItem .textWrapper {
+	background: url(img/People/img/text-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 15px -1px;
+    height: 98px;
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid #9e4f60;
+    border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	margin-top: 0px;
+	position: relative;
+}
+.container .profileItem .textWrapper h3 {
+	margin: 7px 10px;
+	color: white;
+	text-align: left;
+}
+.linkName {
+	text-decoration: none;
+}
+.linkName:hover {
+	text-decoration: none;
 }
 
-.container .planetItem ul {
-	list-style-type: none;
-	text-align: left;
-	-webkit-padding-start: 0px;
+.linkName:hover h3{
+	color: #9e4f60;
 }
-.container .planetItem li {
-	background: rgba(247, 82, 126, 0.15);
-    margin: 3px;
-    color: rgb(132, 0, 54);
-}
-.container .planetItem .planetButton {
+.linkName p{
 	text-decoration: none;
-	cursor: pointer;
-	width: 100%;
-	line-height: 24px;
-    color: #b10071;
-    border: 1px solid #b10071;
-    padding: 5px 10px;
 }
-.container .planetItem .planetButton:hover {
-	background: #b10071;
-	color: white;
+.linkName p:hover{
+	color: #9e4f60;
+	text-decoration: none;
+}
+.container .profileItem .textWrapper p {
+	margin: 35px 10px 0 10px;
+	color: #9e4f60;
+	text-align: left;
+}
+.container .profileItem .textWrapper p:hover i {
+	transform: rotate(360deg);
 }
 
 /*----------------------------------
-			 SINGLE PLANET
+		   SINGLE PLANET
+----------------------------------*/
+.container.singlePlanetContainer {
+	width: 95%;
+	color: white;
+}
+.singlePlanetContainer .imageName {
+	text-align: left;
+	display: table-row;
+	background: url(img/People/img/text-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: left 100% bottom 140%;
+}
+.singlePlanetContainer .imageName .image {
+	display: table-cell;
+}
+.singlePlanetContainer .imageName .bio {
+	display: table-cell;
+}
+
+.singlePlanetContainer .information {
+	margin-top: 20px;
+	text-align: center;
+}
+
+/*----------------------------------
+		   SINGLE RESIDENT
 ----------------------------------*/
 
-.container .singlePlanet {
-	margin-top: 20px;
-    border: 1px solid #ff699b;
-    border-radius: 10px;
-    background: rgba(255, 105, 155, 0.1);
-    margin: 2px;
-    width: 100%;
-    padding: 10px;
+.container.singleResidentContainer {
+	width: 95%;
+	color: white;
 }
-.container .singlePlanet .name {
-	border-bottom: 1px solid #8e0049;
-    border-radius: 5px;
-    padding: 5px;
-    margin-top: 10px;
-    color: #b10071;
+.singleResidentContainer .imageName {
+	text-align: left;
+	display: table-row;
+	background: url(img/People/img/text-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: left 100% bottom 140%;
+}
+.singleResidentContainer .imageName .image {
+	display: table-cell;
+}
+.singleResidentContainer .imageName .bio {
+	display: table-cell;
 }
 
-.container .singlePlanet ul {
-	list-style-type: none;
-	text-align: left;
-	-webkit-padding-start: 0px;
+.singleResidentContainer .information {
+	margin-top: 20px;
+	text-align: center;
 }
-.container .singlePlanet li {
-	background: rgba(247, 82, 126, 0.15);
-    margin: 3px;
-    color: rgb(132, 0, 54);
-}
-.container .singlePlanet .planetButton {
-	text-decoration: none;
-	cursor: pointer;
-	width: 100%;
-	line-height: 24px;
-    color: #b10071;
-    border: 1px solid #b10071;
-    padding: 5px 10px;
-}
-.container .singlePlanet .planetButton:hover {
-	background: #b10071;
+
+/*----------------------------------
+		   SINGLE FILM
+----------------------------------*/
+
+.container.singleFilmContainer {
+	width: 95%;
 	color: white;
+}
+.singleFilmContainer .imageName {
+	text-align: left;
+	display: table-row;
+	background: url(img/People/img/text-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: left 100% bottom 140%;
+}
+.singleFilmContainer .imageName .image {
+	display: table-cell;
+}
+.singleFilmContainer .imageName .bio {
+	display: table-cell;
+}
+
+.singleFilmContainer .information {
+	margin-top: 20px;
+	text-align: center;
+}
+
+/*----------------------------------
+		   SINGLE SPECIES
+----------------------------------*/
+
+.container.singleSpeciesContainer {
+	width: 95%;
+	color: white;
+}
+.singleSpeciesContainer .imageName {
+	text-align: left;
+	display: table-row;
+	background: url(img/People/img/text-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: left 100% bottom 140%;
+}
+.singleSpeciesContainer .imageName .image {
+	display: table-cell;
+}
+.singleSpeciesContainer .imageName .bio {
+	display: table-cell;
+}
+
+.singleSpeciesContainer .information {
+	margin-top: 20px;
+	text-align: center;
+}
+
+/*----------------------------------
+		   SINGLE STARSHIP
+----------------------------------*/
+
+.container.singleStarshipContainer {
+	width: 95%;
+	color: white;
+}
+.singleStarshipContainer .imageName {
+	text-align: left;
+	display: table-row;
+	background: url(img/People/img/text-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: left 100% bottom 140%;
+}
+.singleStarshipContainer .imageName .image {
+	display: table-cell;
+}
+.singleStarshipContainer .imageName .bio {
+	display: table-cell;
+}
+
+.singleStarshipContainer .information {
+	margin-top: 20px;
+	text-align: center;
+}
+
+/*----------------------------------
+		   SINGLE VEHICLE
+----------------------------------*/
+
+.container.singleVehiclesContainer {
+	width: 95%;
+	color: white;
+}
+.singleVehiclesContainer .imageName {
+	text-align: left;
+	display: table-row;
+	background: url(img/People/img/text-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: left 100% bottom 140%;
+}
+.singleVehiclesContainer .imageName .image {
+	display: table-cell;
+}
+.singleVehiclesContainer .imageName .bio {
+	display: table-cell;
+}
+
+.singleVehiclesContainer .information {
+	margin-top: 20px;
+	text-align: center;
 }
 
