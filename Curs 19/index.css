@@ -1,0 +1,80 @@
+* {
+	margin:0;
+	padding:0;
+}
+.container {
+	height: 100px;
+	width: 1600px;
+	border-top: 4px solid #a7c353;
+	border-bottom: 1px solid #a7c353;
+	padding-left: 5px;
+	padding-right: 5px; 
+}
+.container .logo {
+	background: url('Logo/img1.png') no-repeat #fff;
+	margin-top: 25px;
+	margin-left: 31px;
+	float: left;
+	width: 160px;
+	height: 37px;
+}
+.container .buttons {
+	float: right;
+	height: 53px;
+    line-height: 35px;
+}
+.container .buttons a {
+	color:#b1b1b1;
+	padding-right: 50px;
+	font-family: 'Georgia';
+	font-size: 14px;
+	display: inline-block;
+	padding: 40px 15px 20px;
+}
+.container .buttons a:hover {
+	background-color: #a7c353;
+}
+.container .buttons a.active {
+	background-color: #a7c353;
+}
+.intro {
+	padding: 0 20px;
+}
+.intro h1 {
+	padding-top: 43px;
+	padding-bottom: 44px;
+	color: #666666;
+	font-family: 'Georgia';
+	font-size: 22px;
+	font-style: italic;
+	text-align: center;
+	line-height: 0.9;
+}
+.item {
+	height: 400px;
+	width: 100%;
+}
+.carousel-indicators li {
+	border: 2px solid #a7c353;
+}
+.carousel-indicators {
+	bottom: -50px;
+}
+.carousel-indicators .active {
+	background-color: white;
+}
+.left .carousel-control
+.right .carousel-control {
+	background: transparent;
+	opacity:1;
+}
+.left.carousel-control img {
+	position: relative;
+	top: 150px;
+	float: right;
+}
+.right.carousel-control img {
+	position: relative;
+	top: 150px;
+	float: left;
+}
