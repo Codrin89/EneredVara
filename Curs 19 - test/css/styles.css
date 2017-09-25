@@ -46,7 +46,7 @@ body {
  	color: #979797;
  }
  .container .header .menuBar ul li:nth-child(6) {
-
+ 	margin-right: -25px;
  }
  .container .header .menuBar ul li:hover {
  	background-color: #a7c353;
@@ -129,6 +129,7 @@ body {
  }
  .container .content {
  	height: 509px;
+ 	color: #999999;
  }
 
  .container .content .col-lg-4.col-md-4 h2 {
@@ -152,12 +153,156 @@ body {
  	color: #a7c353;
  	text-decoration: none;
  }
- .container .content .ourservices div:nth-child(1) {
- 	margin-top: 0!important;
+ .container .content .ourservices .margin_top {
+ 	margin-top: -7px;
+ }
+ .container .content .ourservices .margin_bottom {
+ 	margin-bottom: -9px;
  }
  .container .content .service {
- 	margin-bottom: 35px;
+ 	margin-bottom: 20px;
  }
- .container .content .service .serviceinformation {
- 	display: inline;
+
+ .container .content .ourservices .service .serviceinformation {
+ 	color: #878787;
+ 	margin-left: 79px;
+ 	clear: right;
  }
+.container .content .ourservices .service .serviceinformation p:nth-child(1) {
+	font-size: 14px;
+}
+.container .content .ourservices .service .serviceinformation p:nth-child(2) {
+	font-size: 13px;
+	width: 90%;
+}
+ .container .content .ourservices .service img {
+ 	float: left;
+ }
+
+.container .content .ourservices a {
+	float: right;
+ 	color: #a7c353;
+ 	text-decoration: none;
+}
+
+.container .content .clientsay .client_thanks img{
+	float: left;
+	color: #888888;
+}
+
+
+.container .content .clientsay .client_thanks h4 {
+	clear: right;
+	line-height: 44px;
+	margin-left: 54px;
+	text-align: center;
+}
+.container .content .clientsay .client_thanks a {
+	float: right;
+    color: #a7c353;
+    text-decoration: none;
+    margin-top: -13px;
+}
+
+.footerPage {
+	background-color: #313131!important;
+	height: 380px;
+	margin: 0 auto;
+}
+
+.footerPage h5 {
+	color: #ffffff;
+    font-size: 16px;
+    margin: 10px 0 15px 0;;
+    border-bottom: 1px solid #3a3a3a;
+    padding: 20px 0px;
+}
+
+.footerPage p {
+	color: #999999;
+	font-size: 12px;
+}
+.footerPage .company p span {
+	color: #a7c353;
+	cursor: pointer;
+}
+.container.background {
+	background: #313131!important;
+	border-top: none;
+}
+.footerPage .social .socialmedia {
+	margin: 20px 0;
+	border-bottom: 1px solid #3a3a3a;
+}
+.footerPage .social .socialmedia img{
+	float: left;
+}
+.footerPage .social .socialmedia p{
+	clear: right;
+	line-height: 28px;
+	color: #a7c353;
+	margin-left: 45px;
+	cursor: pointer;
+
+}
+
+.footerPage .blog .blognews {
+	color: #999999;
+}
+
+.footerPage .blog .blognews h4 {
+	font-size: 13px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+.footerPage .blog .blognews p:nth-child(1) {
+	font-size: 11px;
+}
+.footerPage .blog .blognews p {
+	font-size: 12px;
+}
+.footerPage .blog .blognews a {
+	float: right;
+	margin-top: -20px;
+    color: #a7c353;
+    text-decoration: none;
+}
+
+.footerPage .contact form input {
+	width: 100%;
+	margin-bottom: 10px;
+	outline: none;
+	line-height: 25px;
+	border-radius: 8px;
+	border: none;
+	padding: 5px 0 0 10px;
+}
+.footerPage .contact form textarea {
+	height: 100px;
+	line-height: 12px;
+	width: 100%;
+	border-radius: 7px;
+	border: none;
+	outline: none;
+	padding: 5px 0 0 10px;
+}
+
+.footerPage .contact form .submitButton {
+	width: 80px;
+	background-color: #a7c353;
+	color: #313131;
+	outline: none;
+	border: none;
+	border-radius: 8px;
+	padding: 10px 12px;
+	line-height: 12px;
+}
+.container .coding.design {
+	color: #999999;
+	border-top: 1px solid #3a3a3a;
+	line-height: 49px;
+}
+.container .coding.design p:nth-child(2),
+.container .coding.design p:nth-child(3) {
+	text-align: right;
+}
