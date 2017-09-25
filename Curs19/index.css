@@ -1,0 +1,131 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Georgia, serif;
+}
+
+/*body { 
+	background-color: #313131
+
+ }*/
+
+@font-face {
+    font-family: Georgia;
+    src: url(fonts/Georgia.ttf);
+}
+
+.header .navbar-inverse {
+	background: transparent;
+	border-radius: 0;
+	border-top: 5px solid #a7c353;
+	border-right: none;
+	border-left: none;
+	border-bottom: 1px solid #a7c353;
+	
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	font-size: 13px;
+	font-weight: normal;
+	color: #979797;
+	text-transform: uppercase;
+	padding: 50px 20px 30px 20px;
+
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+	background-color: #a7c353;
+	
+}
+.navbar-brand>img {
+    padding-top: 13px;
+}
+
+.intro .intro-text {
+	color: #666;
+    font-size: 22px;
+    padding: 30px 0px;
+    width: 55%;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+.carousel-control.left {
+	background: none;
+	margin-left: 10%;
+}
+
+.carousel-control.right {
+	background: none;
+	margin-right: 10%;
+}
+
+.carousel .item img {
+	margin: 0 auto;
+
+}
+
+.left, .right {
+	position: absolute;
+    top: 34%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
+}
+
+.left img {
+	margin-left: 20px;
+}
+
+.right img {
+	margin-right: 20px;
+}
+
+.carousel .carousel-indicators li {
+background-color: #a7c353;
+border-color: #a7c353;
+position: relative;
+width: 15px;
+height: 15px;
+}
+
+.carousel .carousel-indicators {
+bottom: 70px;
+}
+
+.carousel .carousel-indicators .active {
+	background: none;
+}
+
+.carousel .item .carousel-caption {
+	font-size: 22px;
+	color: #fff;
+	background-color: #a7c353;
+	max-width: 350px;
+	height: 40px;
+	line-height: 11px;
+	right: 60px;
+	position: relative;
+	left: 50%;
+    bottom: 150px;
+}
+
+.carousel .item .sub-caption {
+	font-size: 13px;
+	color: #999;
+	background-color: #fff;
+	max-width: 350px;
+	height: 70px;
+	/*line-height: 11px;*/
+	right: 60px;
+	position: relative;
+	left: 50%;
+    bottom: 140px;
+    padding: 8px 25px;
+
+}
+
+.content .column1 h2 {
+	font-size: 22px;
+	color: #666;
+}

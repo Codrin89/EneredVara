@@ -199,7 +199,7 @@
 
             var anchorToSinglePlanetItem = document.createElement('a');
             anchorToSinglePlanetItem.setAttribute('class', 'planetButton');
-            anchorToSinglePlanetItem.setAttribute('href', '/singlePlanet.html?id=' + (i + 2));
+            anchorToSinglePlanetItem.setAttribute('href', 'singlePlanet.html?id=' + (i + 2));
             anchorToSinglePlanetItem.setAttribute('target', '_blank');
             anchorToSinglePlanetItem.setAttribute('title', value[i].name);
             var anchorToSinglePlanetItemItemText = document.createTextNode('Go to planet ' + value[i].name);
