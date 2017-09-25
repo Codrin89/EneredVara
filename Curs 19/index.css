@@ -1,0 +1,93 @@
+
+.topnav {
+    background-color:white;
+    overflow: hidden;
+    float:right;
+
+}
+.nav {
+    border-bottom:2px solid #a7c353;
+    line-height:3.5;
+}
+
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #979797;
+    text-align: center;
+    padding: 21px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+
+.topnav a:hover {
+    background-color: #a7c353;
+    color: white;
+}
+
+
+.topnav a.active {
+    background-color: #979797;
+    color: white; 
+}
+img {
+    float:left;
+
+}
+.header {
+    border-bottom: 5px solid #a7c353;
+
+}
+.header img {
+    padding-top: 32px;
+    padding-bottom:32px;
+    padding-left:20px;
+
+
+}
+h1 {
+    font-family:'Georgia';
+    font-size:20px;
+    font-style: italic;
+    text-align:center;
+    margin-top:90px;
+
+}
+.carousel-indicators {
+    bottom: -43px;
+}
+
+   
+.carousel-indicators li {
+    border: 2px solid #a7c353;
+    background-color:#a7c353;
+}
+.carousel-indicators .active {
+    background-color:white;
+}
+
+.left.carousel-control,
+.right.carousel-control {
+    background:transparent;
+    opacity:1;
+}
+.left.carousel-control img {
+    position: relative;
+    top: 150px;
+    float: right;
+}
+.right.carousel-control img {
+    position: relative;
+    top: 150px;
+    float: left;
+}
+.item img {
+    height:350px !important;
+    width:100%;
+}
+.intro {
+    padding:0 20px;
+}
