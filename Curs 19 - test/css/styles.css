@@ -14,44 +14,58 @@ body {
 	padding-right: 20px;
 	padding-left: 20px;
 }
+
+/*============================================
+				HEADER
+============================================*/
+
  .container .header {
  	border-top: none;
  	border-bottom: 1px solid #a7c353;
- 	height: 95px;
- }
- .container .header .menuBar {
- 	margin-left: 75px;
- 	padding: 0;
- }
+}
 
-.container .header .logo{
-	padding: 25px 0 25px 0px;
+.container .header .container-fluid .menuBar { 	
+ 	padding: 20px 0px;
+ 	border-top: none;
+}
+.container .header .container-fluid .menuBar .navbar-brand {
+	margin-left: -28px;
+    margin-top: -10px;
  	
 }
- .container .header .menuBar ul {
+.container .header .container-fluid .menuBar .navbar-toggle {
+	
+}
+.container .header .container-fluid .menuBar ul {
  	-webkit-padding-start: 0px;
  	list-style: none;
  	text-align: center;
  	padding: 0;
  	margin: 0;
- }
-
- .container .header .menuBar ul li {
+ 	float: right;
+}
+.container .header .container-fluid .collapse ul li {
  	line-height: px;
  	padding: 0;
  	cursor: pointer;
  	display: block;
- 	display: inline-block;
  	padding: 45px 10px 30px 10px;
  	color: #979797;
- }
- .container .header .menuBar ul li:nth-child(6) {
+}
+.container .header .container-fluid .collapse ul li:nth-child(6) {
  	margin-right: -25px;
- }
- .container .header .menuBar ul li:hover {
+}
+.container .header .container-fluid .collapse ul li:hover {
  	background-color: #a7c353;
  	color: #ffffff;
- }
+}
+.container .header .container-fluid .icon-bar {
+	background: #000000;
+}
+
+/*============================================
+				INTRO
+============================================*/
 
  .container .intro {
  	height: 564px;
@@ -127,6 +141,11 @@ body {
  	padding: 6px 12px;
  	font-size: 13px;
  }
+
+ /*============================================
+				CONTENT
+============================================*/
+
  .container .content {
  	height: 509px;
  	color: #999999;
@@ -204,6 +223,10 @@ body {
     margin-top: -13px;
 }
 
+/*============================================
+				FOOTER
+============================================*/
+
 .footerPage {
 	background-color: #313131!important;
 	height: 380px;
@@ -234,7 +257,7 @@ body {
 	margin: 20px 0;
 	border-bottom: 1px solid #3a3a3a;
 }
-.footerPage .social .socialmedia img{
+.footerPage .social .socialmedia img {
 	float: left;
 }
 .footerPage .social .socialmedia p{
@@ -273,7 +296,7 @@ body {
 	margin-bottom: 10px;
 	outline: none;
 	line-height: 25px;
-	border-radius: 8px;
+	border-radius: 5px;
 	border: none;
 	padding: 5px 0 0 10px;
 }
@@ -285,6 +308,7 @@ body {
 	border: none;
 	outline: none;
 	padding: 5px 0 0 10px;
+	transition: none;
 }
 
 .footerPage .contact form .submitButton {
@@ -293,16 +317,129 @@ body {
 	color: #313131;
 	outline: none;
 	border: none;
-	border-radius: 8px;
+	border-radius: 5px;
 	padding: 10px 12px;
 	line-height: 12px;
 }
+
+/*============================================
+				COPYRIGHT
+============================================*/
+
 .container .coding.design {
 	color: #999999;
 	border-top: 1px solid #3a3a3a;
 	line-height: 49px;
 }
-.container .coding.design p:nth-child(2),
-.container .coding.design p:nth-child(3) {
-	text-align: right;
+.container .coding.design p {
+	display: inline;
+	margin: 0;
+}
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 992px) {
+	.container .header .container-fluid .collapse ul li {
+	 	padding: 45px 5px 30px 5px;
+	 	color: #979797;
+	}
+	.container-fluid>.navbar-collapse, 
+	.container-fluid>.navbar-header, 
+	.container>.navbar-collapse, 
+	.container>.navbar-header, 
+	.navbar-collapse.collapsing {
+	    margin-right: 0px;
+	    margin-left: 0px;
+	    text-align: center;
+	    color: #979797;
+	    line-height: 45px;
+	}
+
+	.navbar-nav {
+    	margin: 0px 0px;
+	}
+	.container .header .container-fluid .menuBar {
+	    padding: 20px 0px;
+	    border-top: none;
+	}
+	.container .header .container-fluid .menuBar .navbar-brand {
+	    margin-left: -28px;
+   		margin-top: -14px;
+	}
+	.container .content .ourservices .margin_top {
+    	margin-top: 0px!important;
+	}
+	.container .content .service {
+   		margin-bottom: 33px!important;
+	}
+	.container .content .clientsay .client_thanks h4 {
+	    clear: right;
+	    line-height: 44px;
+	    margin-left: 70px!important;
+	    text-align: left!important;
+	}
+	.container .content .clientsay .client_thanks {
+		margin-bottom: 35px;
+	}
+	.footerPage .blog .blognews {
+    	color: #999999;
+    	margin-bottom: 35px;
+	}
+	.footerPage .blog .blognews a {
+		margin-top: 0;
+	}
+	.container .content .aboutus img {
+		margin: 0 auto;
+    	width: 100%;
+	}
+	.container .content .clientsay .client_thanks a {
+	    float: right;
+	    color: #a7c353;
+	    text-decoration: none;
+	    margin-top: -3px;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+	.container .header .container-fluid .collapse ul li {
+	 	padding: 0px 0px;
+	 	color: #979797;
+	 	text-align: center;
+	}
+	.container-fluid>.navbar-collapse, 
+	.container-fluid>.navbar-header, 
+	.container>.navbar-collapse, 
+	.container>.navbar-header, 
+	.navbar-collapse.collapsing {
+	    margin-right: 0px;
+	    margin-left: 0px;
+	    text-align: center;
+	    color: #979797;
+	    border-top: 1px solid #a7c353;
+	   
+	}
+	.container .header .container-fluid .collapse ul li:nth-child(6) {
+    	margin-right: 0px;
+	}
+	.container .coding.design p {
+		display: block;
+		line-height: 32px;
+	}
+	
+}	
+
+@media only screen and (max-width: 480px) {
+	.container .intro .qoute {
+		margin: 0 auto;
+	}
+
+	.container .intro .carousel {
+	    height: 350px;
+	    margin-top: 20px;
+	    background-color: #313131;
+	}
+	
+	.container .intro .carousel .carousel-indicators {
+	    bottom: -50px;
+	}
 }
