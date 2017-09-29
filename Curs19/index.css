@@ -77,7 +77,7 @@ body {
     line-height: 25px;
 }
 
-.carousel .left {
+.carousel .left_arrow {
 	z-index: 1;
 	background: none;
 	width: 8%;
