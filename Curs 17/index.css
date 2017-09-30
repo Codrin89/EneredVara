@@ -1,0 +1,24 @@
+* {
+	margin:0;
+	padding: 0;
+}
+.PlanetItem {
+border: 1px solid blue;
+color:orange;
+background-color:rgba(157, 98, 56, 0.64));
+display: inline-block;
+}
+ul li {
+	text-align:center;
+	background-color:rgba(92, 184, 92, 0.62);
+}	
+h6 {
+	text-align:center;
+	background-color:rgba(92, 184, 92, 0.62);
+
+}
+h3 {
+	text-align:center;
+	background-color:rgba(92, 184, 92, 0.62);
+	
+}

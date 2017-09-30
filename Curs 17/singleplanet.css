@@ -1,0 +1,19 @@
+*{
+	margin:0;
+	border:0;
+	color:purple;
+}
+ul li {
+	text-align:left;
+	background-color:rgba(92, 184, 92, 0.62);
+}
+h3 {
+	text-align:center;
+	background-color:rgba(92, 184, 92, 0.62);
+	
+}
+.planetItem {
+	text-align:center;
+	background-color:rgba(92, 184, 92, 0.62);
+	
+}
