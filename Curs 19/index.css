@@ -70,11 +70,11 @@
 }
 .left.carousel-control img {
 	position: relative;
-	top: 150px;
-	float: right;
+	top: 160px;
+	float: left 1px;
 }
 .right.carousel-control img {
 	position: relative;
-	top: 150px;
-	float: left;
+	top: 160px;
+	float: right 1px;
 }
