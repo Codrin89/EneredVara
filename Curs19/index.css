@@ -30,6 +30,10 @@ body {
  	margin-right: -35px;
  }
 
+.navbar-inverse .navbar-toggle .icon-bar {
+	background-color: #a7c353;
+}
+
 
 .header .navbar-inverse {
 	background: transparent;
@@ -77,18 +81,20 @@ body {
     line-height: 25px;
 }
 
-.carousel .left_arrow {
+.container .intro .carousel .carousel-control{
+	top: calc(50% - 26px);
+}
+
+.carousel .left {
 	z-index: 1;
 	background: none;
-	width: 8%;
-	top: calc(50% - 26px);
+	left: -30px;
 }
 
 .carousel .right {
 	z-index: 1;
 	background: none;
-	width: 8%;
-	top: calc(50% - 26px);
+	right: -30px;
 }
 
 .carousel .item .carousel-caption .carousel_title {
