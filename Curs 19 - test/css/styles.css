@@ -373,6 +373,7 @@ body {
 	}
 	.container .content .clientsay .client_thanks h4 {
 	    clear: right;
+	    font-size: 16px;
 	    line-height: 44px;
 	    margin-left: 70px!important;
 	    text-align: left!important;
