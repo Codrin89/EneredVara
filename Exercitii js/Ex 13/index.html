@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>13 Determining Compound Interest</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<h1 class="text-center text-primary">13 Determining Compound Interest</h1>
+		<div class="col-md-6 col-md-offset-3">
+		<input type="number" class="form-control" id="principal" placeholder="Principal">
+		<input type="number" class="form-control" id="anualRate" placeholder="Anual Rate">
+		<input type="number" class="form-control" id="yearsNo" placeholder="Number of Years">
+		<input type="number" class="form-control" id="compoundedNo"  placeholder="Number of times the interest is compounded per
+year">
+		<button style="margin: 15px 35%; width: 30%; " class="btn btn-primary" id="resolve">Calculate!</button>
+		</div>
+
+		<div class="col-md-6 col-md-offset-3">
+			<p>What is the principal amount? <span class="principalSpan"></span></p>
+			<p>What is the rate? <span class="anualRateSpan"></span></p>
+			<p>What is the number of years? <span class="yearsNoSpan"></span></p>
+			<p>What is the number of times the interest<br>
+			is compounded per year? <span class="compoundedNoSpan"></span></p>
+			<p><span class="principalSpan"></span> invested at <span class="anualRateSpan"></span> for <span class="yearsNoSpan"></span> years compounded <span class="compoundedNoSpan"></span> times per year is <span id="total"></span>.</p>
+			
+		</div>
+	
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="index.js"></script>	
+	</body>
+</html>

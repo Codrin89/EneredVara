@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>10 Self-Checkout</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<h1 class="text-center">10 Self-Checkout</h1>
+
+	<div class="col-md-6">
+		<input class="form-control" type="number" id="marItem" placeholder="Price for item 1">
+		<input class="form-control" type="number" id="paraItem" placeholder="Price for item 2">
+		<input class="form-control" type="number" id="gutuieItem" placeholder="Price for item 3">
+	</div>
+	<div class="col-md-6">
+		<input class="form-control" type="number" id="mar" placeholder="How many pieces of item 1">
+		<input class="form-control" type="number" id="para" placeholder="How many pieces of item 2">
+		<input class="form-control" type="number" id="gutuie" placeholder="How many pieces of item 3">
+	</div>
+	<button style="margin-left: 35%; margin-top: 5px; width: 30%" class="btn btn-primary" id="resolve">Calculeaza!</button>
+
+	<div class="col-md-6 col-md-offset-3 result">
+		<p>Enter the price of item 1: <span id="marPrice"></span></p>
+		<p>Enter the quantity of item 1: <span id="marQuantity"></span></p>
+		<p>Enter the price of item 2: <span id="paraPrice"></span></p>
+		<p>Enter the quantity of item 2: <span id="paraQuantity"></span></p>
+		<p>Enter the price of item 3: <span id="gutuiePrice"></span></p>
+		<p>Enter the quantity of item 3: <span id="gutuieQuantity"></span></p>
+		<p>Subtotal: $<span id="subtotal"></span></p>
+		<p>Tax: $<span id="tax"></span></p>
+		<p>Total: $<span id="total"></span></p>
+	</div>
+
+
+	
+
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>
