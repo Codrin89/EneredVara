@@ -89,14 +89,38 @@ $('#ex9').html(res.join(", "));
 /* EX 10 */
 
 var arrayEx10 = [0,"text",9,undefined,"undefined",-5,null,"null"];
-arrayEx5 = (Object.values(arrayEx10)); 
+arrayEx10 = (Object.values(arrayEx10)); 
 for(i = 0; i < arrayEx10.length; i++) {
 	$('#ex10').html($('#ex10').html() + arrayEx10[i] + ' is a ' + typeof(arrayEx10[i]) + '<br>');
 }
 
+/* Ex 11 */
 
+	var arrayEx10 = [0,"text",9,undefined,"undefined",-5,null,"null"];
+arrayEx10 = (Object.values(arrayEx10)); 
+for(i = 0; i < arrayEx10.length; i++) {
+	var word = typeof(arrayEx10[i]);
+	var firstLetter = word[0];
+	var myText = arrayEx10[i] + ' is a ' + word;
+	var myTextSplited = myText.split(" is ")
+	var aOrAn = myTextSplited[1][0];
+	if (firstLetter == "a" || firstLetter == "e" || firstLetter == "i" || firstLetter == "o" || firstLetter == "u") {
+		aOrAn += "n";
+	}
+	$('#ex11').html($('#ex11').html() + arrayEx10[i] + ' is ' + aOrAn + " "  + word + '<br>');
+}
 
+/* Ex 12 */
 
+function sortNumberEx12(a,b) {
+    return a - b;
+}
+var objEx12 = { first:13, second:6, thrid:0, tenth:34, last:-2};
+arrayEx12 = (Object.values(objEx12));
+arrayEx12.sort(sortNumberEx12);
+$('#ex12').html(arrayEx12.join(", "));
+
+/* Thats all Folks!!! */
 
 
 
