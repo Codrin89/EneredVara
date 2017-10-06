@@ -1,0 +1,118 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* font starwars */
+@font-face {font-family:"STARWARS";src:url("font/STARWARS.eot") format("eot"),url("font/STARWARS.woff") format("woff"),url("font/STARWARS.ttf") format("truetype"),url("font/STARWARS.svg#STARWARS") format("svg");font-weight:normal;font-style:normal;}
+
+
+body.planete {
+	background: url(img/univers.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body.person {
+	background: url(img/person_wallpaper.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: white;
+}
+
+
+.personItem {
+	border: 1px solid #5DB6E9;
+	font-family: Starwars;
+	font-weight: 700;
+	font-size: 1.5em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	min-height: auto;
+
+}
+
+.Name {
+	font-family: Merriweather;
+	color: rgb(3, 255, 232);
+}
+
+.personItem .info {
+	font-family: Starwars;
+	color:red;
+	letter-spacing: 2px;
+	font-weight: 600;
+}
+
+.personItem ul {
+	list-style-type: none;
+}
+
+.planetItem ul {
+	list-style-type: none;
+	color: #eeff8f;
+}
+
+.planetContainer {
+	text-align: center;
+}
+
+.planetItem {
+	width: 25%;
+	display: inline-block;
+	border: 1px solid black;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align: bottom;
+	border-radius: 50%;
+	margin: 2px;
+	height: 300px;
+}
+
+.planetItem .info {
+	font-size: 12px;
+	color: #fffbfb;
+	font-weight: 800;
+	letter-spacing: 0.6em;
+}
+
+h1.titlePlanete{
+	color: white;
+    text-align: center;
+    font-family: "STARWARS";
+    letter-spacing: 15px;
+    font-size: 64px;
+}
+
+
+.alderaan {
+	background: url('img/Alderaan.jpg') no-repeat center;
+}
+.yavin {
+	background: url('img/yavin.jpg') no-repeat center;
+}
+
+.planetItem:hover {
+	box-shadow: 0px 0px 100px  #FDB813;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(2);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(2);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(2);
+    transition: all 200ms ease-in;
+    transform: scale(2);
+    -webkit-animation:spin 10s linear infinite;
+    -moz-animation:spin 10s linear infinite;
+    animation:spin 10s linear infinite;
+
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+

@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding:0;
+	color: white;
+}
+body{
+	background:url("fundal.png") no-repeat #fff; 
+	background-size:cover;
+}
+h1{
+	color: white;
+}
+.mobilePhone img {
+	width: 60%;
+	margin:20px 0;
+	position: absolute;
+}
+.subHeading {
+	font-size: 24px;
+	margin-top: 25px;
+
+}
+.heading {
+    font-size: 36px;
+}
+.info ul {
+	font-size: 17px;
+	list-style-type: none;
+
+}
+.info li{
+}
+@media screen and (max-width: 992px){
+	.hideMobile{
+		display: none;
+	}
+}
+@media screen and (min-width: 991px){
+	.hideDesktop{
+		display: none;
+	}
+}
