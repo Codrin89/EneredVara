@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>25 Password Strength Indicator</title>
+		<title>Calculator</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -10,27 +10,29 @@
 				margin-top:15px;
 			}
 		</style>
+			
 	</head>
+
+
 	<body>
-		<h1 class="text-primary text-center">25 Password Strength Indicator</h1>
+		<h1 class="text-primary text-center">Calculator</h1>
 		<div class="col-md-6 col-md-offset-3">
-		<input type="number" class="form-control" id="balance" placeholder="Enter your balance">
-		<input type="number" class="form-control" id="apr" placeholder="Anual Percent Rate?">
-		<input type="number" class="form-control" id="monthly_payment" placeholder="Monthly Payment">
-		<button style="margin: 15px calc(50% - 150px) ; width: 300px" class="btn btn-primary" id="calculate">Calculate</button>
-		<p style="font-size: 2.5em;" id="message"></p>	
+		<input type="text" class="form-control" id="numbers" placeholder="Enter Number">
+		
+		<button class="btn btn-primary"> Submit (=)</button>
+		<button class="btn btn-success"> Ad (+)</button>
+		<button class="btn btn-warning"> Substract (-)</button>
 		</div>
 
 
+<div style="font-size: 20px" class="col-md-6 col-md-offset-3 text-primary text-center">
+Result is <span style="font-size:30px; color: red; display: block" id="result"></span>
 
-		<div class="col-md-6 col-md-offset-3" id="theAnswer"></div>
-
-
-
+</div>
 
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="index.js"></script>	
+		<script type="text/javascript" src="index.js"></script>
 	</body>
 </html>
