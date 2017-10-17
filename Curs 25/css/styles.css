@@ -1,0 +1,176 @@
+@font-face {
+	font-family: 'Armata Regular';
+    src: url('fonts/Armata/Armata-Regular.ttf');
+}
+
+@font-face {
+	font-family: Karla Regular;
+    src: url('fonts/Karla/Karla-Regular.ttf');
+}
+
+@font-face {
+	font-family: Karla Bold;
+    src: url('fonts/Karla/Karla-Bold.ttf');
+}
+
+body {
+	background-image: url('img/background.jpg');
+}
+
+.container .bubbles h1{
+	text-align: center;
+	font-family: 'Armata Regular';
+	color: #1c1c1c;
+	padding: 35px 0px;
+	margin: 0;
+	border-bottom: 2px dashed #e2e2e2;
+	font-size: 32px;
+}
+
+.container .bubbles h1 span {
+	color: #8eb63e;
+}
+.container .bubbles {
+	padding-bottom: 50px;
+	border-bottom: 2px dashed #e2e2e2;
+}
+.container .bubbles .eachBubble {
+	margin-top: 40px;
+	text-align: center;
+}
+
+.container .bubbles .eachBubble .firstParagraph {
+	font-family: 'Armata Regular';
+	font-size: 30px;
+	margin-top: 14px;
+}
+
+.container .bubbles .eachBubble .secondParagraph {
+	font-family: 'Karla Regular';
+	font-size: 18px;
+	margin-top: -15px;
+}
+.container .products {
+	border-bottom: 2px dashed #e2e2e2;
+	padding-bottom: 66px;
+}
+.container .products h1 {
+	background-image: url('img/background.jpg');
+	margin-top: -14px;
+	display: table;
+	font-family: 'Armata Regular';
+	font-size: 25px;
+	padding: 0 10px;
+	margin-left: 70px;
+}
+
+.container .products h1 span {
+	color: #8eb63e;
+}
+
+.container .products > .col-md-6 {
+	margin-top: 25px;
+	height: 150px;
+	padding: 0 15px;
+}
+.container .products .col-md-6 .left {
+	padding: 0;
+	text-align: center;
+	border: 1px solid grey;
+	border-right: 0;
+	overflow: hidden;
+	height: 100%;
+}
+.container .products .col-md-6 .left img {
+	position: absolute;
+    width: 100%;
+    left: 0;
+}
+.container .products .col-md-6 .right {
+	background: #fff;
+	height: 100%;
+	border: 1px solid #ece9e9;
+	padding: 10px 17px 10px 20px;
+}
+
+.container .products .col-md-6 .right .productType {
+	font-family: 'Armata Regular';
+	font-size: 16px;
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+.container .products .col-md-6 .right .description {
+	font-family: 'Karla Regular';
+	font-size: 13px;
+	margin-top: 5px;
+}
+
+.container .products .col-md-6 .right .description span {
+	font-family: 'Karla Bold';
+}
+
+.container .products .col-md-6 .right a {
+	font-family: 'Karla Regular';
+	font-size: 14px;
+	text-transform: none;
+	text-decoration: none;
+	background: #8eb63e;
+	color: #fff;
+	padding: 1px 7px;
+}
+.container .sponsors {
+	padding-bottom: 104px;
+}
+.container .sponsors h1 {
+	background-image: url('img/background.jpg');
+	margin-top: -14px;
+	display: table;
+	font-family: 'Armata Regular';
+	font-size: 25px;
+	padding: 0 10px;
+	margin-left: 70px;
+}
+
+.container .sponsors h1 span {
+	color: #8eb63e;
+}
+.container .sponsors img {
+	margin-top: 25px;
+}
+.nopadding {
+	padding: 0;
+}
+.container-fluid {	
+	border-top: 1px solid #ece9e9;
+}
+.container-fluid .container .footer {
+	background: #fff;
+}
+
+.container-fluid .container .footer h1 {
+	font-family: 'Armata Regular';
+	font-size: 18px;
+}
+
+.container-fluid .container .footer p {
+	font-family: 'Karla Regular';
+	font-size: 13px;
+}
+
+.container-fluid .container .footer p span{
+	font-family: 'Karla Bold';
+	font-size: 13px;
+}
+
+.container-fluid .container .footer i {
+	letter-spacing: 10px;
+}
+
+.paddingleft {
+	padding-left: 15px;
+}
+
+.paddingright {
+	padding-right: 15px;
+}

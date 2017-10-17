@@ -5,7 +5,7 @@
 	function generateMultiTable() {
 
 		var divItem = $('<div></div>');
-		divItem.append('<span class="number"> </span>')
+		divItem.append('<span class="number"> </span>');
 
 		for(var i = 0 ; i <= number ; i++) {
 
@@ -13,8 +13,10 @@
 			divItem.append(numberItem);
 		}
 		$('.col-md-6').append(divItem);
-		for(var i = 0 ; i < number ; i++) {
-
+		for(var i = 0 ; i <= number ; i++) {
+			var divItem = $('<div></div>');
+			divItem.append($('<span class="number">' + i + '</span>'));
+			
 			for (var i = 0; i < number; i++) {
 
 				
