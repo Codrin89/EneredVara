@@ -1,0 +1,63 @@
+* {
+	margin:0;
+	padding:0;
+}
+span {
+	color: #90b742;
+}
+h1 {
+	color: #202020;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.bubbles {
+	border-bottom: dashed 2px #d4d4d4;
+	border-top: dashed 2px #d4d4d4;
+	padding-top: 42px;
+	padding-bottom: 61px;
+}
+.bubble {
+	text-align: center;
+}
+h2 {
+	color: #5b5b5b;
+	text-align: center;
+}
+.container {
+    padding-top: 10px;
+}
+h3.portofolio {
+	position: relative;
+	top: -35px;
+	float: left;
+	background: white;
+	margin-bottom: 48px;
+	margin-left: 50px;
+}
+.products {
+	border-bottom: dashed 2px #d4d4d4;
+	padding-bottom: 67px;
+}
+.title {
+	font-size: 16px;
+	font-family: 'Myriad Pro';
+	color: #202020;
+}
+.text3 {
+	font-size: 16px;
+	font-family: 'Myriad Pro';
+	color: #202020;
+}
+.sponsor {
+	margin-top: 38px;
+	padding-left: 70px;
+	text-align: center;
+}
+h4.advertisers {
+   	position: relative;
+	top: -35px;
+	float: left;
+	background: white;
+	margin-bottom: 48px;
+	margin-left: 250px;
+}
