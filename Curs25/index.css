@@ -1,0 +1,32 @@
+.welcome span {
+	color: #90b742;
+}
+.bubbles{
+	border-bottom: 2px dashed #dedede;
+    border-top: 2px dashed #dedede;
+    padding: 40px 0;
+
+}
+.recent{
+	margin-top: -20px;
+    margin-bottom: 40px;
+    float: left;
+    background: white;
+    position: relative;
+
+}
+.recent span{
+	color: #90b742;
+	
+}
+
+.borderbox{
+	border: 1px solid #dedede;
+	margin-bottom: 20px;
+
+}
+.borderbox span{
+	background-color: #90b742;
+	color: white;
+	padding: 2px 5px;
+}
