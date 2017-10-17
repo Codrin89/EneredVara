@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+	/*border: 1px solid red;*/
+}
+
+body {
+	background: url("img/bg.png") center center no-repeat;
+}
+
+.bubbles {
+	border-top: 2px dashed #e1e1e1;
+	border-bottom: 2px dashed #e1e1e1;
+	color: #1c1c1c;
+}
+
+.container .bubbles .balon {
+	margin: 40px 0px;
+}
+
+.container .bubbles .balon img {
+	margin-left: calc(50% - 90px);
+}
+
+.container .bubbles .balon h2 {
+font-size: 30px;
+}
+
+.container .bubbles .balon p {
+	font-size: 18px;
+}
+
+.container .bubbles .ondashed {
+	font-size: 25px;
+	margin-bottom: -17px;
+}
+
+.container .bubbles .ondashed span {
+	color: #8eb63e;
+}
+
+.container .products {
+	border-bottom: 2px dashed #e1e1e1; 
+	margin-top: 25px;
+	padding-bottom: 45px;
+}
+
+.container .products .portofolio {
+	margin: 20px 0px;
+
+}
+
+.container .products .portofolio .portofolio_img {
+	float: left;
+	background-color: #fff;
+	padding-left: 0px;
+
+}
+
+.container .products .portofolio .portofolio_text {
+	color: #858585;
+	background-color: #fff;
+	height: 148px;
+	padding-left: 0;
+}
+
+.container .products .portofolio .portofolio_text .portofolio_title {
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.container .products .portofolio .portofolio_text .butoane {
+border: none;
+outline: none;
+background-color: #8eb63e;
+color: #fff;
+padding: 1px 13px;
+margin-bottom: 7px;
+}
+
+.container .products .portofolio .portofolio_text .info {
+	font-size: 13px;
+	letter-spacing: 0.7px;
+}
+
+.container .sponsors .ondashed2 {
+	font-size: 25px;
+	margin-top: -17px;
+}
+
+.container .sponsors span {
+	color: #8eb63e;
+}
