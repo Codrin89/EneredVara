@@ -1,0 +1,56 @@
+.title{
+	margin-top: 40px;
+	text-align: center;
+	margin-bottom: 89px;
+	border-bottom: 2px dashed #e2e2e2;
+	
+
+}
+.title h4 {
+	font-size: 32px;
+}
+.title span {
+	font-size: 32px;
+	color: #8eb63e;
+}
+.subtitle  {
+	text-align: left;
+
+}
+
+.subtitle span {
+	color: #8eb63e;
+
+}
+#bubbles {
+	border-bottom: 2px dashed #e2e2e2;
+
+}
+
+
+.productsList h3 {
+	font-size: 16px;
+}
+.productsList span {
+	font-size: 14px;
+
+}
+.productsList p {
+	font-size: 13px;
+}
+.lastproducts, .firstproducts {
+	float:left;
+	margin-bottom: 25px;
+}
+.products {
+	border-bottom: 2px dashed #e2e2e2;
+}
+
+.container-fluid {
+	border-top: 2px solid  #e2e2e2;
+}
+
+#footer {
+	font-size: 13px;
+	margin-top: 25px;
+}
