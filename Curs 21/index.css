@@ -74,6 +74,10 @@ h3.sponsors {
  	margin-top: 38px;
  	text-align:center;
  }
- .bottom-hr {
- 	
- }
+#footer {
+	font-size: 13px;
+	margin-top: 25px;
+}
+.container-fluid {
+	border-top: 2px solid  #e2e2e2;
+}
