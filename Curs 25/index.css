@@ -25,14 +25,17 @@ h2 {
 }
 .container {
     padding-top: 10px;
+    background-image: url("Logo/img12.png");
 }
 h3.portofolio {
 	position: relative;
 	top: -35px;
 	float: left;
-	background: white;
+	background-color: #f7f7f7 ;
 	margin-bottom: 48px;
 	margin-left: 50px;
+	font-size: 30px;
+	font-family: 'Myriad Pro';	
 }
 .products {
 	border-bottom: dashed 2px #d4d4d4;
@@ -48,6 +51,11 @@ h3.portofolio {
 	font-family: 'Myriad Pro';
 	color: #202020;
 }
+.textarea {
+	margin-bottom: 40px;
+	padding-left: 20px;
+	height: 148px;
+}
 .sponsor {
 	margin-top: 38px;
 	padding-left: 70px;
@@ -55,9 +63,29 @@ h3.portofolio {
 }
 h4.advertisers {
    	position: relative;
-	top: -35px;
+	top: -195px;
 	float: left;
-	background: white;
+	background-color: #f7f7f7 ;
 	margin-bottom: 48px;
-	margin-left: 250px;
+	margin-left: 50px;
+	font-size: 30px;
+	font-family: 'Myriad Pro';
+}
+.btn {
+    background-color: #8eb63e;
+    color: white;
+    padding: 10px 17px;
+    text-align: center;
+    font-size: 11px;
+}
+.data {
+	border-top: dotted 2px #d4d4d4;
+}
+.title2 {
+	font-size: 22px;
+	font-family: 'Myriad Pro';
+	color: #606061;
+}
+.container-fluid {
+	border-top: solid 2px #bcbaba;
 }
