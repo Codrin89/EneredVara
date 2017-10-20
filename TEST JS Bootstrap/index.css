@@ -91,3 +91,114 @@ margin-bottom: 7px;
 .container .sponsors span {
 	color: #8eb63e;
 }
+
+.container .sponsors .back_to_top {
+	font-size: 19px;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-top: 40px;
+	overflow: visible;
+}
+
+.container .sponsors .back_to_top img {
+	padding-left: 30px;
+}
+
+.container-fluid {
+	background-color: #fff;
+	padding: 0;
+}
+
+.container-fluid .container .footer {
+	margin-top: 30px;
+}
+
+.container-fluid .container .footer h3 {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.container-fluid .container .footer .about_us_text {
+	font-size: 15px;
+}
+
+.container-fluid .container .footer .about_us_text span {
+	font-weight: bold;
+}
+
+.container-fluid .container .footer .social_media i {
+	font-size: 25px;
+	color: #dddddd;
+	padding-right: 15px;
+}
+
+.container-fluid .container .footer .archives {
+	border-bottom: 1px dotted #c1c0bf;
+	padding-bottom: 10px;
+}
+
+.container-fluid .container .footer .no_border {
+	border-bottom: none;
+}
+
+.container-fluid .container .footer .mail i, .container-fluid .container .footer .phone i, .container-fluid .container .footer .mobile i {
+	color: #acacac;
+	font-size: 33px;
+	margin-right: 15px;
+}
+
+.container-fluid .container .footer .form-group .form-control {
+	border: none;
+	background-color: #fafafa;
+	margin-bottom: 10px;
+	border-radius: 0;
+	font-style: italic;
+	height: 35px;
+}
+
+.container-fluid .container .footer .form-group .subscribe {
+	float: right;
+    border: none;
+    outline: none;
+    background-color: #8eb63e;
+    color: #fff;
+    padding: 10px 15px;
+    margin-top: 20px;
+}
+
+.container-fluid .subfooter nav.navbar.navbar-inverse {
+	background: #202020;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    font-size: 14px;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+	color: white;
+	padding: 5px 15px;
+}
+
+.container-fluid .subfooter nav {
+	min-height: 20px;
+	height: 30px !important;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav {
+	margin-left: 35px;
+}
+
+.container-fluid .subfooter {
+	margin-top: 20px;
+}
+
+.container-fluid .subfooter nav.navbar.navbar-inverse .navbar-right {
+	padding: 5px 15px;
+	color: white;
+	margin-right: 10px;
+	margin-bottom: 0px;
+}
+
+
+
