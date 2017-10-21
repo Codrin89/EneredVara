@@ -1,0 +1,21 @@
+.margin_top {
+	margin-top: 40px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #000;
+}
+.form-control {
+	margin-bottom: 10px;
+}
+
+span {
+	font-weight: 800;
+}
+
+#error-label,
+#error-labelRegister {
+	color: red;
+}
+
+.container {
+	text-align: center;
+}
