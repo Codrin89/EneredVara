@@ -1,0 +1,94 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url('img/background.jpg');
+	background-size: cover;
+	font-family: 'Roboto', sans-serif;
+	font-size: 40px;	
+	text-align: center;
+}
+.containerPhone #logo {
+	margin: 200px auto 100px auto;
+    display: block;
+    box-shadow: 1px 1px 105px -10px rgba(0,0,0,0.2);
+    border-radius: 50px;
+}
+
+.containerPhone .inputDiv {
+	margin: 0 auto;
+	width: 90%;
+	border-bottom: 1px solid #cccccc;
+}
+.containerPhone .inputDiv input,
+.containerPhone .inputDiv button {
+	display: block;
+	border: 1px solid #c1c1c1;
+	margin: 0 auto;
+	height: 125px;
+	margin-bottom: 50px;
+	border-radius: 60px;
+	width: 100%;
+}
+.containerPhone .inputDiv input {
+	padding-left: 60px;
+	outline: none;
+	font-weight: 200;
+	background-repeat: no-repeat;
+	background-position: 95% center;
+}
+.containerPhone .inputDiv input:focus {
+	border: 1px solid #00a850;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #c1c1c1;
+}
+
+.containerPhone .inputDiv input:nth-child(1) {
+	margin-top: 10px;
+	background-image: url('img/username.png');
+}
+
+.containerPhone .inputDiv input:nth-child(2) {
+	margin-bottom: 100px;
+	background-image: url('img/password.png');
+}
+
+.containerPhone .inputDiv button {
+	background: #00a850;
+	color: #fff;
+	outline: none;
+}
+
+.containerPhone .inputDiv a {
+	color: #00a850;
+	display: block;
+	margin-bottom: 110px;
+	text-decoration: none;
+}
+
+.containerPhone .socialMedia p {
+	color: #010101;
+}
+
+.containerPhone .socialMedia p:nth-child(1) {
+	background: #fff;
+    width: 80px;
+    margin: -33px auto;
+    margin-bottom: 0px;    
+}
+.containerPhone .socialMedia p:nth-child(1),
+.containerPhone .socialMedia p:nth-child(2) {
+	color: #adadad;
+}
+
+.containerPhone .socialMedia p a {
+	font-weight: 700;
+	color: #00a850;
+	text-decoration: none;	
+}
+
+.containerPhone .socialMedia a img {
+	margin: 68px 24px 150px 24px;
+}
+
