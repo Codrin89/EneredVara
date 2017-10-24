@@ -1,0 +1,13 @@
+* {
+	margin:0;
+	padding:0; 
+}
+.support {
+	text-align: center;
+	font-size: 40px;
+	color: #000000;
+	margin-top: 10px;
+}
+.content {
+	background-image: url('Img/Background.png');
+}
