@@ -1,0 +1,77 @@
+body {
+	background-image: url('img/background.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: 140px;
+
+}
+#userName {
+	background-image: url('img/username.png');
+	background-position: 93% center;
+	background-repeat: no-repeat;
+	border-radius: 50px;
+	height: 100px;
+	width: 97%;
+	margin-top: 140px;
+	font-size: 35px;
+	text-decoration-color: :#999999;
+	border: 1px solid grey;
+    padding-left: 40px;
+}
+#password {
+	background-image: url('img/password.png');
+	background-position: 93% center;
+	background-repeat: no-repeat;
+	border-radius: 50px;
+	height: 100px;
+	width: 97%;
+	margin-top: 40px;
+	font-size: 35px;
+	text-decoration-color: :#999999;
+	border: 1px solid grey;
+    padding-left: 40px;
+}
+.userName {
+	background-color: #00a850;
+	border-radius: 50px;
+	height: 100px;
+	width: 97%;
+	margin-top: 70px;
+	font-size: 35px;
+	color: #ffffff;
+}
+.btn {
+	color: #00a850;
+	font-size: 30px;
+	margin-top: 30px;
+	padding-left: 30%
+}
+#loginWith {
+	font-size: 35px;
+    color: #adadad;
+    position: relative;
+    background: white;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    top: -47px;
+}
+.facebook {
+	padding-left: 28%;
+	margin-top: 20px;
+}
+.google {
+	padding-right: 25%;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+#footer {
+	text-align: center;
+	font-size: 35px;
+	margin-top: 150px;
+}
+.btn.signUp {
+	margin: 0;
+	padding: 0;
+	font-size: 35px;
+}
