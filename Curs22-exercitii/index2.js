@@ -14,6 +14,5 @@ document.getElementById(`verify-button`).addEventListener(`click`,function() {
           }
       }
 
-
 });
 })();

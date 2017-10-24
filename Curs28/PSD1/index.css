@@ -1,0 +1,98 @@
+body{
+   background-image: url(fundal.png);
+   background-size: cover;
+
+}
+.semnal{
+    padding-top: 160px;
+    padding-bottom: 100px;
+}
+.omulet {
+	background-image: url(imagine2.png);
+	background-position: 95% center;
+	background-repeat:no-repeat;
+	background-size:35px;
+}
+.cheie {
+	background-image: url(imagine3.png);
+	background-position: 95% center;
+	background-repeat:no-repeat;
+	background-size:35px;
+
+}
+.fake .btn{
+	cursor: pointer;
+}
+.btn{
+    margin-bottom: 70px;
+    padding: 26px 12px;
+}
+
+.form-control.omulet{
+	width: 100%;
+    padding: 55px 20px;
+    margin: 40px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-size: 41px;
+
+}
+.form-control.cheie{
+	width: 100%;
+    padding: 55px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-size: 41px;
+
+}
+
+.btn.btn-primary{
+    width: 100%;
+    padding: 30px 20px;
+    margin: 92px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    box-sizing: border-box;
+    background:#00a850 !important;
+    margin-bottom: 35px;
+    font-size: 41px;
+}
+
+.forgot{
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.btn-link{
+    font-size: 41px;
+    color: #4CAF50;
+}
+p{
+    font-size: 35px;
+
+}
+.line{
+    margin-top: -47px;
+    color: #adadad;
+
+} 
+.line span{
+    background:white;
+    padding:0px 20px;
+}
+.singup a{
+    color: #00a850;
+    font-weight: bold;
+}

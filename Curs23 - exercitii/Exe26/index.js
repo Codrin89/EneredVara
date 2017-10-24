@@ -1,0 +1,1 @@
+n = (1/30)*( Mathlog( 1+(b/P)*(1-Math.pow((1+i),30)))/Mathlog((1+i))
