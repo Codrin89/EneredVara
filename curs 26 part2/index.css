@@ -1,0 +1,12 @@
+body {
+	background: url('background.png') #fff no-repeat;
+	background-size: cover;
+}
+
+.titlu {
+	padding-top: 30px;
+}
+.titlu span {
+	margin-left: 262px;
+    font-size: 45px;
+}
