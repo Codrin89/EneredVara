@@ -1,0 +1,65 @@
+body {
+	background: url('poze/background.jpg') #fff no-repeat;
+	background-size: cover;
+}
+#logo {
+	box-shadow: 0 0 10px 2px #999;
+	    margin-top: 150px;
+    margin-bottom: 100px;
+}
+.btn.btn-success {
+	background: #00a850;
+	background-size: 45px;
+	border-radius: 66px;
+	padding: 30px 40px;
+	font-size:40px;
+	width: 100%; 
+
+}
+.btn.btn-link {
+	color: #00a850;
+	background-size: 45px;
+	border-radius: 66px;
+	padding: 30px 40px;
+	font-size:40px;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+#username {
+	background: url('poze/om.png') no-repeat;
+	background-position: 95% center;
+	background-size: 45px;
+	border-radius: 66px;
+	padding: 55px 40px;
+	font-size:40px;
+}
+#password {
+	background: url('poze/cheia.png') no-repeat;
+	background-position: 95% center;
+	background-size: 45px;
+	border-radius: 66px;
+	padding: 55px 40px;
+	font-size: 40px;
+	margin-top: 35px;
+	margin-bottom: 100px;
+}
+.social p {
+	font-size: 35px;
+	
+}
+
+#sign {
+	color: #00a850;
+
+}
+p#login {
+	color: #adadad;
+	margin-bottom: 50px;
+}
+#face {
+	margin-right: 60px;
+}
+.singup {
+	margin-top: 100px;
+}
