@@ -1,0 +1,120 @@
+body {
+	background-image: url(img/background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+	padding: 0; 
+}
+.menu .container {
+	width: 100%;
+}
+.menu .container .upMenu {
+	width: 100%;
+	outline: none;
+	border: none;
+	background: transparent;
+	position: relative;
+	font-size: 50px;
+	font-weight: 300;
+}
+.menu .container .support {
+	background-color: #fff;
+	line-height: 135px;
+	font-size: 58.33px;
+	font-weight: 500;
+	box-shadow: 0px 5px 25px 5px rgba(0,0,0,0.1);
+}
+.menu .container .support span {
+	position: absolute;
+    left: 5%;
+    top: calc(50% - 70px);
+}
+.menu .container .upButton {
+	text-align: left;
+	line-height: 180px;
+	border-bottom: 1px solid #cccccc;
+	padding-left: 130px;
+}
+.menu .container .upButton .rightArrow {
+	position: absolute;
+	right: 4%;
+    top: calc(50% - 92px);
+}
+.menu .container .upButton .leftIcon {
+	position: absolute;
+	left: 4%;
+    top: calc(50% - 92px);
+}
+.text-center {
+	padding: 50px;
+}
+.text-center .body {
+	border-radius: 50px;
+	position: relative;
+}
+.text-center .body .content {
+	background: url(img/background2.png);
+	box-shadow: 1px 1px 95px -10px rgba(0,0,0,0.1);
+}
+.text-center .body .content h2 {
+	font-size: 70px;
+	font-weight: 500;
+}
+.text-center .body .content p {
+	font-size: 40px;
+    width: 80%;
+    margin: 40px auto;
+    font-weight: 200;
+}
+.text-center .body .content .upMenu {
+	width: 80%;
+	border: 2px solid #00a850;
+	color: #00a850;
+	background: transparent;
+	position: relative;
+	font-size: 50px;
+	font-weight: 400;
+	margin-top: 40px;
+	border-radius: 50px;
+	height: 100px;
+	text-align: left;
+	padding-left: 20%;
+	margin-bottom: 50px;
+}
+.text-center .body .content .upMenu span {
+	margin-right: 30px;
+}
+.text-center .body .media {
+	margin-top: 90px;
+}
+.text-center .body .media p {
+	color: #adadad;
+	font-size: 50px;
+	margin-bottom: 40px;
+}
+.text-center .body .media .facebook {
+	margin-right: 40px;
+	margin-bottom: 50px;
+}
+.text-center .body .media .twitter {
+	margin-right: 40px;
+	margin-bottom: 50px;
+}
+.text-center .body .media .instagram {
+	margin-bottom: 50px;
+}
+.btn {
+	font-size: 40px;
+	color: #00a850;
+	margin: 20px 0;
+}
+.bottom-menu {
+	background-color: #ffffff;
+	height: 150px;
+	font-size: 30px;
+	position: relative;
+	box-shadow: 1px 1px 95px -10px rgba(0,0,0,0.1);
+	margin-top: -30px;
+	text-align: center;
+}
+
