@@ -1,80 +1,117 @@
 * {
-	margin:0;
-	padding:0;
-}
-@font-face {
-	font-family: 'OpenSansBold';
-	src: url('OpenSans/OpenSans-Bold.ttf');
-}
-@font-face {
-    font-family: 'OpenSansRegular';
-	src: url('OpenSans/OpenSans-Regular.ttf');
+	margin: 0;
+	padding: 0;
 }
 body > div {
 	min-height: 100px;
+	font-family: 'Open Sans', sans-serif;
 }
-.blue-background {
-	background-color: #69d2e7;
+@font-face{
+	font-family: 'openSans-Bold';
+	src: url('font/OpenSans-Bold.ttf');
 }
-.grey-background {
-	background-color: #f1f1f1;
+@font-face{
+	font-family: 'openSans-Regular';
+	src: url('font/OpenSans-Regular.ttf');
 }
-.orange-background {
+@font-face{
+	font-family: 'openSans-SemiBold';
+	src: url('font/OpenSans-SemiBold.ttf');
+}
+@font-face{
+	font-family: 'openSans-Light';
+	src: url('font/OpenSans-Light.ttf');
+}
+.blue_bg {
+	background-color: #66ccff;
+}
+.orange_bg {
 	background-color: #fa6900;
 }
-.header {
-	padding: 35px 100px;
+.grey_bg {
+	background-color: #f1f1f1;
 }
-.header .companyName {
-	font-family: 'OpenSansBold';
-	font-size: 20px;
-	line-height: 0.9;
+
+.header {
+	height: 465px;
+	border-top: 5px solid #fa6900;
+}
+.about {
+	height: 530px;
+}
+.slider_1 {
+	height: 470px;
+}
+.slider_2 {
+	height: 535px;
+}
+.info {
+	height: 530px;
+}
+.footer {
+	height: 555px;
+}
+.header {
+	padding: 35px 100px;		
+}
+.header .logo {
+	float: left;
 	margin-right: 10px;
 }
-.header .tagLine {
-	font-family: 'OpenSansRegular';
+.header .company {
+	font-family: 'OpenSans-Bold';
+	font-size: 20px;
+	line-height: 0.9;
+			
+}
+.header .tagline {
+	font-family: 'OpenSans-Regular';
 	font-size: 17px;
+	line-height: 1.2;
+		
 }
-.logo {
-	float: left;
-}
-.logo2 {
+.header .menu {
 	float: right;
+}
+.header h1,
+.header h2 {		
+	color: white;
+	text-align: center;		
 }
 .header h1 {
 	font-size: 83px;
-	color: #fff;
-	margin-top: 90px;
-	text-transform: uppercase;
-	text-align: center;
-	font-family: 'OpenSansBold';
+	padding-top: 95px;
+	font-family: 'OpenSans-Bold';
+	
 }
 .header h2 {
 	font-size: 31px;
-	color: #fff;
-	margin-bottom: 145px;
-	text-transform: uppercase;
-	text-align: center;
-	font-family: 'OpenSansBold';
+	font-family: 'OpenSans-SemiBold';
 }
-.about .about-us {
+.about .about_me {
 	width: 830px;
 	height: 285px;
 	margin: 0 auto;
-	background-color: #fff;
+	background-color: white;
 	border-radius: 4px;
 	position: relative;
 	top: -100px;
 }
-.about .about-us h1{
-	width: 380px;
-	text-align: center;
-	margin:0 auto;
-	border-bottom: 1px solid #d5d5d5;
-	font-family: 'OpenSansBold';
+.about .about_me h1 {
 	font-size: 36px;
+	font-family: 'OpenSans-Bold';	
+	padding: 25px 0;
+	text-align: center;
+	width: 380px;
+	border-bottom: 1px solid #d5d5d5;
+	margin: 0 auto;
+
 }
-.text {
-	font-family: 'OpenSansLight';
+.about .about_me p {
 	font-size: 22px;
+	font-family: 'OpenSans-Light';
+	padding: 33px;
+}
+.about .about_me .imagini img {
+	margin-right: 175px;
 }
