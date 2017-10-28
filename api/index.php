@@ -1,5 +1,4 @@
 <?php
-echo 'something';
 
 require 'Slim/Slim.php';
 
@@ -34,26 +33,22 @@ function getConnection() {
 $dbh = getConnection();
 
 
-$query = "UPDATE `user` SET `firstName`='Codrin' WHERE `ID`=3"; 
- 
-        $result = mysqli_query($dbh, $query);
-        die;
-        
-        
 
 // POST route
 
 $app->post(
     '/register-data',
     function () use ($app, $dbh) {
+
         $json = $app->request->getBody();
         $result = json_decode($json, true);
         var_dump($result);
+         $query =  "INSERT INTO `users`(`firstName`,`lastName`, `email`, `password`,`gender`, `username`, `address`, `telephone`) VALUES ('". $result['firstName'] ."', '". $result['lastName'] ."', '". $result['email'] ."', '". $result['password'] ."','". $result['gender'] ."','". $result['username'] ."', '". $result['address'] ."', '". $result['phone'] ."')";
 
-       // $query = "INSERT INTO `user`( `username`, `email`, `password`, `address`, `date_of_birth`, `phone`, `country`, `city`, `firstname`, `lastname`, `gender`, `occupation`) VALUES ('".$result['username']."',[value-3],[value-4],[value-5],[value-6],[value-7],[value-8],[value-9],[value-10],[value-11],[value-12],[value-13])"; 
-       // $result = mysqli_query($dbh, $query);
+        // $query = "INSERT INTO `users` (`firstName`) VALUES ('" . $result["firstName"] ."')";
+        $result = mysqli_query($dbh, $query); 
+
         
-
     }
 );
 
