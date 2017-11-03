@@ -1,4 +1,6 @@
 <?php
+echo 'something';
+
 
 
 require 'Slim/Slim.php';
@@ -12,6 +14,7 @@ use Psr\Http\Message\ResponseInterface;
 $app = new \Slim\Slim();
 $body = $app->request->getBody();
 
+
 //connect to database
 function getConnection() {
     $servername = "localhost";
@@ -21,6 +24,7 @@ function getConnection() {
 
     // Create connection
     $conn = mysqli_connect($servername, $username, $password);
+
     // Check connection
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
@@ -29,13 +33,11 @@ function getConnection() {
     return $conn;
 }
 
-
 $dbh = getConnection();
 
+$query = "UPDATE `users` SET `firstName`='Ana' WHERE `ID`=4";
+$result = mysqli_query($dbh, $query);
 
-// $query = "INSERT INTO `users`( `username`, `email`, `password`, `address`, `firstname`, `lastname`, `gender`, `telephone`) VALUES ('Codrin No.1', 'codrin@gmail.com', 'codrincodrin', 'Nicolina', 'Alexandru', 'Codrin', 'male', 321321)"; 
-// $result = mysqli_query($dbh, $query);
-// die;
 // POST route
 
 $app->post(
@@ -43,9 +45,9 @@ $app->post(
     function () use ($app, $dbh) {
         $json = $app->request->getBody();
         $result = json_decode($json, true);
-        var_dump($result);
-        $query = "INSERT INTO `users` (`firstName`,`lastName`) VALUES ('".$result['firstName']."','".$result['lastName']."')";
-        $result = mysqli_query($dbh, $query);
+
+        $query = "INSERT INTO `users`( `username`, `email`, `password`, `address`, `date_of_birth`, `phone`, `country`, `city`, `firstname`, `lastname`, `gender`, `occupation`) VALUES ('".$result['username']."',[value-3],[value-4],[value-5],[value-6],[value-7],[value-8],[value-9],[value-10],[value-11],[value-12],[value-13])"; 
+        $result = mysqli_query($dbh, $query); 
     }
 );
 
@@ -58,22 +60,11 @@ $app->post(
         $result = mysqli_query($dbh, $query); 
         $info = mysqli_fetch_assoc($result);
         if($info != NULL) {
-            echo json_encode($info, true);
+            echo "Successfully logged in";
         } else {
             echo "Try again!";
         }
 
-    }
-);
-$app->post(
-    '/checkLoggedIn',
-    function () use ($app, $dbh) {
-        $json = $app->request->getBody();
-        $result = json_decode($json, true);
-        $query = "SELECT `firstName` FROM `users` WHERE `ID`='".$result["ID"]."'";
-        $result = mysqli_query($dbh, $query); 
-        $info = mysqli_fetch_assoc($result);
-        echo json_encode($info, true);
     }
 );
 
