@@ -1,0 +1,63 @@
+* {
+	font-family: 'Pacifico',cursive  !important;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+}
+
+.container #formTabs {
+	position: absolute;
+	left: calc(50% - 350px);
+	width: 700px;
+	background: #b36b39;
+}
+
+.container #formTabs {
+	top: calc(50vh - 300.4px);
+}
+
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+	width: 100%;
+}
+
+.ui-tabs .ui-tabs-nav li {
+	width: 50%;
+	margin: 0;
+	border: none;
+	border-radius: 0;
+}
+
+.ui-tabs .ui-tabs-nav li > a {
+	outline: none;
+	border-radius: 0;
+}
+
+.ui-tabs.ui-corner-all.ui-widget.ui-widget-content {
+	border: none;
+}
+
+.ui-tabs-nav.ui-corner-all.ui-helper-reset.ui-helper-clearfix.ui-widget-header {
+	border: none;
+	background: #fff;
+}
+
+.ui-tabs .ui-tabs-nav {
+	padding: 0;
+}
+
+.ui-state-active, 
+.ui-widget-content .ui-state-active, 
+.ui-widget-header .ui-state-active, 
+a.ui-button:active, .ui-button:active, 
+.ui-button.ui-state-active:hover {
+	background: #b36b39;
+}
+
+.container #formTabs #loginForm .formButton,
+.container #formTabs #registerForm .formButton {
+	width: 100%;
+}
