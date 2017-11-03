@@ -1,23 +1,24 @@
 * {
-	font-family: 'Pacifico',cursive  !important;
+	font-family: 'Pacifico', cursive !important;
 	margin: 0;
 	padding: 0;
 }
 
 body {
 	position: relative;
+	background: url('img/background.jpg');
 }
 
 .container #formTabs {
-	position: absolute;
-	left: calc(50% - 350px);
-	width: 700px;
-	background: #b36b39;
+	position: relative;
+	left: calc(50% - 280px);
+	top: calc(50vh - 185px);
+	width: 560px;
+	height: 370px;
+	background: rgba(232, 118, 38, 0.42);
 }
 
-.container #formTabs {
-	top: calc(50vh - 300.4px);
-}
+
 
 
 .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
@@ -42,7 +43,7 @@ body {
 
 .ui-tabs-nav.ui-corner-all.ui-helper-reset.ui-helper-clearfix.ui-widget-header {
 	border: none;
-	background: #fff;
+	background: transparent;
 }
 
 .ui-tabs .ui-tabs-nav {
@@ -54,10 +55,89 @@ body {
 .ui-widget-header .ui-state-active, 
 a.ui-button:active, .ui-button:active, 
 .ui-button.ui-state-active:hover {
-	background: #b36b39;
+	background: transparent;
 }
 
 .container #formTabs #loginForm .formButton,
 .container #formTabs #registerForm .formButton {
 	width: 100%;
+	padding: 5px 10px;
+	background-color: #fff;
+}
+
+
+/*INPUTS*/
+
+.formRow {
+    position: relative;
+    width: 100%;
+}
+
+.formRow--item {
+    display: block;
+    width: 100%;
+}
+
+.formRow--input {
+    position: relative;
+    padding: 15px 20px 11px;
+    width: 100%;
+    outline: none;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 4px;
+    color: #2c3235;
+    letter-spacing: .2px;
+    font-weight: 400;
+    font-size: 16px;
+    resize: none;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.formRow--input-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.formRow--input-wrapper.active .placeholder {
+    top: -5px;
+    background-color: transparent;
+    color: #ad6952;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    font-size: 11px;
+    width: 100px;
+    line-height: 14px;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.formRow--input-wrapper.active .formRow--input:not(:focus):not(:hover) ~ .placeholder { color: #ad6952; }
+
+.formRow--input-wrapper .formRow--input:focus, .formRow--input-wrapper .formRow--input:hover { 
+	border-color: #ad6952; 
+}
+
+.formRow .placeholder {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    display: block;
+    padding: 0 10px;
+    color: #652f00;
+    white-space: nowrap;
+    letter-spacing: .2px;
+    font-weight: normal;
+    font-size: 16px;
+    -webkit-transition: all, .2s;
+    transition: all, .2s;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

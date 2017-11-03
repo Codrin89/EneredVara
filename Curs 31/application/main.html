@@ -17,25 +17,41 @@
 				<li><a href="#registerForm" class="tabButtonForm registerTab">Register</a></li>
 			</ul>
 			<div id="loginForm">
-
-				<h3 class="">Welcome to My Pet Online</h3>
-				<input class="form-control" id="username" type="text" placeholder="Enter username">
-				<input class="form-control" id="password" type="password" placeholder="Enter password">
-					
+				<fieldset class="formRow">
+					<div class="formRow--item">
+					    <label for="username" class="formRow--input-wrapper js-inputWrapper">
+							<input type="text" class="formRow--input js-input" id="username" placeholder="Username/Email">
+					    </label>
+					    <label for="password" class="formRow--input-wrapper js-inputWrapper">
+							<input type="password" class="formRow--input js-input" id="password" placeholder="Password">
+					    </label>
+				    </div>
+				</fieldset>			
+							
 				<button class="formButton loginButton" id="loginAction">Login</button>
 			</div>
 
 			<div id="registerForm">
-				<h3 class="">Welcome to My Pet Online</h3>
-				<input class="form-control" id="fname" type="text" placeholder="Enter first name">
-				<input class="form-control" id="lname" type="text" placeholder="Enter last name">
-				<input class="form-control" id="username" type="text" placeholder="Enter username">
-				<input class="form-control" id="email" type="text" placeholder="Enter email">
-				<input class="form-control" id="password" type="text" placeholder="Enter password">
-				<input class="form-control" id="gender" type="text" placeholder="Enter gender">
-				<input class="form-control" id="address" type="text" placeholder="Enter address">
-				<input class="form-control" id="phone" type="text" placeholder="Enter phone number">
-				<button class="formButton registerButton" id="registerAction">Register me</button>
+				<fieldset class="formRow">
+					<div class="formRow--item">
+						<label for="firstname" class="formRow--input-wrapper js-inputWrapper">
+							<input type="text" class="formRow--input js-input" id="firstname" placeholder="First name">
+					    </label>
+					    <label for="username" class="formRow--input-wrapper js-inputWrapper">
+							<input type="text" class="formRow--input js-input" id="username" placeholder="Username">
+					    </label>
+					    <label for="email" class="formRow--input-wrapper js-inputWrapper">
+							<input type="email" class="formRow--input js-input" id="email" placeholder="Email">
+					    </label>
+					    <label for="password" class="formRow--input-wrapper js-inputWrapper">
+							<input type="password" class="formRow--input js-input" id="password" placeholder="Password">
+					    </label>
+					    <label for="password" class="formRow--input-wrapper js-inputWrapper">
+							<input type="password" class="formRow--input js-input" id="retypePassword" placeholder="Retype password">
+					    </label>
+				    </div>
+				</fieldset>
+				<button class="formButton registerButton" id="registerAction">Sign up</button>
 			</div>
 		</div>
 	</div>	
