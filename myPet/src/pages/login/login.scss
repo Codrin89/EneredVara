@@ -1,0 +1,27 @@
+.loginPage {	
+	background: url('../assets/imgs/img/background.jpg');
+	background-size: cover;
+    background-position: -360px 10px;	
+
+    .scroll-content {
+    	.list-md {
+    		position: relative;
+    		top: calc(50% - 90px);
+    		
+    		.input-has-focus {
+				border-bottom-color: #000;
+				box-shadow: inset 0 -1px 0 0 #000;
+			}
+    	}
+    }
+
+    .item-md {
+		padding-left: 0;
+		background-color: rgba(234, 152, 70, 0.5);
+
+		
+		.label-md {
+			color: #fff;
+		}
+	}
+}
