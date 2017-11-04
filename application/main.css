@@ -1,0 +1,32 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.navigation {
+	height: 80px;
+}
+.logo {
+	float: left;
+	margin-right: 10px;
+	width: 80px;
+	height:80px;
+}
+.navigation .btn-link {
+	height: 80px;
+	float: right;
+	text-decoration: none;
+	outline: none !important;
+}
+.navigation .btn-link:hover,
+.navigation .btn-link.active {
+	background: #23527c;
+	color: white;
+}
+.carousel .item {
+	text-align: center;
+}
+.carousel .item img {
+	display: inline-block;
+	width: 500px;
+	height:500px;
+}
