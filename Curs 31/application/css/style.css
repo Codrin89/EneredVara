@@ -1,5 +1,5 @@
 * {
-	font-family: 'Pacifico', cursive !important;
+	/*font-family: 'Pacifico', cursive !important;*/
 	margin: 0;
 	padding: 0;
 }
@@ -10,12 +10,14 @@ body {
 }
 
 .container #formTabs {
-	position: relative;
+	position: absolute;
 	left: calc(50% - 280px);
 	top: calc(50vh - 185px);
 	width: 560px;
+	padding: 0;
 	height: 370px;
 	background: rgba(232, 118, 38, 0.42);
+	font-family: 'Julius Sans One', sans-serif;
 }
 
 
@@ -27,9 +29,12 @@ body {
 
 .ui-tabs .ui-tabs-nav li {
 	width: 50%;
-	margin: 0;
-	border: none;
-	border-radius: 0;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    line-height: 35px;
+    text-align: center;
+    font-size: 23px;
 }
 
 .ui-tabs .ui-tabs-nav li > a {
@@ -57,17 +62,41 @@ a.ui-button:active, .ui-button:active,
 .ui-button.ui-state-active:hover {
 	background: transparent;
 }
+.container #formTabs #loginForm .formButton {
 
+}
 .container #formTabs #loginForm .formButton,
 .container #formTabs #registerForm .formButton {
 	width: 100%;
-	padding: 5px 10px;
-	background-color: #fff;
+    line-height: 45px;
+    margin: 4px 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: #454545;
+    font-size: 23px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.ui-state-active a, 
+.ui-state-active a:link, 
+.ui-state-active a:visited {
+	color: #efe0d6;
+}
+
+.ui-tabs .ui-tabs-panel {
+    display: block;
+    border-width: 0;
+    padding: 1em 0em;
+    background: none;
+}
+.ui-state-default, 
+.ui-widget-content .ui-state-default, 
+.ui-widget-header .ui-state-default {
+	bakground: rgba(246, 246, 246, 0.50);
 }
 
 
 /*INPUTS*/
-
 .formRow {
     position: relative;
     width: 100%;
@@ -85,7 +114,6 @@ a.ui-button:active, .ui-button:active,
     outline: none;
     background: rgba(255, 255, 255, 0.5);
     border: none;
-    border-radius: 4px;
     color: #2c3235;
     letter-spacing: .2px;
     font-weight: 400;
@@ -99,6 +127,7 @@ a.ui-button:active, .ui-button:active,
     position: relative;
     display: block;
     width: 100%;
+    line-height: 28px;
 }
 
 .formRow--input-wrapper.active .placeholder {

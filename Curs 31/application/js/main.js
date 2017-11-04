@@ -11,7 +11,7 @@
 		if(loggedUser) {
 			var xhr = new XMLHttpRequest();
 		// REMEMBER TO CHANGE TO LINK
-			xhr.open("POST", "http://localhost/EneredVara/api/checkLoggedIn", true);
+			xhr.open("POST", "http://localhost/api/checkLoggedIn", true);
 			xhr.onreadystatechange = function() {
 				if (xhr.readyState == 4 && xhr.status == 200) {
 					var response = JSON.parse(xhr.responseText);
@@ -40,7 +40,7 @@
 
 		var xhr = new XMLHttpRequest();
 		// REMEMBER TO CHANGE TO LINK
-		xhr.open("POST", "http://localhost/EneredVara/api/register-data", true);
+		xhr.open("POST", "http://localhost/api/register-data", true);
 		xhr.onreadystatechange = function() {
 			if (xhr.readyState == 4 && xhr.status == 200) {
 				console.log(xhr.responseText);
@@ -59,7 +59,7 @@
 
 		var xhr = new XMLHttpRequest();
 		// REMEMBER TO CHANGE TO LINK
-		xhr.open("POST", "http://localhost/EneredVara/api/login-data", true);
+		xhr.open("POST", "http://localhost/api/login-data", true);
 		xhr.onreadystatechange = function() {
 			if (xhr.readyState == 4 && xhr.status == 200) {
 				var response = JSON.parse(xhr.responseText);
