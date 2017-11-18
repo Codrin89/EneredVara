@@ -17,7 +17,7 @@ function getConnection() {
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "api";
+    $dbname = "api_ana";
 
     // Create connection
     $conn = mysqli_connect($servername, $username, $password);
@@ -65,18 +65,53 @@ $app->post(
 
     }
 );
-$app->post(
-    '/checkLoggedIn',
+
+$app->get(
+    '/getMainPageOffers',
     function () use ($app, $dbh) {
         $json = $app->request->getBody();
-        $result = json_decode($json, true);
-        $query = "SELECT `firstName` FROM `users` WHERE `ID`='".$result["ID"]."'";
+        $query = "SELECT * FROM `listing` ORDER BY `ID` DESC";
+
         $result = mysqli_query($dbh, $query); 
-        $info = mysqli_fetch_assoc($result);
-        echo json_encode($info, true);
+        $arrayResult = array();
+        $count = 0;
+        while($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+            if($count != 6) {
+                $count++;
+                array_push($arrayResult, $row); 
+            }     
+        }
+        echo json_encode($arrayResult);
     }
 );
 
+
+$app->post(
+    '/getSingleListing',
+    function () use ($app, $dbh) {
+        $json = $app->request->getBody();
+        $result = json_decode($json, true);
+        $query = "SELECT * FROM `listing` WHERE `ID`='".$result['ID']."'";
+        $result = mysqli_query($dbh, $query); 
+        $arrayResult = mysqli_fetch_assoc($result);
+        echo json_encode($arrayResult);
+    }
+);
+
+$app->post(
+    '/searchListings',
+    function () use ($app, $dbh) {
+        $json = $app->request->getBody();
+        $result = json_decode($json, true);
+        $query = "SELECT * FROM `listing` WHERE `title` LIKE '%".$result['query']."%' OR `description` LIKE '%".$result['query']."%' OR `zone` LIKE '%".$result['query']."%'";
+        $result = mysqli_query($dbh, $query); 
+        $arrayResult = array();
+        while($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+            array_push($arrayResult, $row);     
+        }
+        echo json_encode($arrayResult);
+    }
+);
 
 
 

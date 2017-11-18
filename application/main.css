@@ -31,6 +31,29 @@
 	width:100%;
 	height: 450px;
 }
+.new-items {
+	margin-bottom: 20px;
+}
 .new-items img {
 	width:100%;
+}
+.image-listing {
+	max-height: 200px;
+}
+.details {
+	float: right;
+}
+.desctiption-new-items {
+	height: 44px;
+	max-height: 44px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.image-wrapper {
+    height: 200px;
+    overflow: hidden;
+    text-align: center;
+}
+.image-wrapper img {
+	max-height: 100%;
 }
