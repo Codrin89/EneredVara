@@ -57,3 +57,13 @@
 .image-wrapper img {
 	max-height: 100%;
 }
+.navigation input {
+	font-size:10px;
+	color: #45515e;
+	padding: 10px 40px;
+	width: 400px;
+	background-image: url('poze/search.png');
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	float: right;
+}

@@ -28,5 +28,11 @@
 			window.location.href = 'singleListing.html?id=' + this.getAttribute('data-id');
 		});
 	}
+	$('#searchBar').on('keyup', function(e) {
+		if(e.keyCode == 13) {
+			window.location.href = 'search.html?query=' + $('#searchBar').val();
+		}
+	});
 
+	
 })();
