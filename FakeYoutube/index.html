@@ -2,30 +2,35 @@
 <html>
   <head>
     <title>YouTube Data API Quickstart</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="index.css">
     <meta charset='utf-8' />
    
   </head>
   <body>
-    <p style="text-align: center">YouTube Data API </p>
-
-    <!--Add buttons to initiate auth sequence and sign out-->
-    <button id="login-link" style="display: none;">Authorize</button>
-    <button id="logout-link" style="display: none;">Sign Out</button>
-
-   
-
-    <div id="buttons">
-      <label> 
-        <input id="query" value='cats' type="text"/>
-        <button id="search-button" disabled >Search</button>
-      </label>
+    <div class="container-style">
+        <img id="YouTube" src="iconYouTube.png">
+        <div class="search-container">
+        <button id="login-link" style="display: none;">Authorize</button>
+        <button id="logout-link"><img src="logouticon.png" /></button>
 
 
+        <div id="buttons">
+          <label> 
+            <input id="query" type="text" placeholder="Search" autocomplete="off" autocorrect="off" autofocus name="search-query" spellcheck="false" role="combox" style="outline:none" aria-label="Seach">
+            <button id="search-button"><img src="searchicon.png"></button>
+          </label>
+        </div>
     </div>
-    <div id="search-container">
 
-    </div>
+        <div id="search-container">
+        </div>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script src="auth.js"></script>
     <script src="search.js"></script>
