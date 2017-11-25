@@ -10,12 +10,20 @@
 	<body>
 
 		<nav class="navigation container">
+			<button class="btn btn-link" id="loginPopUpAction" type="button">Login</button>
+			<div class="loginPopUp displayNone text-center">
+				<input type="text" id="username" class="form-control" placeholder="Username">
+				<input type="text" id="password" class="form-control" placeholder="Password">
+				<button class="btn btn-success" id="login">Login</button>
+				<button class="btn btn-primary" id="register">Register</button>
+			</div>
 			<button class="btn btn-link" type="button" title="Contact">Contact</button>
 			<button class="btn btn-link" type="button">Ajutor</button>
 			<button class="btn btn-link" type="button">Anunturi salvate</button>
-			<button class="btn btn-link" type="button">Acasa</button>
-			<input type="text" placeholder="Start a search" id="searchBar" />			
+			<button class="btn btn-link active" type="button">Acasa</button>
+					
 			<img class="logo" src="poze/logo.jpg" alt="Logo">
+			<input type="text" class="form-control" placeholder="Start a search" id="searchBar" />	
 		</nav>
 
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -51,22 +59,9 @@
 		</div>
 
 		<div class="container new-listings">
-			<h4>New listings</h4>
-
-			
-
-
+			<h4>Cele mai noi apartamente</h4>
 		</div>
-		 
-  		     
-		
-		
-		
-			
-
-		
-
-   		
+		  		
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

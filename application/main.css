@@ -5,6 +5,9 @@
 .navigation {
 	height: 80px;
 }
+.displayNone {
+	display: none !important;
+}
 .logo {
 	float: left;
 	margin-right: 10px;
@@ -40,6 +43,9 @@
 .image-listing {
 	max-height: 200px;
 }
+.italic {
+	font-style: italic;
+}
 .details {
 	float: right;
 }
@@ -57,13 +63,37 @@
 .image-wrapper img {
 	max-height: 100%;
 }
-.navigation input {
-	font-size:10px;
-	color: #45515e;
-	padding: 10px 40px;
-	width: 400px;
-	background-image: url('poze/search.png');
-	background-repeat: no-repeat;
-	background-position: 5px center;
-	float: right;
+.navigation > input {
+    font-size: 14px;
+    color: #45515e;
+    padding: 10px 40px;
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 75px;
+    background-image: url(poze/search.png);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 19px;
+    float: left;
+}
+.loginPopUp {
+    float: right;
+    position: absolute;
+    right: 140px;
+    height: auto;
+    width: 300px;
+    z-index: 13;
+    top: 80px;
+    background: #fff;
+    padding: 10px;
+}
+.loginPopUp input {
+	margin-bottom: 10px;
+}
+.container h4 {
+	text-align: center;
+	text-shadow: 1px 1px blue;
+	color: blue;
+	text-transform: uppercase;
+
 }

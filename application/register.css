@@ -1,0 +1,18 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.col-md-4 .form-control {
+	margin-top: 20px;
+	
+  	background-color: #ebe7ff;
+
+}
+body {
+	background-image: url(poze/img3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.btn {
+	margin-top: 20px;
+}

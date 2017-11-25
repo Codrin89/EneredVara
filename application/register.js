@@ -1,7 +1,7 @@
 (function() {
 	document.getElementById('registerAction').addEventListener('click', function(){
-		var loginObj = {
-			"fistName": document.getElementById('fname').value,
+		var registerObject = {
+			"firstName": document.getElementById('fname').value,
 			"lastName": document.getElementById('lname').value,
 			"email": document.getElementById('email').value,
 			"password": document.getElementById('password').value,
@@ -24,7 +24,7 @@
 	});
 
 	document.getElementById('login').addEventListener('click', function(){
-		window.location.href = "login.html";
+		window.location.href = "main.html";
 	});
 
 

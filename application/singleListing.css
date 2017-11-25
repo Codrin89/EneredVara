@@ -1,0 +1,17 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.navigation > input {
+	font-size: 14px;
+    color: #45515e;
+    padding: 10px 40px;
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 75px;
+    background-image: url(poze/search.png);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 19px;
+    float: left;
+}

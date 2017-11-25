@@ -43,8 +43,8 @@ $app->post(
     function () use ($app, $dbh) {
         $json = $app->request->getBody();
         $result = json_decode($json, true);
-        var_dump($result);
-        $query = "INSERT INTO `users` (`firstName`,`lastName`) VALUES ('".$result['firstName']."','".$result['lastName']."')";
+        $query = "INSERT INTO `users` (`firstName`,`lastName`,`email`,`username`,`gender`,`password`,`adress`,`telephone`) VALUES ('".$result['firstName']."','".$result['lastName']."','".$result['email']."','".$result['username']."','".$result['gender']."','".$result['password']."','".$result['address']."','".$result['telephone']."')";
+        var_dump($query);
         $result = mysqli_query($dbh, $query);
     }
 );
