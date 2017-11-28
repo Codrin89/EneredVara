@@ -1,0 +1,45 @@
+
+
+#logout-link {
+    margin-top: -25px;
+    background-color: transparent;
+    height: 32px;
+    width: 32px;
+    border: none;
+    float: right;
+    margin-right: 30px;
+
+    
+}
+#buttons {
+	text-align: center;
+}
+.playere {
+
+    margin: 50px auto 20px auto;
+    display: block;
+    
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+p{
+	font-size:25px;
+}
+
+#search-button img {
+	height: 18px;
+    width: 22px;
+}
+
+#buttons input {
+	outline: none;
+    width: 578px;
+    height: 26px;
+}
+
+#YouTube {
+    height: 30px;
+    margin-left: 25px;
+    margin-top: 16px;
+}
