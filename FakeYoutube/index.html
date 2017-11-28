@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset='utf-8' />
     <title>YouTube Data API Quickstart</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="index.css">
-     <link rel="stylesheet" type="text/css" href="my_uploads.css">
-    <meta charset='utf-8' />
+    <link rel="stylesheet" type="text/css" href="my_uploads.css">
    
   </head>
   <body>
@@ -18,51 +18,41 @@
         <button id="logout-link"><img src="logouticon.png" /></button>
 
 
-        <div id="buttons">
+        <div id="top-search">
           <label> 
-            <input id="query" type="text" placeholder="Search" autocomplete="off" autocorrect="off" autofocus name="search-query" spellcheck="false" role="combox" style="outline:none" aria-label="Seach">
+            <input id="query" type="text" placeholder="Search" autocomplete="off" autocorrect="off" autofocus name="search-query" spellcheck="false" role="combox" style="outline:none" aria-label="Seach" >
             <button id="search-button"><img src="searchicon.png"></button>
           </label>
         </div>
     </div>
+    <div class="playlist_updates col-md-3">
+        <div id="buttons" >
 
-    <div id="search-container">
-
-      <div class="playlist_updates">
-          <div id="login-container" class="pre-auth">This application requires access to your YouTube account.
-          Please <a href="#" id="login-link">authorize</a> to continue.
-          </div>
-          <div id="buttons">
-            <button id="playlist-button" disabled onclick="createPlaylist()">Create a new Private Playlist</button>
-            <br>
-            <label>Current Playlist Id: <input id="playlist-id" value='' type="text"/></label>
-            <br>
-            <label>Video Id: <input id="video-id" value='GZG9G5txtaE' type="text"/></label><button onclick="addVideoToPlaylist()">Add to current playlist</button>
-          </div>
-          <h3>Playlist: <span id="playlist-title"></span></h3>
-          <p id="playlist-description"></p>
-          <div id="playlist-container">
-            <span id="status">No Videos</span>
-          </div>
-      </div>
-
-      <div class="my_uploads">
-          <div id="login-container" class="pre-auth">
-          This application requires access to your YouTube account.
-          Please <a href="#" id="login-link">authorize</a> to continue.
-          </div>
-          <div id="video-container"></div>
-          <div class="button-container">
-            <button id="prev-button" class="paging-button" onclick="previousPage();">Previous Page</button>
-            <button id="next-button" class="paging-button" onclick="nextPage();">Next Page</button>
-          </div>
-      </div>
-
-
+          <input type="text" id="playlistName" placeholder="Play List Name" class="form-control">
+          <input type="text" id="playlistDescription" placeholder="Description" class="form-control">
+          <input type="text" id="playlistPrivacy" placeholder="Playlist Privacy" class="form-control">
+          <button id="playlist-button" disabled onclick="createPlaylist()">Create a new Private Playlist</button>
+          <h3>Video Id:</h3>
+           <input id="video-id" value='GZG9G5txtaE' type="text" class="form-control">
+          <button onclick="addVideoToPlaylist()">Add to current playlist</button>
+        </div>
+        <h3>Playlist: <span id="playlist-title"></span></h3>
+        <p id="playlist-description"></p>
+        <div id="playlist-container">
+          <span id="status">No Videos</span>
+        </div>
+        <div class="my_uploads col-md-4">
+        <div id="video-container"></div>
+        <div class="button-container">
+          <button id="prev-button" class="paging-button" onclick="previousPage();">Previous Page</button>
+          <button id="next-button" class="paging-button" onclick="nextPage();">Next Page</button>
+        </div>
+    </div>
     </div>
 
     
-
+    <div id="search-container" class="search col-md-9">
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

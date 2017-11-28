@@ -2,7 +2,7 @@
 var playlistId, nextPageToken, prevPageToken;
 
 // After the API loads, call a function to get the uploads playlist ID.
-function handleAPILoaded() {
+function handleAPILoadedUploads() {
   requestUserUploadsPlaylistId();
 }
 

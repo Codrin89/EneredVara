@@ -2,13 +2,14 @@
 var playlistId, channelId;
 
 // After the API loads, call a function to enable the playlist creation form.
-function handleAPILoaded() {
+function handleAPILoadedPlaylist() {
   enableForm();
 }
 
 // Enable the form for creating a playlist.
 function enableForm() {
   $('#playlist-button').attr('disabled', false);
+  fetchPlaylist();
 }
 
 // Create a private playlist.
@@ -17,11 +18,11 @@ function createPlaylist() {
     part: 'snippet,status',
     resource: {
       snippet: {
-        title: 'Test Playlist',
-        description: 'A private playlist created with the YouTube API'
+        title: document.getElementById('playlistName').value,
+        description: document.getElementById('playlistDescription').value
       },
       status: {
-        privacyStatus: 'private'
+        privacyStatus: document.getElementById('playlistPrivacy').value
       }
     }
   });
@@ -29,13 +30,22 @@ function createPlaylist() {
     var result = response.result;
     if (result) {
       playlistId = result.id;
-      $('#playlist-id').val(playlistId);
-      $('#playlist-title').html(result.snippet.title);
-      $('#playlist-description').html(result.snippet.description);
     } else {
-      $('#status').html('Could not create playlist');
+      alert('Could not create playlist');
     }
   });
+}
+
+function fetchPlaylist() {
+  var request = gapi.client.youtube.playlists.list({
+    'mine': 'true',
+    'part': 'snippet,contentDetails'
+  });
+  request.execute(function(response) {
+    var result = response.result;
+    console.log(result.items);
+  });
+  
 }
 
 // Add a video ID specified in the form to the playlist.

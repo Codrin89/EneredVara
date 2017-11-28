@@ -11,7 +11,7 @@
 
     
 }
-#buttons {
+#top-search {
 	text-align: center;
 }
 .playere {
@@ -19,12 +19,12 @@
     margin: 50px auto 20px auto;
     display: block;
     
-    width: 40%;
+    
     margin-bottom: 20px;
 }
 
-p{
-	font-size:25px;
+h3{
+	font-size:15px;
 }
 
 #search-button img {
@@ -34,7 +34,7 @@ p{
 
 #buttons input {
 	outline: none;
-    width: 578px;
+    width: 200px;
     height: 26px;
 }
 
