@@ -113,6 +113,16 @@ $app->post(
     }
 );
 
+$app->post(
+    '/saveListing',
+    function () use ($app, $dbh) {
+        $json = $app->request->getBody();
+        $result = json_decode($json, true);
+        $query = "INSERT INTO `saved` (`userID`,`listingID`) VALUES (".$result['userID'].", ".$result['listingID'].")";
+        $result = mysqli_query($dbh, $query); 
+    }
+);
+
 
 
 /**

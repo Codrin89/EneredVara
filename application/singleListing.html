@@ -5,26 +5,35 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="singleListing.css">
 	</head>
 
 	<body>
 
 		<nav class="navigation container">
+			<button class="btn btn-link" id="logoutPopUpAction" type="button" style="display: none;">Logout</button>
+			<button class="btn btn-link" id="loginPopUpAction" type="button" style="display: none;">Login</button>
+			<button class="btn btn-link active" id="existingUser" type="button" style="display: none;"></button>
+			<div id="loginPopUp" class="loginPopUp displayNone text-center">
+				<input type="text" id="username" class="form-control" placeholder="Username">
+				<input type="text" id="password" class="form-control" placeholder="Password">
+				<button class="btn btn-success" id="login">Login</button>
+				<button class="btn btn-primary" id="register">Register</button>
+			</div>
 			<button class="btn btn-link" type="button" title="Contact">Contact</button>
 			<button class="btn btn-link" type="button">Ajutor</button>
 			<button class="btn btn-link" type="button">Anunturi salvate</button>
 			<button class="btn btn-link" type="button">Acasa</button>
-			<button class="btn btn-link" type="button">Salveaza</button>
 			<img class="logo" src="poze/logo.jpg" alt="Logo">
 			<input type="text" class="form-control" placeholder="Start a search" id="searchBar" />			
-			<img class="background" src="poze/background.jpg" alt="">
+			
 		</nav>
 
-		<div class="container">
+		<div class="container singleListing">
+			<button class="btn btn-link save-button" type="button" id="saveListing">Salveaza</button>
 			<h3 class="title italic"></h3>
 			<img class="image-listing" src="#">
 			<ul>
-				
 				<li>Nr camere : <span class="rooms"></span></li>
 				<li>Nr bai : <span class="bath"></span></li>
 				<li>Etaj : <span class="floor"></span></li>
@@ -34,7 +43,7 @@
 				<li>Pret : <span class="price"></span> EUR</li>
 				<li>Zona : <span class="zone"></span></li>
 			</ul>
-
+			
 		</div>
 		
 		<div class="container">

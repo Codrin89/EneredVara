@@ -1,5 +1,7 @@
 (function() {
 
+
+
 	function getLatestListings() {
 
 		var query = {
@@ -33,6 +35,43 @@
 			window.location.href = 'search.html?query=' + $('#searchBar').val();
 		}
 	});
+
+	$('#loginPopUpAction').on('click', function() {
+		var popup = $('.loginPopUp');
+		if(popup.hasClass('displayNone')) {
+			popup.removeClass('displayNone');
+		} else {
+			popup.addClass('displayNone');
+		}
+	});
+
+	document.getElementById('login').addEventListener('click', function(){
+
+		var loginObject = {
+			"username": document.getElementById('username').value,
+			"password": document.getElementById('password').value
+		}
+
+		var xhr = new XMLHttpRequest();
+		xhr.open("POST", "http://localhost/api/login-data", true);
+		xhr.onreadystatechange = function() {
+			if (xhr.readyState == 4 && xhr.status == 200) {
+				
+				if (xhr.responseText !="Try again!") {
+					var response = JSON.parse(xhr.responseText);
+					window.localStorage.setItem("loggedUser", response.ID);
+					window.localStorage.setItem("loggedUserName", response.username);
+				} else{
+					alert('bad login');
+				}
+			}
+		}
+		xhr.send(JSON.stringify(loginObject));
+	})
+
+	document.getElementById('register').addEventListener('click', function(){
+		window.location.href = 'register.html';
+	})
 
 	
 })();

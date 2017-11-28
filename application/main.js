@@ -1,5 +1,63 @@
 (function() {
 
+	function checkLogin() {
+		if(window.localStorage.getItem("loggedUser")) {
+			$('#loginPopUpAction').hide();
+			$('#existingUser').show();
+			$('#logoutPopUpAction').show();
+			$('#existingUser').html(window.localStorage.getItem("loggedUserName"));
+			$('#logoutPopUpAction').on('click', function() {
+				window.localStorage.removeItem("loggedUser");
+				window.localStorage.removeItem("loggedUserName");
+				checkLogin();
+			});
+		} else {
+			$('#loginPopUpAction').show();
+			$('#existingUser').hide();
+			$('#logoutPopUpAction').hide();
+			$('#loginPopUpAction').on('click', function() {
+				var popup = $('.loginPopUp');
+				if(popup.hasClass('displayNone')) {
+					popup.removeClass('displayNone');
+				} else {
+					popup.addClass('displayNone');
+				}
+			});
+
+			document.getElementById('login').addEventListener('click', function(){
+
+				var loginObject = {
+					"username": document.getElementById('username').value,
+					"password": document.getElementById('password').value
+				}
+
+				var xhr = new XMLHttpRequest();
+				xhr.open("POST", "http://localhost/api/login-data", true);
+				xhr.onreadystatechange = function() {
+					if (xhr.readyState == 4 && xhr.status == 200) {
+						
+						if (xhr.responseText !="Try again!") {
+							var response = JSON.parse(xhr.responseText);
+							window.localStorage.setItem("loggedUser", response.ID);
+							window.localStorage.setItem("loggedUserName", response.username);
+							$('.loginPopUp').addClass('displayNone');
+							checkLogin();
+						} else{
+							alert('bad login');
+						}
+					}
+				}
+				xhr.send(JSON.stringify(loginObject));
+			})
+
+			document.getElementById('register').addEventListener('click', function(){
+				window.location.href = 'register.html';
+			})
+		}
+	}
+
+	checkLogin();
+
 	function getLatestListings() {
 		var xhr = new XMLHttpRequest();
 		xhr.open('GET', 'http://localhost/api/getMainPageOffers', true);
@@ -31,42 +89,6 @@
 		} 
 	});
 
-	$('#loginPopUpAction').on('click', function() {
-		var popup = $('.loginPopUp');
-		if(popup.hasClass('displayNone')) {
-			popup.removeClass('displayNone');
-		} else {
-			popup.addClass('displayNone');
-		}
-	});
-
-	document.getElementById('login').addEventListener('click', function(){
-
-		var loginObject = {
-			"username": document.getElementById('username').value,
-			"password": document.getElementById('password').value
-		}
-
-		var xhr = new XMLHttpRequest();
-		xhr.open("POST", "http://localhost/api/login-data", true);
-		xhr.onreadystatechange = function() {
-			if (xhr.readyState == 4 && xhr.status == 200) {
-				
-				if (xhr.responseText !="Try again!") {
-					var response = JSON.parse(xhr.responseText);
-					window.localStorage.setItem("loggedUser", response.ID);
-					window.localStorage.setItem("loggedUserName", response.username);
-					alert('login');
-				} else{
-					alert('bad login');
-				}
-			}
-		}
-		xhr.send(JSON.stringify(loginObject));
-	})
-
-	document.getElementById('register').addEventListener('click', function(){
-		window.location.href = 'register.html';
-	})
+	
 
 })();
