@@ -45,3 +45,15 @@ h3{
 }
 
 
+.title{
+    font-size: 20px;
+    margin: 0 45px;
+
+}
+
+.description {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    color: grey;
+}

@@ -1,0 +1,59 @@
+
+
+#logout-link {
+    margin-top: -25px;
+    background-color: transparent;
+    height: 32px;
+    width: 32px;
+    border: none;
+    float: right;
+    margin-right: 30px;
+
+    
+}
+#top-search {
+	text-align: center;
+}
+.playere {
+
+    margin: 50px auto 20px auto;
+    display: block;
+    
+    
+    margin-bottom: 20px;
+}
+
+h3{
+	font-size:15px;
+}
+
+#search-button img {
+	height: 18px;
+    width: 22px;
+}
+
+#buttons input {
+	outline: none;
+    width: 200px;
+    height: 26px;
+}
+
+#YouTube {
+    height: 30px;
+    margin-left: 25px;
+    margin-top: 16px;
+}
+
+
+.title{
+    font-size: 20px;
+    margin: 0 45px;
+
+}
+
+.description {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    color: grey;
+}

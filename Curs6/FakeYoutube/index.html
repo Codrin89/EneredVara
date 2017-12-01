@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>YouTube Data API Quickstart</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="my_uploads.css">
+   
+  </head>
+  <body>
+
+    <div class="style">
+        <img id="YouTube" src="iconYouTube.png">
+        <div class="search">
+        <button id="login-link" style="display: none;">Authorize</button>
+        <button id="logout-link"><img src="logouticon.png" /></button>
+
+
+        <div id="top-search">
+          <label> 
+            <input id="query" type="text" placeholder="Search" autocomplete="off" autocorrect="off" autofocus name="search-query" spellcheck="false" role="combox" style="outline:none" aria-label="Seach" >
+            <button id="search-button"><img src="searchicon.png"></button>
+          </label>
+        </div>
+    </div>
+    <div class="playlist_updates col-md-3">
+        <div id="buttons" >
+          <input type="text" id="playlistName" placeholder="Play List Name" class="form-control">
+          <input type="text" id="playlistDescription" placeholder="Description" class="form-control">
+          <input type="text" id="playlistPrivacy" placeholder="Playlist Privacy" class="form-control">
+          <button id="playlist-button" disabled onclick="createPlaylist()">Create a new Private Playlist</button>
+          <h3>Video Id:</h3>
+           <input id="video-id" value='GZG9G5txtaE' type="text" class="form-control">
+          <button onclick="addVideoToPlaylist()">Add to current playlist</button>
+        </div>
+       
+    </div>
+    </div>
+  
+    <div id="search-container" class="search col-md-9">
+    <div id="root_start"></div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="auth.js"></script>
+    <script src="search.js"></script>
+    <script src="playlist_updates.js"></script>
+    <script type="text/javascript"  src="my_uploads.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+  </body>
+</html>
