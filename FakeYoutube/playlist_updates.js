@@ -31,7 +31,8 @@ function createPlaylist() {
     if (result) {
       playlistId = result.id;
     } else {
-      alert('Could not create playlist');
+      alert('Could not create playlist '+response);
+      alert('Could not create playlist '+response);
     }
   });
 }
@@ -52,6 +53,7 @@ function fetchPlaylist() {
 function addVideoToPlaylist() {
   addToPlaylist($('#video-id').val());
 }
+
 
 // Add a video to a playlist. The "startPos" and "endPos" values let you
 // start and stop the video at specific times when the video is played as

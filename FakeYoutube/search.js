@@ -17,7 +17,12 @@ function search() {
     var arrayYoutubeSearchResponse = youtubeSearchResponse.items;
     for(var i = 0 ; i < arrayYoutubeSearchResponse.length ; i++) {
       var player = $('<iframe class="playere" type="text/html" width="640" height="390" src="http://www.youtube.com/embed/' + arrayYoutubeSearchResponse[i].id.videoId + '?enablejsapi=1&origin=http://example.com" frameborder="0"></iframe>');
-      $('#search-container').append(player);
+      var root = $('<div id="item_'+i+'"><button id="add_" onclick="addToPlaylist('+arrayYoutubeSearchResponse[i].id.videoId+')">Add to list</button></div>');
+      root.append(player);
+
+
+      $('#search-container').append(root);
+      //alert("I am an alert boxs");
     }
   });
 }
