@@ -14,15 +14,15 @@
     <div class="style">
         <img id="YouTube" src="iconYouTube.png">
         <div class="search">
-        <button id="login-link" style="display: none;">Authorize</button>
+        <button id="login-link" style="display: none;" class="btn btn-success">Authorize</button>
         <button id="logout-link"><img src="logouticon.png" /></button>
 
 
         <div id="top-search">
-          <label> 
-            <input id="query" type="text" placeholder="Search" autocomplete="off" autocorrect="off" autofocus name="search-query" spellcheck="false" role="combox" style="outline:none" aria-label="Seach" >
-            <button id="search-button"><img src="searchicon.png"></button>
-          </label>
+          
+            <input id="query" type="text" placeholder="Search" autocomplete="off" autocorrect="off" autofocus name="search-query" spellcheck="false" role="combox" style="outline:none" >
+            <button id="search-button"><img src="searchicon.png" ></button>
+         
         </div>
     </div>
     <div class="playlist_updates col-md-3">
@@ -30,17 +30,17 @@
           <input type="text" id="playlistName" placeholder="Play List Name" class="form-control">
           <input type="text" id="playlistDescription" placeholder="Description" class="form-control">
           <input type="text" id="playlistPrivacy" placeholder="Playlist Privacy" class="form-control">
-          <button id="playlist-button" disabled onclick="createPlaylist()">Create a new Private Playlist</button>
+          <button id="playlist-button" disabled onclick="createPlaylist()"  class="btn btn-default">Create a new Private Playlist</button>
           <h3>Video Id:</h3>
            <input id="video-id" value='GZG9G5txtaE' type="text" class="form-control">
-          <button onclick="addVideoToPlaylist()">Add to current playlist</button>
+          <button onclick="addVideoToPlaylist()" >Add to current playlist</button>
         </div>
        
     </div>
     </div>
   
-    <div id="search-container" class="search col-md-9">
-    <div id="root_start"></div>
+    <div id="search-container" class="search col-md-9" padding-left="35px;">
+    <div id="button"></div>
 
     </div>
 

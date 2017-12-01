@@ -63,7 +63,7 @@ function fetchItems(id, playlistPos) {
   request.execute(function(response) {
     console.log(response.items);
     for (var i = 0 ; i < response.items.length ; i++) {
-      var objectlist = $('<iframe class="playere" type="text/html" width="320" height="140" src="http://www.youtube.com/embed/' + response.items[i].contentDetails.videoId + '?enablejsapi=1&origin=http://example.com" frameborder="0"></iframe>');
+      var objectlist = $('<iframe class="playere" type="text/html" width="220" height="140" src="http://www.youtube.com/embed/' + response.items[i].contentDetails.videoId + '?enablejsapi=1&origin=http://example.com" frameborder="0"></iframe>');
       $('.onePlaylist')[playlistPos].append(objectlist[0]);
     }
     
@@ -97,9 +97,13 @@ function addToPlaylist(id, startPos, endPos) {
       snippet: {
         playlistId: document.getElementsByClassName('activePlaylist')[0].getAttribute('data-id'),
         resourceId: details
+        
       }
     }
   });
+    
+
+  
   request.execute(function(response) {
     $('#status').html('<pre>' + JSON.stringify(response.result) + '</pre>');
   });

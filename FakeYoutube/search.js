@@ -20,6 +20,7 @@ function search() {
       var button = $('<div id="item_'+ i +'"><button id="add_" onclick="addToPlaylist('+arrayYoutubeSearchResponse[i].id.videoId+')">Add to list</button></div>');
       $('#search-container').append(player);
       $('#search-container').append(button);
+      
   
       //alert("I am an alert boxs");
 
@@ -32,6 +33,7 @@ $('#search-button').on('click', function() {
 
 
 });
+
 
 $('#query').on('keyup', function(e) {
   console.log(e);

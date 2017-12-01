@@ -12,7 +12,11 @@
     
 }
 #top-search {
-	text-align: center;
+	text-align: center; 
+    margin-bottom: 100px;
+
+    
+}
 }
 .playere {
 
@@ -30,24 +34,35 @@ h3{
 #search-button img {
 	height: 18px;
     width: 22px;
+   
+}
+#search-button {
+    margin-left: -6px;
+    height:  33px;
+
+}
+#query{
+    height: 32px;
 }
 
 #buttons input {
 	outline: none;
     width: 200px;
-    height: 26px;
+    height: 30px;
 }
 
 #YouTube {
-    height: 30px;
-    margin-left: 25px;
-    margin-top: 16px;
+   height: 35px;
+    margin-left: 40px;
+    margin-top: 55px;
+
 }
 
 
 .title{
     font-size: 20px;
     margin: 0 45px;
+    color: #2719e0;
 
 }
 
@@ -55,5 +70,21 @@ h3{
     font-size: 15px;
     margin-top: 5px;
     margin-bottom: 40px;
-    color: grey;
+    color: #5a42e0;
+}
+#query {
+    width: 400px;
+}
+
+
+#search-container{
+   padding-left: 130px;
+}
+.playlist_updates {
+    padding-left: 40px;
+}
+
+#playlist-button {
+    width: 199px;
+    color: #2b85e2;
 }
