@@ -14,6 +14,7 @@
 #top-search {
 	text-align: center; 
     margin-bottom: 100px;
+    margin-left: 240px;
 
     
 }
@@ -21,9 +22,7 @@
 .playere {
 
     margin: 50px auto 20px auto;
-    display: block;
-    
-    
+    display: block; 
     margin-bottom: 20px;
 }
 
@@ -37,12 +36,15 @@ h3{
    
 }
 #search-button {
-    margin-left: -6px;
-    height:  33px;
+    margin-left: 400px;
+    height: 33px;
+    width: auto;
+    margin-top: -32px;
 
 }
 #query{
     height: 32px;
+    margin-top: -30px
 }
 
 #buttons input {
@@ -52,10 +54,9 @@ h3{
 }
 
 #YouTube {
-   height: 35px;
+    height: 35px;
     margin-left: 40px;
-    margin-top: 55px;
-
+    margin-top: 15px;
 }
 
 
@@ -87,4 +88,18 @@ h3{
 #playlist-button {
     width: 199px;
     color: #2b85e2;
+}
+
+.activePlaylist .title {
+    color: red;
+    cursor: pointer;
+}
+
+.playlist {
+    font-size: 20px;
+    color: #3c54af;
+}
+
+.onePlaylistVideos{
+
 }

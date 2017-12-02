@@ -45,12 +45,20 @@ function fetchPlaylist() {
   request.execute(function(response) {
     console.log(response.items);
     for(var i = 0 ; i < response.items.length ; i++) {
-      var object = $('<div class="onePlaylist" data-id="'+response.items[i].id +' "><p class="title">' +response.items[i].snippet.title + '</p><h3 class="description">'+response.items[i].snippet.description +'</h3></div>');
+      var object = $('<div class="onePlaylist" data-id="'+response.items[i].id +' "><p class="title">' +response.items[i].snippet.title + '</p><h3 class="description">'+response.items[i].snippet.description +'</h3><div class="onePlaylistVideos"></div></div>');
       $('.playlist_updates').append(object);
       fetchItems(response.items[i].id, i);
-
     }
+    $('.onePlaylist .title').on('click', function() {
+        $('.onePlaylist').removeClass('activePlaylist');
+        $(this.parentElement).addClass('activePlaylist');
+    });
+
+    $('.title').on('click', function() {
+      $(this.parentElement).find('.onePlaylistVideos').toggle(1000);
+    })
   });
+
   
 }
 
@@ -64,11 +72,12 @@ function fetchItems(id, playlistPos) {
     console.log(response.items);
     for (var i = 0 ; i < response.items.length ; i++) {
       var objectlist = $('<iframe class="playere" type="text/html" width="220" height="140" src="http://www.youtube.com/embed/' + response.items[i].contentDetails.videoId + '?enablejsapi=1&origin=http://example.com" frameborder="0"></iframe>');
-      $('.onePlaylist')[playlistPos].append(objectlist[0]);
+      $('.onePlaylistVideos')[playlistPos].append(objectlist[0]);
     }
     
   });
   
+
 }
 
 // Add a video ID specified in the form to the playlist.
