@@ -30,6 +30,8 @@ function createPlaylist() {
     var result = response.result;
     if (result) {
       playlistId = result.id;
+
+      location.reload();
     } else {
       alert('Could not create playlist '+response);
       alert('Could not create playlist '+response);
@@ -44,9 +46,11 @@ function fetchPlaylist() {
   });
   request.execute(function(response) {
     console.log(response.items);
+
+    $('#playlist-container').empty();
     for(var i = 0 ; i < response.items.length ; i++) {
       var object = $('<div class="onePlaylist" data-id="'+response.items[i].id +' "><p class="title">' +response.items[i].snippet.title + '</p><h3 class="description">'+response.items[i].snippet.description +'</h3><div class="onePlaylistVideos"></div></div>');
-      $('.playlist_updates').append(object);
+      $('#playlist-container').append(object);
       fetchItems(response.items[i].id, i);
     }
     $('.onePlaylist .title').on('click', function() {
@@ -72,12 +76,25 @@ function fetchItems(id, playlistPos) {
     console.log(response.items);
     for (var i = 0 ; i < response.items.length ; i++) {
       var objectlist = $('<iframe class="playere" type="text/html" width="220" height="140" src="http://www.youtube.com/embed/' + response.items[i].contentDetails.videoId + '?enablejsapi=1&origin=http://example.com" frameborder="0"></iframe>');
+      var buttonRemove = $('<div id="itemlist_'+ i +'"><button onclick="removeVideoFromPlayList(\''+response.items[i].id+'\')" >Remove</button></div>');     
       $('.onePlaylistVideos')[playlistPos].append(objectlist[0]);
+       $('.onePlaylistVideos')[playlistPos].append(buttonRemove[0]);
     }
     
   });
   
 
+}
+
+
+function removeVideoFromPlayList(videoId){
+    var request = gapi.client.youtube.playlistItems.delete({
+            id: videoId
+        });
+
+    request.execute(function(response) {
+    location.reload();
+  });
 }
 
 // Add a video ID specified in the form to the playlist.
@@ -115,5 +132,6 @@ function addToPlaylist(id, startPos, endPos) {
   
   request.execute(function(response) {
     $('#status').html('<pre>' + JSON.stringify(response.result) + '</pre>');
+    location.reload();
   });
 }
