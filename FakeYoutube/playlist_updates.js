@@ -20,6 +20,7 @@ function createPlaylist() {
       snippet: {
         title: document.getElementById('playlistName').value,
         description: document.getElementById('playlistDescription').value
+
       },
       status: {
         privacyStatus: document.getElementById('playlistPrivacy').value
@@ -49,7 +50,7 @@ function fetchPlaylist() {
 
     $('#playlist-container').empty();
     for(var i = 0 ; i < response.items.length ; i++) {
-      var object = $('<div class="onePlaylist" data-id="'+response.items[i].id +' "><p class="title">' +response.items[i].snippet.title + '</p><h3 class="description">'+response.items[i].snippet.description +'</h3><div class="onePlaylistVideos"></div></div>');
+      var object = $('<div class="onePlaylist" data-id="'+ response.items[i].id +' "><p class="title">' +response.items[i].snippet.title + '</p><span class="select">Open/Close</span><h3 class="description">'+response.items[i].snippet.description +'</h3><div class="onePlaylistVideos"></div></div>');
       $('#playlist-container').append(object);
       fetchItems(response.items[i].id, i);
     }
@@ -58,7 +59,7 @@ function fetchPlaylist() {
         $(this.parentElement).addClass('activePlaylist');
     });
 
-    $('.title').on('click', function() {
+    $('.select').on('click', function() {
       $(this.parentElement).find('.onePlaylistVideos').toggle(1000);
     })
   });
@@ -78,7 +79,7 @@ function fetchItems(id, playlistPos) {
       var objectlist = $('<iframe class="playere" type="text/html" width="220" height="140" src="http://www.youtube.com/embed/' + response.items[i].contentDetails.videoId + '?enablejsapi=1&origin=http://example.com" frameborder="0"></iframe>');
       var buttonRemove = $('<div id="itemlist_'+ i +'"><button class="removeVideoFromPlayList" onclick="removeVideoFromPlayList(\''+response.items[i].id+'\')" >Remove</button></div>');     
       $('.onePlaylistVideos')[playlistPos].append(objectlist[0]);
-       $('.onePlaylistVideos')[playlistPos].append(buttonRemove[0]);
+      $('.onePlaylistVideos')[playlistPos].append(buttonRemove[0]);
     }
     
   });
