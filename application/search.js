@@ -8,7 +8,7 @@
 			"query": window.location.href.split('?query=')[1].replace('%20', ' ')
 		}
 		var xhr = new XMLHttpRequest();
-		xhr.open('POST', 'http://localhost/api/searchListings', true);
+		xhr.open('POST', 'http://localhost/DemosGit/Ana/api/searchListings', true);
 		xhr.onreadystatechange = function () {
 			if (xhr.readyState == 4 && xhr.status == 200) {
 				var response = JSON.parse(xhr.responseText);
@@ -53,7 +53,7 @@
 		}
 
 		var xhr = new XMLHttpRequest();
-		xhr.open("POST", "http://localhost/api/login-data", true);
+		xhr.open("POST", "http://localhost/DemosGit/Ana/api/login-data", true);
 		xhr.onreadystatechange = function() {
 			if (xhr.readyState == 4 && xhr.status == 200) {
 				
@@ -73,5 +73,8 @@
 		window.location.href = 'register.html';
 	})
 
+	$('.logo').on('click', function() {
+		window.location.href = 'main.html';
+	});
 	
 })();

@@ -32,7 +32,7 @@
 				}
 
 				var xhr = new XMLHttpRequest();
-				xhr.open("POST", "http://localhost/api/login-data", true);
+				xhr.open("POST", "http://localhost/DemosGit/Ana/api/login-data", true);
 				xhr.onreadystatechange = function() {
 					if (xhr.readyState == 4 && xhr.status == 200) {
 						
@@ -60,7 +60,7 @@
 
 	function getLatestListings() {
 		var xhr = new XMLHttpRequest();
-		xhr.open('GET', 'http://localhost/api/getMainPageOffers', true);
+		xhr.open('GET', 'http://localhost/DemosGit/Ana/api/getMainPageOffers', true);
 		xhr.onreadystatechange = function () {
 			if (xhr.readyState == 4 && xhr.status == 200) {
 				var response = JSON.parse(xhr.responseText);

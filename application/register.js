@@ -12,7 +12,7 @@
 		}
 
 		var xhr = new XMLHttpRequest();
-		xhr.open("POST", "http://localhost/api/register-data", true);
+		xhr.open("POST", "http://localhost/DemosGit/Ana/api/register-data", true);
 		xhr.onreadystatechange = function() {
 			if (xhr.readyState == 4 && xhr.status == 200) {
 				console.log(xhr.responseText);

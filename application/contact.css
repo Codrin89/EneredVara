@@ -1,0 +1,24 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.col-md-4 .form-control {
+	margin-top: 20px;
+	
+  	background-color: #f2f5e1;
+
+}
+body {
+	background-image: url(poze/contact-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.btn {
+	margin-top: 20px;
+}
+.container h4 {
+	text-align: center;
+	color: #b92e40;
+	
+
+}
