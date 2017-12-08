@@ -76,7 +76,7 @@ function fetchItems(id, playlistPos) {
     console.log(response.items);
     for (var i = 0 ; i < response.items.length ; i++) {
       var objectlist = $('<iframe class="playere" type="text/html" width="220" height="140" src="http://www.youtube.com/embed/' + response.items[i].contentDetails.videoId + '?enablejsapi=1&origin=http://example.com" frameborder="0"></iframe>');
-      var buttonRemove = $('<div id="itemlist_'+ i +'"><button onclick="removeVideoFromPlayList(\''+response.items[i].id+'\')" >Remove</button></div>');     
+      var buttonRemove = $('<div id="itemlist_'+ i +'"><button class="removeVideoFromPlayList" onclick="removeVideoFromPlayList(\''+response.items[i].id+'\')" >Remove</button></div>');     
       $('.onePlaylistVideos')[playlistPos].append(objectlist[0]);
        $('.onePlaylistVideos')[playlistPos].append(buttonRemove[0]);
     }
