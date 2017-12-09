@@ -17,7 +17,7 @@ function getConnection() {
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "api";
+    $dbname = "api_ana";
 
     // Create connection
     $conn = mysqli_connect($servername, $username, $password);
@@ -120,6 +120,24 @@ $app->post(
         $result = json_decode($json, true);
         $query = "INSERT INTO `saved` (`userID`,`listingID`) VALUES (".$result['userID'].", ".$result['listingID'].")";
         $result = mysqli_query($dbh, $query); 
+    }
+);
+
+
+$app->post(
+    '/savedListings',
+    function () use ($app, $dbh) {
+        $json = $app->request->getBody();
+        $result = json_decode($json, true);
+        $query = "SELECT * FROM `saved` WHERE `userID`=".$result['ID']."";
+        $result = mysqli_query($dbh, $query); 
+        $array = [];
+        while($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+            $query = "SELECT * FROM `listing` WHERE `ID`=".$row['listingID']."";
+            $listingResult = mysqli_query($dbh, $query);
+            array_push($array, mysqli_fetch_assoc($listingResult));
+        }
+        echo json_encode($array);
     }
 );
 

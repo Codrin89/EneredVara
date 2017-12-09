@@ -5,10 +5,10 @@
 	function getLatestListings() {
 
 		var query = {
-			"query": window.location.href.split('?query=')[1].replace('%20', ' ')
+			"ID": window.localStorage.loggedUser
 		}
 		var xhr = new XMLHttpRequest();
-		xhr.open('POST', 'http://localhost/api/searchListings', true);
+		xhr.open('POST', 'http://localhost/api/savedListings', true);
 		xhr.onreadystatechange = function () {
 			if (xhr.readyState == 4 && xhr.status == 200) {
 				var response = JSON.parse(xhr.responseText);
@@ -76,6 +76,11 @@
 	document.getElementById('contact').addEventListener('click', function(){
 		window.location.href = 'contact.html';
 	})
+
+	document.getElementById('acasa').addEventListener('click', function(){
+		window.location.href = 'main.html';
+	}) 
+
 
 	$('.logo').on('click', function() {
 		window.location.href = 'main.html';

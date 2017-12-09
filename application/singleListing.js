@@ -30,7 +30,7 @@
 				}
 
 				var xhr = new XMLHttpRequest();
-				xhr.open("POST", "http://localhost/DemosGit/Ana/api/login-data", true);
+				xhr.open("POST", "http://localhost/api/login-data", true);
 				xhr.onreadystatechange = function() {
 					if (xhr.readyState == 4 && xhr.status == 200) {
 						if (xhr.responseText !="Try again!") {
@@ -52,14 +52,16 @@
 			})
 		}
 	}
-
+			document.getElementById('contact').addEventListener('click', function(){
+				window.location.href = 'contact.html';
+			})
 	checkLogin();
 
 	var single = {
 		"ID": window.location.href.split('id=')[1]
 	}
 	var xhr = new XMLHttpRequest();
-	xhr.open('POST', 'http://localhost/DemosGit/Ana/api/getSingleListing', true);
+	xhr.open('POST', 'http://localhost/api/getSingleListing', true);
 	xhr.onreadystatechange = function () {
 		if (xhr.readyState == 4 && xhr.status == 200) {
 			var response = JSON.parse(xhr.responseText);
@@ -97,7 +99,7 @@
 		}
 
 		var xhr = new XMLHttpRequest();
-		xhr.open('POST', 'http://localhost/DemosGit/Ana/api/saveListing', true);
+		xhr.open('POST', 'http://localhost/api/saveListing', true);
 		xhr.onreadystatechange = function () {
 			if (xhr.readyState == 4 && xhr.status == 200) {
 				alert("am salvat")

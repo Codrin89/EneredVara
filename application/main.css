@@ -95,5 +95,10 @@
 	text-shadow: 1px 1px blue;
 	color: blue;
 	text-transform: uppercase;
+}
 
+.footer p {
+	text-align: center;
+	text-shadow: 1px 1px blue;
+	color: blue;
 }
