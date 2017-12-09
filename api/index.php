@@ -17,7 +17,7 @@ function getConnection() {
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "api_ana";
+    $dbname = "api";
 
     // Create connection
     $conn = mysqli_connect($servername, $username, $password);
