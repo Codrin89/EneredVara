@@ -1,0 +1,158 @@
+*{
+padding: 0;
+margin: 0;
+}
+
+body {
+background: rgba(226,226,226,1);
+background: -moz-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 3%, rgba(254,254,254,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(226,226,226,1)), color-stop(3%, rgba(219,219,219,1)), color-stop(100%, rgba(254,254,254,1)));
+background: -webkit-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 3%, rgba(254,254,254,1) 100%);
+background: -o-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 3%, rgba(254,254,254,1) 100%);
+background: -ms-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 3%, rgba(254,254,254,1) 100%);
+background: linear-gradient(to right, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 3%, rgba(254,254,254,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1 );
+
+}
+/*Navbar-top*/
+
+.nopadding{
+	padding: 0;
+}
+
+.navbar-default {
+	background-image: linear-gradient(to bottom,#fff 0,#c1c0c0 100%);
+    
+}
+
+.lia{
+	color: #efefef;
+    height: 70px;
+    line-height: 70px;
+    margin-left: -14px;
+
+}
+
+.navbar-nav li a {
+	padding-top: 25px;
+}
+
+
+#singUp {
+    margin-left: 132px;
+    margin-right: 0px;
+}
+
+
+
+
+
+/*Carousel setting*/
+
+
+.carousel .item {
+    height:400px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+/*card settingd */
+
+.card  {
+	margin-top: 40px;
+	margin-left: 40px;
+    border: 1px solid #f3f3f3;
+    border-radius: 15px;
+    height: 330px;
+    padding-top: 10px;
+    background-color: #f7f8fb;
+    box-shadow: 1px -3px 19px 5px rgba(206,235,234,1);
+    font-family: 'Berkshire Swash', cursive;
+    display: inline-block;
+    text-align: center;
+}
+
+.imag {
+	width: 27rem;
+	height: 19rem;
+	border-radius: 13px;
+	margin-left: 0;
+
+}
+.navbari {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    float: right;
+    margin-top: 186px;
+    margin-bottom: -179px;	
+
+   }
+
+.midle{
+	margin-bottom: 100px;
+	margin-left: 140px;
+}
+/*Botom bat*/
+
+.container-fluid-fund {
+	height: 120px;
+	
+	background-color: #cccccc
+}
+
+.navBot{
+	padding-top: 50px;
+	
+	text-align: center
+}
+
+.navBot li{
+	display: inline-block;
+	
+}
+
+.navBot li a{
+	color:#7b6f6f;
+}
+
+/* Cosul */
+
+
+
+.table>tbody>tr>td, .table>tfoot>tr>td{
+    vertical-align: middle;
+}
+@media screen and (max-width: 600px) {
+    table#cart tbody td .form-control{
+        width:20%;
+        display: inline !important;
+    }
+    .actions .btn{
+        width:36%;
+        margin:1.5em 0;
+    }
+    
+    .actions .btn-info{
+        float:left;
+    }
+    .actions .btn-danger{
+        float:right;
+    }
+    
+    table#cart thead { display: none; }
+    table#cart tbody td { display: block; padding: .6rem; min-width:320px;}
+    table#cart tbody tr td:first-child { background: #333; color: #fff; }
+    table#cart tbody td:before {
+        content: attr(data-th); font-weight: bold;
+        display: inline-block; width: 8rem;
+    }
+    
+    
+    
+    table#cart tfoot td{display:block; }
+    table#cart tfoot td .btn{display:block;}
+    
+}
+

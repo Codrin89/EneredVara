@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<!-- <link rel="stylesheet" href="index.css"> -->
+	
+</head>
+<body class="container">
+
+	<div class="col-md-4 text-center" id='box'>
+		<h3 class="text-success text-center">Welcome to Taverna</h3>
+		<input class="form-control" id="username" type="text" placeholder="Enter username">
+		<input class="form-control" id="password" type="password" placeholder="Enter password">
+		
+         <input type="checkbox" onclick="check()" class="checkbox"><p class="checkbox">Show the password</p>
+	
+		<button class="btn btn-success" id="loginAction">Login</button>
+		<button class="btn btn-primary" id="register">Register</button>
+         <p class="error"></p>
+     </div>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		function check() { 
+    
+			var pass = document.getElementById("password");
+			if(pass.type === "password") {
+				
+				pass.type = "text"; 
+			} else {
+				pass.type = "password";
+			}
+		
+	    }
+	</script>
+	<script type="text/javascript" src="login.js"></script>
+</body>
+</html>

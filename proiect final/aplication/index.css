@@ -1,0 +1,64 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+    background: url(pic/foodlog.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+#box {
+    font-family: 'Berkshire Swash', cursive;
+    border-radius: 18px;
+    margin: 250px auto;
+    float:none;
+    background-color: rgba(112, 182, 243, 0.6);
+   
+}
+
+#username {
+	margin-bottom: 10px;
+	font-family: serif;
+}
+
+#password {
+	font-family: serif;
+}
+
+#loginAction {
+	margin:  7px 45px;
+}
+
+.search {
+    padding-top: 20px;
+}
+
+.error {
+    color: #350504;
+}
+.checkbox {
+    float:left;
+    padding-left: 5px;
+}
+
+
+/*Reister*/
+
+#regis1 {
+	font-family: 'Berkshire Swash', cursive;
+    border-radius: 18px;
+    margin: 125px auto;
+    float:none;
+    background-color: rgba(112, 182, 243, 0.6);
+}
+
+.form-control{
+	margin-bottom: 10px;
+	font-family: serif;
+}
+

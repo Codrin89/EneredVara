@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="index.css">
+	
+</head>
+<body class="container">
+
+	<div class="col-md-4 text-center" id='regis1'>
+		<h3 class="text-success text-center">Register</h3>
+		<input class="form-control" id="fname" type="text" placeholder="Enter first name">
+		<input class="form-control" id="lname" type="text" placeholder="Enter last name">
+		<input class="form-control" id="username" type="text" placeholder="Enter username">
+		<input class="form-control" id="email" type="text" placeholder="Enter email">
+		<input class="form-control" id="password" type="password" placeholder="Enter password">
+		<input type="checkbox" onclick="check()" class="checkbox"><p class="checkbox">Show the password</p>
+		<input class="form-control" id="gender" type="text" placeholder="Enter gender">
+		<input class="form-control" id="address" type="text" placeholder="Enter address">
+		<input class="form-control" id="phone" type="text" placeholder="Enter phone number">
+
+		<button class="btn btn-primary" id="registerAction">Register me</button>
+
+		<p class="error"></p>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		function check() { 
+            console.log("mata");
+			var pass = document.getElementById("password");
+			if(pass.type === "password") {
+				
+				pass.type = "text"; 
+			} else {
+				pass.type = "password";
+			}
+		
+	    }
+	</script>
+	<script type="text/javascript" src="register.js"></script>
+</body>
+</html>
